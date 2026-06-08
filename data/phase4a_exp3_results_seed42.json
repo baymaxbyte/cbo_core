@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "trigger_epoch": 1077,
+  "grokking_epoch": 4653,
+  "cooldown": 50,
+  "spike_wd": 1.0,
+  "lag": 3576
+}

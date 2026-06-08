@@ -1,0 +1,9 @@
+{
+  "seed": 1042,
+  "grokking_epoch": 3598,
+  "kappa": 5.0,
+  "tau": 0.02,
+  "alpha": 0.9,
+  "base_wd": 0.1,
+  "max_dynamic_wd": 1.96459853958174
+}
