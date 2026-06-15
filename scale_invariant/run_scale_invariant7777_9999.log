@@ -1,0 +1,601 @@
+nohup: ignoring input
+============================================================
+ SCALE-INVARIANT CBO EXPERIMENT
+============================================================
+ Seeds: 7777 9999
+ Epochs: 7000
+ Z-Score Threshold: 2.0
+ Device: cuda
+ Variants: cold-start gate + continuous sensor (wo_coldstart)
+============================================================
+
+
+============================================================
+ SEED 7777 — Phase 3: Trigger Benchmarking
+============================================================
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=7000, seed=7777
+  Profiler tau=0.015, Z-score threshold=2.0
+  Device: cuda
+
+    [PROFILER] Triggered at epoch 16 (velocity=0.416755 > tau=0.015)
+    [KINEMATIC] Triggered at epoch 16 (v=0.416755>0, a=-0.046409<0)
+    [Z-SCORE] Triggered at epoch 17 (z=2.07 > 2.0)
+  Epoch 100/7000 | TrLoss:0.0382 VLoss:3.4078 | TrAcc:1.0000 VAcc:0.5014 | Cv:4.3702
+  Epoch 200/7000 | TrLoss:0.0082 VLoss:3.5400 | TrAcc:1.0000 VAcc:0.5024 | Cv:3.7555
+    [EMA-ZSCORE-CONTINUOUS] Triggered at epoch 204 (z=2.142 > 2.0)
+    [EMA-ZSCORE-GATED] Triggered at epoch 204 (z=2.142 > 2.0)
+  Epoch 300/7000 | TrLoss:0.0036 VLoss:3.6047 | TrAcc:1.0000 VAcc:0.5024 | Cv:3.3773
+  Epoch 400/7000 | TrLoss:0.0019 VLoss:3.6596 | TrAcc:1.0000 VAcc:0.5027 | Cv:3.0908
+  Epoch 500/7000 | TrLoss:0.0011 VLoss:3.7013 | TrAcc:1.0000 VAcc:0.5027 | Cv:2.8620
+  Epoch 600/7000 | TrLoss:0.0006 VLoss:3.7454 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.6677
+  Epoch 700/7000 | TrLoss:0.0004 VLoss:3.7941 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.5088
+  Epoch 800/7000 | TrLoss:0.0002 VLoss:3.8393 | TrAcc:1.0000 VAcc:0.5035 | Cv:2.3649
+  Epoch 900/7000 | TrLoss:0.0001 VLoss:3.8936 | TrAcc:1.0000 VAcc:0.5039 | Cv:2.2390
+  Epoch 1000/7000 | TrLoss:0.0001 VLoss:3.9499 | TrAcc:1.0000 VAcc:0.5037 | Cv:2.1235
+  Epoch 1100/7000 | TrLoss:0.0000 VLoss:4.0041 | TrAcc:1.0000 VAcc:0.5037 | Cv:2.0237
+  Epoch 1200/7000 | TrLoss:0.0000 VLoss:4.0607 | TrAcc:1.0000 VAcc:0.5031 | Cv:1.9307
+  Epoch 1300/7000 | TrLoss:0.0099 VLoss:3.9375 | TrAcc:1.0000 VAcc:0.5016 | Cv:9.0758
+  Epoch 1400/7000 | TrLoss:0.0016 VLoss:3.8427 | TrAcc:1.0000 VAcc:0.5035 | Cv:5.0140
+  Epoch 1500/7000 | TrLoss:0.0009 VLoss:3.7388 | TrAcc:1.0000 VAcc:0.5044 | Cv:3.5135
+  Epoch 1600/7000 | TrLoss:0.0007 VLoss:3.6570 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.7636
+  Epoch 1700/7000 | TrLoss:0.0005 VLoss:3.5986 | TrAcc:1.0000 VAcc:0.5035 | Cv:2.3596
+  Epoch 1800/7000 | TrLoss:0.0004 VLoss:3.5801 | TrAcc:1.0000 VAcc:0.5039 | Cv:2.1105
+  Epoch 1900/7000 | TrLoss:0.0002 VLoss:3.5801 | TrAcc:1.0000 VAcc:0.5044 | Cv:1.9309
+  Epoch 2000/7000 | TrLoss:0.0002 VLoss:3.6282 | TrAcc:1.0000 VAcc:0.5046 | Cv:1.8055
+  Epoch 2100/7000 | TrLoss:0.0031 VLoss:3.3003 | TrAcc:1.0000 VAcc:0.5120 | Cv:8.8311
+  Epoch 2200/7000 | TrLoss:0.0012 VLoss:3.2109 | TrAcc:1.0000 VAcc:0.5152 | Cv:5.9017
+  Epoch 2300/7000 | TrLoss:0.0007 VLoss:3.1334 | TrAcc:1.0000 VAcc:0.5169 | Cv:4.2732
+  Epoch 2400/7000 | TrLoss:0.0005 VLoss:3.0764 | TrAcc:1.0000 VAcc:0.5180 | Cv:3.2886
+  Epoch 2500/7000 | TrLoss:0.0003 VLoss:3.0503 | TrAcc:1.0000 VAcc:0.5175 | Cv:2.6808
+  Epoch 2600/7000 | TrLoss:0.0002 VLoss:3.0517 | TrAcc:1.0000 VAcc:0.5192 | Cv:2.2955
+  Epoch 2700/7000 | TrLoss:0.0001 VLoss:3.0556 | TrAcc:1.0000 VAcc:0.5192 | Cv:2.0414
+  Epoch 2800/7000 | TrLoss:0.0001 VLoss:3.0928 | TrAcc:1.0000 VAcc:0.5207 | Cv:1.8510
+  Epoch 2900/7000 | TrLoss:0.0001 VLoss:3.1160 | TrAcc:1.0000 VAcc:0.5220 | Cv:1.7036
+  Epoch 3000/7000 | TrLoss:0.0000 VLoss:3.1557 | TrAcc:1.0000 VAcc:0.5222 | Cv:1.5829
+  Epoch 3100/7000 | TrLoss:0.0000 VLoss:3.1917 | TrAcc:1.0000 VAcc:0.5228 | Cv:1.4848
+  Epoch 3200/7000 | TrLoss:0.0000 VLoss:3.2435 | TrAcc:1.0000 VAcc:0.5237 | Cv:1.4060
+  Epoch 3300/7000 | TrLoss:0.0000 VLoss:3.2868 | TrAcc:1.0000 VAcc:0.5231 | Cv:1.3369
+  Epoch 3400/7000 | TrLoss:0.0000 VLoss:3.3346 | TrAcc:1.0000 VAcc:0.5233 | Cv:1.2805
+  Epoch 3500/7000 | TrLoss:0.0428 VLoss:2.3161 | TrAcc:1.0000 VAcc:0.5413 | Cv:7.7845
+  Epoch 3600/7000 | TrLoss:0.0017 VLoss:1.8046 | TrAcc:1.0000 VAcc:0.5983 | Cv:3.5808
+  Epoch 3700/7000 | TrLoss:0.0008 VLoss:1.5964 | TrAcc:1.0000 VAcc:0.6266 | Cv:2.3795
+  Epoch 3800/7000 | TrLoss:0.0005 VLoss:1.4582 | TrAcc:1.0000 VAcc:0.6421 | Cv:1.7203
+  Epoch 3900/7000 | TrLoss:0.0003 VLoss:1.3609 | TrAcc:1.0000 VAcc:0.6553 | Cv:1.3502
+  Epoch 4000/7000 | TrLoss:0.0003 VLoss:1.3041 | TrAcc:1.0000 VAcc:0.6659 | Cv:1.1419
+  Epoch 4100/7000 | TrLoss:0.0030 VLoss:0.4038 | TrAcc:1.0000 VAcc:0.8778 | Cv:4.3705
+  Epoch 4200/7000 | TrLoss:0.0012 VLoss:0.2088 | TrAcc:1.0000 VAcc:0.9420 | Cv:2.7216
+  Epoch 4300/7000 | TrLoss:0.0007 VLoss:0.1144 | TrAcc:1.0000 VAcc:0.9753 | Cv:1.8314
+  Epoch 4400/7000 | TrLoss:0.0004 VLoss:0.0677 | TrAcc:1.0000 VAcc:0.9879 | Cv:1.3056
+  Epoch 4500/7000 | TrLoss:0.0003 VLoss:0.0426 | TrAcc:1.0000 VAcc:0.9930 | Cv:0.9886
+  Epoch 4600/7000 | TrLoss:0.0002 VLoss:0.0283 | TrAcc:1.0000 VAcc:0.9953 | Cv:0.7963
+  Epoch 4700/7000 | TrLoss:0.0001 VLoss:0.0195 | TrAcc:1.0000 VAcc:0.9964 | Cv:0.6748
+  Epoch 4800/7000 | TrLoss:0.0001 VLoss:0.0130 | TrAcc:1.0000 VAcc:0.9968 | Cv:0.5903
+  Epoch 4900/7000 | TrLoss:0.0000 VLoss:0.0084 | TrAcc:1.0000 VAcc:0.9983 | Cv:0.5284
+  Epoch 5000/7000 | TrLoss:0.0000 VLoss:0.0052 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.4789
+  Epoch 5100/7000 | TrLoss:0.0000 VLoss:0.0030 | TrAcc:1.0000 VAcc:0.9994 | Cv:0.4402
+  Epoch 5200/7000 | TrLoss:0.0000 VLoss:0.0015 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4067
+  Epoch 5300/7000 | TrLoss:0.0000 VLoss:0.0007 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3792
+  Epoch 5400/7000 | TrLoss:0.0000 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3568
+  Epoch 5500/7000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3380
+  Epoch 5600/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3235
+  Epoch 5700/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3125
+  Epoch 5800/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3020
+  Epoch 5900/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2947
+  Epoch 6000/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2893
+  Epoch 6100/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2832
+  Epoch 6200/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2815
+  Epoch 6300/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2883
+  Epoch 6400/7000 | TrLoss:0.0021 VLoss:0.0045 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.7343
+  Epoch 6500/7000 | TrLoss:0.0007 VLoss:0.0016 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.8821
+  Epoch 6600/7000 | TrLoss:0.0003 VLoss:0.0007 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3243
+  Epoch 6700/7000 | TrLoss:0.0002 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9658
+  Epoch 6800/7000 | TrLoss:0.0001 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7199
+  Epoch 6900/7000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5404
+  Epoch 7000/7000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4181
+
+============================================================
+PHASE 3 RESULTS (seed=7777)
+============================================================
+  Profiler triggered:          epoch 16
+  Z-Score (batch) triggered:   epoch 17
+  Kinematic triggered:         epoch 16
+  EMA Z-Score (continuous):    epoch 204
+  EMA Z-Score (gated/cold):    epoch 204
+  Natural grokking:            epoch 4127
+  LAG (kinematic -> grokking): 4111 epochs
+  LAG (ema_cont -> grokking):  3923 epochs
+  LAG (ema_gated -> grokking): 3923 epochs
+============================================================
+
+  Saved: data/phase3_seed7777_metrics.csv
+  Saved: data/phase3_seed7777_benchmark_results.json
+  Saved: figures/phase3_seed7777_triggers.png
+  Saved: figures/phase3_seed7777_kinematics.png
+
+============================================================
+ SEED 7777 — Phase 4B: CvAdamW (Cold-Start Gate)
+============================================================
+Phase 4B: Scale-Invariant CvAdamW (Z-Score Driven)
+  z_thresh=2.0, beta_z=0.9, base_wd=0.1
+  p=97, epochs=7000, seed=7777, device=cuda
+  Formula: lambda_t = base_wd + max(0, Z_t - z_thresh)
+
+  Epoch 100/7000 | Loss:0.0383 TrAcc:1.0000 VAcc:0.5014 | Cv:4.362398 v:-0.017425 mu:-0.002430 sigma:0.043953 Z:-0.341 WD:0.1000
+  Epoch 200/7000 | Loss:0.0082 TrAcc:1.0000 VAcc:0.5024 | Cv:3.743782 v:0.035692 mu:0.003266 sigma:0.041108 Z:0.789 WD:0.1000
+  Epoch 300/7000 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5024 | Cv:3.361669 v:-0.050406 mu:-0.007611 sigma:0.034484 Z:-1.241 WD:0.1000
+  Epoch 400/7000 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5027 | Cv:3.070857 v:-0.017390 mu:-0.004710 sigma:0.025598 Z:-0.495 WD:0.1000
+  Epoch 500/7000 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5027 | Cv:2.841817 v:-0.036586 mu:-0.002512 sigma:0.024095 Z:-1.414 WD:0.1000
+  Epoch 600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5031 | Cv:2.643907 v:-0.008999 mu:-0.003056 sigma:0.031349 Z:-0.190 WD:0.1000
+  Epoch 700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5029 | Cv:2.484859 v:0.010131 mu:0.001439 sigma:0.016806 Z:0.517 WD:0.1000
+  Epoch 800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5037 | Cv:2.341267 v:0.015431 mu:0.002175 sigma:0.017563 Z:0.755 WD:0.1000
+  Epoch 900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5041 | Cv:2.217583 v:-0.003273 mu:0.001796 sigma:0.023044 Z:-0.220 WD:0.1000
+  Epoch 1000/7000 | Loss:0.0053 TrAcc:1.0000 VAcc:0.5024 | Cv:8.381480 v:0.047141 mu:-0.000992 sigma:0.056448 Z:0.853 WD:0.1000
+  Epoch 1100/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5037 | Cv:5.205139 v:0.086837 mu:0.008833 sigma:0.034746 Z:2.245 WD:0.3450
+  Epoch 1200/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5052 | Cv:3.809371 v:-0.004746 mu:-0.001033 sigma:0.026377 Z:-0.141 WD:0.1000
+  Epoch 1300/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5056 | Cv:3.095824 v:0.022330 mu:0.000991 sigma:0.021576 Z:0.989 WD:0.1000
+  Epoch 1400/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5052 | Cv:2.679655 v:-0.054030 mu:-0.004293 sigma:0.021504 Z:-2.313 WD:0.1000
+  Epoch 1500/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5052 | Cv:2.418771 v:0.031681 mu:0.002567 sigma:0.016334 Z:1.782 WD:0.1000
+  Epoch 1600/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5044 | Cv:2.219796 v:0.034721 mu:0.002687 sigma:0.015499 Z:2.067 WD:0.1668
+  Epoch 1700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5046 | Cv:2.057416 v:-0.013754 mu:-0.002319 sigma:0.016641 Z:-0.687 WD:0.1000
+  Epoch 1800/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5052 | Cv:1.925463 v:0.006202 mu:0.001578 sigma:0.009619 Z:0.481 WD:0.1000
+  Epoch 1900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5052 | Cv:1.811375 v:-0.036353 mu:-0.002753 sigma:0.015458 Z:-2.174 WD:0.1000
+  Epoch 2000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5054 | Cv:1.712883 v:0.004149 mu:0.000119 sigma:0.011270 Z:0.358 WD:0.1000
+  Epoch 2100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5061 | Cv:1.629564 v:0.015578 mu:0.002350 sigma:0.011149 Z:1.186 WD:0.1000
+  Epoch 2200/7000 | Loss:0.0024 TrAcc:1.0000 VAcc:0.5114 | Cv:6.620778 v:0.070191 mu:0.003632 sigma:0.045145 Z:1.474 WD:0.1000
+  Epoch 2300/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5146 | Cv:4.365670 v:-0.040770 mu:-0.004985 sigma:0.022983 Z:-1.557 WD:0.1000
+  Epoch 2400/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5154 | Cv:3.193911 v:0.023081 mu:0.000540 sigma:0.016374 Z:1.377 WD:0.1000
+  Epoch 2500/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5160 | Cv:2.503408 v:0.020332 mu:0.000802 sigma:0.013595 Z:1.437 WD:0.1000
+  Epoch 2600/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5165 | Cv:2.105199 v:-0.007225 mu:-0.000564 sigma:0.009224 Z:-0.722 WD:0.1000
+  Epoch 2700/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5169 | Cv:1.850347 v:-0.014049 mu:-0.001500 sigma:0.011584 Z:-1.083 WD:0.1000
+  Epoch 2800/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5167 | Cv:1.674737 v:0.032784 mu:0.001779 sigma:0.015050 Z:2.060 WD:0.1601
+  Epoch 2900/7000 | Loss:0.0054 TrAcc:1.0000 VAcc:0.5439 | Cv:5.691156 v:0.039548 mu:-0.001223 sigma:0.027280 Z:1.495 WD:0.1000
+  Epoch 3000/7000 | Loss:0.0013 TrAcc:1.0000 VAcc:0.5647 | Cv:3.438617 v:-0.013735 mu:-0.002803 sigma:0.016111 Z:-0.679 WD:0.1000
+  Epoch 3100/7000 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5719 | Cv:2.489431 v:0.001765 mu:-0.001328 sigma:0.016879 Z:0.183 WD:0.1000
+  Epoch 3200/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5728 | Cv:1.982412 v:0.034419 mu:0.003040 sigma:0.013155 Z:2.385 WD:0.4853
+  Epoch 3300/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5770 | Cv:1.687197 v:0.021099 mu:0.001963 sigma:0.010602 Z:1.805 WD:0.1000
+  Epoch 3400/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5773 | Cv:1.501906 v:0.009066 mu:-0.000379 sigma:0.011809 Z:0.800 WD:0.1000
+  Epoch 3500/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5845 | Cv:1.372713 v:0.005283 mu:0.000943 sigma:0.009946 Z:0.436 WD:0.1000
+  Epoch 3600/7000 | Loss:0.0083 TrAcc:1.0000 VAcc:0.6922 | Cv:5.034336 v:-0.007773 mu:-0.005767 sigma:0.024650 Z:-0.081 WD:0.1000
+  Epoch 3700/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.8166 | Cv:2.368523 v:-0.002791 mu:-0.002068 sigma:0.015352 Z:-0.047 WD:0.1000
+  Epoch 3800/7000 | Loss:0.0008 TrAcc:1.0000 VAcc:0.8727 | Cv:1.594670 v:-0.004989 mu:-0.000426 sigma:0.008569 Z:-0.533 WD:0.1000
+  Epoch 3900/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.9022 | Cv:1.188082 v:0.002437 mu:-0.000105 sigma:0.005701 Z:0.446 WD:0.1000
+  Epoch 4000/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9305 | Cv:0.939881 v:-0.004865 mu:-0.000476 sigma:0.003822 Z:-1.148 WD:0.1000
+  Epoch 4100/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9513 | Cv:0.776013 v:0.010600 mu:0.001247 sigma:0.005312 Z:1.761 WD:0.1000
+  Epoch 4200/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9656 | Cv:0.660968 v:0.004581 mu:0.000211 sigma:0.003388 Z:1.290 WD:0.1000
+  Epoch 4300/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9777 | Cv:0.576060 v:-0.003226 mu:-0.000135 sigma:0.003541 Z:-0.873 WD:0.1000
+  Epoch 4400/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9851 | Cv:0.512531 v:-0.003490 mu:-0.000200 sigma:0.003287 Z:-1.001 WD:0.1000
+  Epoch 4500/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9900 | Cv:0.461742 v:-0.002819 mu:-0.000470 sigma:0.002304 Z:-1.019 WD:0.1000
+  Epoch 4600/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9936 | Cv:0.422736 v:0.000396 mu:-0.000001 sigma:0.002012 Z:0.197 WD:0.1000
+  Epoch 4700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9951 | Cv:0.386643 v:-0.004521 mu:-0.000538 sigma:0.002142 Z:-1.860 WD:0.1000
+  Epoch 4800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9966 | Cv:0.357734 v:-0.003394 mu:-0.000197 sigma:0.002036 Z:-1.570 WD:0.1000
+  Epoch 4900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9979 | Cv:0.332506 v:-0.001262 mu:-0.000143 sigma:0.002167 Z:-0.516 WD:0.1000
+  Epoch 5000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9981 | Cv:0.313483 v:0.002862 mu:0.000082 sigma:0.001755 Z:1.584 WD:0.1000
+  Epoch 5100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9987 | Cv:0.297905 v:0.000426 mu:-0.000006 sigma:0.001817 Z:0.238 WD:0.1000
+  Epoch 5200/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9994 | Cv:0.285235 v:0.002529 mu:0.000257 sigma:0.001503 Z:1.512 WD:0.1000
+  Epoch 5300/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 | Cv:0.274984 v:-0.000187 mu:-0.000073 sigma:0.001466 Z:-0.077 WD:0.1000
+  Epoch 5400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 | Cv:0.267062 v:-0.001193 mu:-0.000052 sigma:0.000792 Z:-1.441 WD:0.1000
+  Epoch 5500/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 | Cv:0.261463 v:-0.001570 mu:-0.000166 sigma:0.000983 Z:-1.428 WD:0.1000
+  Epoch 5600/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 | Cv:0.255909 v:-0.000550 mu:0.000012 sigma:0.001223 Z:-0.459 WD:0.1000
+  Epoch 5700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.252668 v:0.002776 mu:0.000332 sigma:0.001265 Z:1.933 WD:0.1000
+  Epoch 5800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.254000 v:-0.001910 mu:-0.000224 sigma:0.001140 Z:-1.479 WD:0.1000
+  Epoch 5900/7000 | Loss:1.7865 TrAcc:0.5474 VAcc:0.3254 | Cv:7.464117 v:-0.071598 mu:-0.000167 sigma:0.017062 Z:0.000 WD:0.1000
+  Epoch 6000/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.9998 | Cv:1.756261 v:-0.065110 mu:-0.006790 sigma:0.027385 Z:-2.130 WD:0.1000
+  Epoch 6100/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 | Cv:1.146725 v:-0.006736 mu:-0.001349 sigma:0.010557 Z:-0.510 WD:0.1000
+  Epoch 6200/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:0.830737 v:-0.002604 mu:-0.000327 sigma:0.005899 Z:-0.386 WD:0.1000
+  Epoch 6300/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:0.597751 v:0.007425 mu:0.000514 sigma:0.004305 Z:1.605 WD:0.1000
+  Epoch 6400/7000 | Loss:0.0014 TrAcc:1.0000 VAcc:1.0000 | Cv:5.464481 v:0.068389 mu:0.006349 sigma:0.054382 Z:1.141 WD:0.1000
+  Epoch 6500/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 | Cv:3.698893 v:0.010229 mu:0.003894 sigma:0.039391 Z:0.161 WD:0.1000
+  Epoch 6600/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 | Cv:2.756172 v:-0.014638 mu:-0.000114 sigma:0.017527 Z:-0.829 WD:0.1000
+  Epoch 6700/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:2.150008 v:-0.032240 mu:-0.003254 sigma:0.017334 Z:-1.672 WD:0.1000
+  Epoch 6800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.707631 v:0.010960 mu:0.000085 sigma:0.013432 Z:0.810 WD:0.1000
+  Epoch 6900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.361488 v:-0.000042 mu:-0.000557 sigma:0.008316 Z:0.062 WD:0.1000
+  Epoch 7000/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.087532 v:-0.007066 mu:-0.000462 sigma:0.006375 Z:-1.036 WD:0.1000
+
+============================================================
+  PHASE 4B RESULTS (seed=7777)
+============================================================
+  Grokking epoch:  3889
+  Max Z-score:     2.7022
+  Max dynamic WD:  0.8022
+  z_thresh:        2.0
+  beta_z:          0.9
+============================================================
+  Saved: data/phase4b_seed7777_metrics.csv
+  Saved: data/phase4b_seed7777_results.json
+  Saved: figures/phase4b_seed7777_cv_adamw.png
+
+============================================================
+ SEED 7777 — Phase 4B: CvAdamW (Continuous Sensor / No Cold-Start)
+============================================================
+Phase 4B: Scale-Invariant CvAdamW (Z-Score Driven)
+  z_thresh=2.0, beta_z=0.9, base_wd=0.1
+  p=97, epochs=7000, seed=7777, device=cuda
+  Formula: lambda_t = base_wd + max(0, Z_t - z_thresh)
+
+  Epoch 100/7000 | Loss:0.0383 TrAcc:1.0000 VAcc:0.5014 | Cv:4.366078 v:-0.017451 mu:-0.002431 sigma:0.044008 Z:-0.341 WD:0.1000
+  Epoch 200/7000 | Loss:0.0082 TrAcc:1.0000 VAcc:0.5024 | Cv:3.746699 v:0.035732 mu:0.003269 sigma:0.041158 Z:0.789 WD:0.1000
+  Epoch 300/7000 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5024 | Cv:3.364192 v:-0.050472 mu:-0.007620 sigma:0.034530 Z:-1.241 WD:0.1000
+  Epoch 400/7000 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5027 | Cv:3.073100 v:-0.017412 mu:-0.004714 sigma:0.025626 Z:-0.496 WD:0.1000
+  Epoch 500/7000 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5027 | Cv:2.843828 v:-0.036653 mu:-0.002515 sigma:0.024124 Z:-1.415 WD:0.1000
+  Epoch 600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5031 | Cv:2.645746 v:-0.009017 mu:-0.003056 sigma:0.031388 Z:-0.190 WD:0.1000
+  Epoch 700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5029 | Cv:2.486564 v:0.010128 mu:0.001441 sigma:0.016823 Z:0.516 WD:0.1000
+  Epoch 800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5037 | Cv:2.342849 v:0.015443 mu:0.002177 sigma:0.017583 Z:0.754 WD:0.1000
+  Epoch 900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5041 | Cv:2.219066 v:-0.003265 mu:0.001799 sigma:0.023063 Z:-0.220 WD:0.1000
+  Epoch 1000/7000 | Loss:0.0063 TrAcc:1.0000 VAcc:0.5029 | Cv:8.666306 v:0.040673 mu:-0.003150 sigma:0.055858 Z:0.785 WD:0.1000
+  Epoch 1100/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5033 | Cv:5.388901 v:0.080612 mu:0.008013 sigma:0.034275 Z:2.118 WD:0.2181
+  Epoch 1200/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5035 | Cv:3.972711 v:-0.019587 mu:-0.001937 sigma:0.029184 Z:-0.605 WD:0.1000
+  Epoch 1300/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5033 | Cv:3.236386 v:0.016974 mu:0.000870 sigma:0.023930 Z:0.673 WD:0.1000
+  Epoch 1400/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5035 | Cv:2.788238 v:-0.056759 mu:-0.004060 sigma:0.023581 Z:-2.235 WD:0.1000
+  Epoch 1500/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5033 | Cv:2.508364 v:0.031123 mu:0.002157 sigma:0.016846 Z:1.719 WD:0.1000
+  Epoch 1600/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5031 | Cv:2.291074 v:0.042345 mu:0.003253 sigma:0.017688 Z:2.210 WD:0.3100
+  Epoch 1700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5037 | Cv:2.115572 v:-0.011738 mu:-0.001861 sigma:0.015916 Z:-0.621 WD:0.1000
+  Epoch 1800/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5054 | Cv:1.971386 v:0.007757 mu:0.001525 sigma:0.011004 Z:0.566 WD:0.1000
+  Epoch 1900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5048 | Cv:1.844782 v:-0.035235 mu:-0.003046 sigma:0.015455 Z:-2.083 WD:0.1000
+  Epoch 2000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5056 | Cv:1.741398 v:0.012964 mu:0.000970 sigma:0.012296 Z:0.975 WD:0.1000
+  Epoch 2100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5067 | Cv:1.644912 v:0.018597 mu:0.002416 sigma:0.012605 Z:1.284 WD:0.1000
+  Epoch 2200/7000 | Loss:0.0164 TrAcc:1.0000 VAcc:0.5088 | Cv:7.875661 v:-0.065928 mu:-0.023297 sigma:0.072843 Z:-0.585 WD:0.1000
+  Epoch 2300/7000 | Loss:0.0016 TrAcc:1.0000 VAcc:0.5129 | Cv:4.226897 v:-0.050194 mu:-0.007600 sigma:0.025633 Z:-1.662 WD:0.1000
+  Epoch 2400/7000 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5131 | Cv:3.067580 v:0.047002 mu:0.003327 sigma:0.021320 Z:2.049 WD:0.1485
+  Epoch 2500/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5112 | Cv:2.441524 v:0.051549 mu:0.002398 sigma:0.020095 Z:2.446 WD:0.5460
+  Epoch 2600/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5118 | Cv:2.073723 v:-0.016979 mu:-0.001049 sigma:0.011168 Z:-1.426 WD:0.1000
+  Epoch 2700/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5114 | Cv:1.830961 v:-0.021819 mu:-0.002418 sigma:0.017024 Z:-1.140 WD:0.1000
+  Epoch 2800/7000 | Loss:0.0081 TrAcc:1.0000 VAcc:0.5401 | Cv:5.958364 v:0.062650 mu:0.001361 sigma:0.034969 Z:1.753 WD:0.1000
+  Epoch 2900/7000 | Loss:0.0017 TrAcc:1.0000 VAcc:0.5581 | Cv:3.500799 v:0.039074 mu:0.002004 sigma:0.020110 Z:1.843 WD:0.1000
+  Epoch 3000/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5702 | Cv:2.517259 v:-0.013734 mu:-0.003862 sigma:0.012853 Z:-0.768 WD:0.1000
+  Epoch 3100/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5794 | Cv:1.963657 v:-0.002905 mu:-0.001307 sigma:0.012611 Z:-0.127 WD:0.1000
+  Epoch 3200/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5872 | Cv:1.636153 v:0.038634 mu:0.003607 sigma:0.014562 Z:2.405 WD:0.5053
+  Epoch 3300/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5996 | Cv:1.416063 v:0.033529 mu:0.002478 sigma:0.014124 Z:2.199 WD:0.2985
+  Epoch 3400/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.6062 | Cv:1.261821 v:-0.010648 mu:-0.001366 sigma:0.009999 Z:-0.928 WD:0.1000
+  Epoch 3500/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.6168 | Cv:1.147140 v:0.013930 mu:0.000320 sigma:0.009382 Z:1.451 WD:0.1000
+  Epoch 3600/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.6344 | Cv:1.055751 v:0.000139 mu:0.000400 sigma:0.006587 Z:-0.040 WD:0.1000
+  Epoch 3700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.6478 | Cv:0.980028 v:-0.009335 mu:-0.001270 sigma:0.008654 Z:-0.932 WD:0.1000
+  Epoch 3800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.6614 | Cv:0.918700 v:0.008916 mu:0.000733 sigma:0.007290 Z:1.122 WD:0.1000
+  Epoch 3900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.6786 | Cv:0.864681 v:0.009693 mu:0.000928 sigma:0.007612 Z:1.152 WD:0.1000
+  Epoch 4000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.6969 | Cv:0.817587 v:-0.012439 mu:-0.001147 sigma:0.007232 Z:-1.561 WD:0.1000
+  Epoch 4100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7086 | Cv:0.778260 v:-0.003970 mu:0.000186 sigma:0.004864 Z:-0.854 WD:0.1000
+  Epoch 4200/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7235 | Cv:0.746842 v:0.006952 mu:0.000240 sigma:0.006946 Z:0.966 WD:0.1000
+  Epoch 4300/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7486 | Cv:0.718531 v:-0.004253 mu:-0.000464 sigma:0.003799 Z:-0.998 WD:0.1000
+  Epoch 4400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7624 | Cv:0.695251 v:-0.000686 mu:0.000039 sigma:0.004265 Z:-0.170 WD:0.1000
+  Epoch 4500/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7864 | Cv:0.673388 v:-0.012088 mu:-0.001123 sigma:0.006438 Z:-1.703 WD:0.1000
+  Epoch 4600/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.7981 | Cv:0.660615 v:0.011903 mu:0.000914 sigma:0.005869 Z:1.872 WD:0.1000
+  Epoch 4700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.8155 | Cv:0.642031 v:0.005185 mu:0.000221 sigma:0.004363 Z:1.138 WD:0.1000
+  Epoch 4800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.8306 | Cv:0.633622 v:-0.007299 mu:-0.000339 sigma:0.003731 Z:-1.866 WD:0.1000
+  Epoch 4900/7000 | Loss:0.0043 TrAcc:1.0000 VAcc:0.8750 | Cv:3.971713 v:-0.005027 mu:-0.000161 sigma:0.027779 Z:-0.175 WD:0.1000
+  Epoch 5000/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.9501 | Cv:2.440282 v:-0.010604 mu:-0.000995 sigma:0.016539 Z:-0.581 WD:0.1000
+  Epoch 5100/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9785 | Cv:1.695501 v:0.005378 mu:-0.001027 sigma:0.010639 Z:0.602 WD:0.1000
+  Epoch 5200/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9926 | Cv:1.231497 v:0.023578 mu:0.001740 sigma:0.009540 Z:2.289 WD:0.3891
+  Epoch 5300/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9972 | Cv:0.918402 v:-0.010730 mu:-0.001243 sigma:0.005253 Z:-1.806 WD:0.1000
+  Epoch 5400/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9985 | Cv:0.718406 v:-0.004656 mu:-0.000204 sigma:0.005406 Z:-0.823 WD:0.1000
+  Epoch 5500/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.9998 | Cv:3.615423 v:0.029905 mu:0.000841 sigma:0.015074 Z:1.928 WD:0.1000
+  Epoch 5600/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 | Cv:2.454013 v:-0.001894 mu:-0.000116 sigma:0.007964 Z:-0.223 WD:0.1000
+  Epoch 5700/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 | Cv:1.724095 v:-0.000787 mu:-0.000135 sigma:0.005437 Z:-0.120 WD:0.1000
+  Epoch 5800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.252021 v:-0.005450 mu:-0.000931 sigma:0.005116 Z:-0.883 WD:0.1000
+  Epoch 5900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.937998 v:0.008566 mu:0.000696 sigma:0.004392 Z:1.792 WD:0.1000
+  Epoch 6000/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.741144 v:0.003185 mu:0.000064 sigma:0.003410 Z:0.915 WD:0.1000
+  Epoch 6100/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:1.0000 | Cv:4.237597 v:-0.042443 mu:-0.005115 sigma:0.031172 Z:-1.198 WD:0.1000
+  Epoch 6200/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 | Cv:3.133701 v:0.007798 mu:-0.001061 sigma:0.024068 Z:0.368 WD:0.1000
+  Epoch 6300/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:2.409363 v:0.039202 mu:0.004010 sigma:0.018828 Z:1.869 WD:0.1000
+  Epoch 6400/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.883106 v:0.024910 mu:0.001883 sigma:0.010330 Z:2.229 WD:0.3291
+  Epoch 6500/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.490696 v:0.004787 mu:0.000942 sigma:0.007035 Z:0.546 WD:0.1000
+  Epoch 6600/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.204614 v:0.008990 mu:0.001342 sigma:0.004498 Z:1.700 WD:0.1000
+  Epoch 6700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.987216 v:-0.001168 mu:-0.000161 sigma:0.003652 Z:-0.276 WD:0.1000
+  Epoch 6800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.819903 v:0.005377 mu:0.000226 sigma:0.005881 Z:0.876 WD:0.1000
+  Epoch 6900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.686071 v:0.000151 mu:-0.000205 sigma:0.003194 Z:0.111 WD:0.1000
+  Epoch 7000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.579014 v:-0.003530 mu:-0.000305 sigma:0.002525 Z:-1.278 WD:0.1000
+
+============================================================
+  PHASE 4B RESULTS (seed=7777)
+============================================================
+  Grokking epoch:  4925
+  Max Z-score:     2.7310
+  Max dynamic WD:  0.8310
+  z_thresh:        2.0
+  beta_z:          0.9
+============================================================
+  Saved: data/phase4b_wocs_seed7777_metrics.csv
+  Saved: data/phase4b_wocs_seed7777_results.json
+  Saved: figures/phase4b_wocs_seed7777_cv_adamw.png
+
+  ✅ Seed 7777 complete (all 3 runs).
+
+
+============================================================
+ SEED 9999 — Phase 3: Trigger Benchmarking
+============================================================
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=7000, seed=9999
+  Profiler tau=0.015, Z-score threshold=2.0
+  Device: cuda
+
+    [PROFILER] Triggered at epoch 16 (velocity=0.581820 > tau=0.015)
+    [KINEMATIC] Triggered at epoch 17 (v=0.484533>0, a=-0.097287<0)
+  Epoch 100/7000 | TrLoss:0.0404 VLoss:3.3300 | TrAcc:1.0000 VAcc:0.4893 | Cv:4.9039
+  Epoch 200/7000 | TrLoss:0.0085 VLoss:3.4491 | TrAcc:1.0000 VAcc:0.4910 | Cv:4.3330
+    [EMA-ZSCORE-CONTINUOUS] Triggered at epoch 281 (z=2.302 > 2.0)
+    [EMA-ZSCORE-GATED] Triggered at epoch 281 (z=2.302 > 2.0)
+  Epoch 300/7000 | TrLoss:0.0037 VLoss:3.5096 | TrAcc:1.0000 VAcc:0.4916 | Cv:3.9306
+  Epoch 400/7000 | TrLoss:0.0020 VLoss:3.5568 | TrAcc:1.0000 VAcc:0.4922 | Cv:3.6199
+  Epoch 500/7000 | TrLoss:0.0011 VLoss:3.5924 | TrAcc:1.0000 VAcc:0.4925 | Cv:3.3524
+  Epoch 600/7000 | TrLoss:0.0007 VLoss:3.6335 | TrAcc:1.0000 VAcc:0.4927 | Cv:3.1464
+  Epoch 700/7000 | TrLoss:0.0004 VLoss:3.6743 | TrAcc:1.0000 VAcc:0.4933 | Cv:2.9471
+  Epoch 800/7000 | TrLoss:0.0002 VLoss:3.7160 | TrAcc:1.0000 VAcc:0.4935 | Cv:2.7856
+  Epoch 900/7000 | TrLoss:0.0001 VLoss:3.7690 | TrAcc:1.0000 VAcc:0.4939 | Cv:2.6302
+    [Z-SCORE] Triggered at epoch 934 (z=37.05 > 2.0)
+  Epoch 1000/7000 | TrLoss:0.0027 VLoss:3.4290 | TrAcc:1.0000 VAcc:0.4946 | Cv:6.7390
+  Epoch 1100/7000 | TrLoss:0.0012 VLoss:3.4094 | TrAcc:1.0000 VAcc:0.4952 | Cv:4.7732
+  Epoch 1200/7000 | TrLoss:0.0008 VLoss:3.3794 | TrAcc:1.0000 VAcc:0.4950 | Cv:3.6883
+  Epoch 1300/7000 | TrLoss:0.0006 VLoss:3.3665 | TrAcc:1.0000 VAcc:0.4959 | Cv:3.0818
+  Epoch 1400/7000 | TrLoss:0.0004 VLoss:3.3816 | TrAcc:1.0000 VAcc:0.4967 | Cv:2.7211
+  Epoch 1500/7000 | TrLoss:0.0003 VLoss:3.4002 | TrAcc:1.0000 VAcc:0.4973 | Cv:2.4926
+  Epoch 1600/7000 | TrLoss:0.0002 VLoss:3.4476 | TrAcc:1.0000 VAcc:0.4969 | Cv:2.3247
+  Epoch 1700/7000 | TrLoss:0.0001 VLoss:3.5134 | TrAcc:1.0000 VAcc:0.4976 | Cv:2.1961
+  Epoch 1800/7000 | TrLoss:0.0001 VLoss:3.5784 | TrAcc:1.0000 VAcc:0.4969 | Cv:2.0767
+  Epoch 1900/7000 | TrLoss:0.0042 VLoss:2.5288 | TrAcc:1.0000 VAcc:0.5222 | Cv:7.1246
+  Epoch 2000/7000 | TrLoss:0.0012 VLoss:2.5862 | TrAcc:1.0000 VAcc:0.5237 | Cv:4.8952
+  Epoch 2100/7000 | TrLoss:0.0007 VLoss:2.5896 | TrAcc:1.0000 VAcc:0.5214 | Cv:3.6979
+  Epoch 2200/7000 | TrLoss:0.0005 VLoss:2.6009 | TrAcc:1.0000 VAcc:0.5177 | Cv:2.9752
+  Epoch 2300/7000 | TrLoss:0.0004 VLoss:2.6206 | TrAcc:1.0000 VAcc:0.5163 | Cv:2.5212
+  Epoch 2400/7000 | TrLoss:0.0003 VLoss:2.6515 | TrAcc:1.0000 VAcc:0.5180 | Cv:2.2357
+  Epoch 2500/7000 | TrLoss:0.0002 VLoss:2.6935 | TrAcc:1.0000 VAcc:0.5194 | Cv:2.0394
+  Epoch 2600/7000 | TrLoss:0.0077 VLoss:1.4951 | TrAcc:1.0000 VAcc:0.6153 | Cv:7.9666
+  Epoch 2700/7000 | TrLoss:0.0018 VLoss:1.5401 | TrAcc:1.0000 VAcc:0.6206 | Cv:5.6540
+  Epoch 2800/7000 | TrLoss:0.0008 VLoss:1.3738 | TrAcc:1.0000 VAcc:0.6550 | Cv:4.1696
+  Epoch 2900/7000 | TrLoss:0.0005 VLoss:1.2204 | TrAcc:1.0000 VAcc:0.6816 | Cv:3.2044
+  Epoch 3000/7000 | TrLoss:0.0003 VLoss:1.1036 | TrAcc:1.0000 VAcc:0.7052 | Cv:2.5532
+  Epoch 3100/7000 | TrLoss:0.0044 VLoss:0.6232 | TrAcc:1.0000 VAcc:0.7945 | Cv:6.9217
+  Epoch 3200/7000 | TrLoss:0.0012 VLoss:0.5180 | TrAcc:1.0000 VAcc:0.8315 | Cv:4.5916
+  Epoch 3300/7000 | TrLoss:0.0007 VLoss:0.3898 | TrAcc:1.0000 VAcc:0.8763 | Cv:3.2849
+  Epoch 3400/7000 | TrLoss:0.0005 VLoss:0.2901 | TrAcc:1.0000 VAcc:0.9071 | Cv:2.4508
+  Epoch 3500/7000 | TrLoss:0.0003 VLoss:0.2149 | TrAcc:1.0000 VAcc:0.9341 | Cv:1.9019
+  Epoch 3600/7000 | TrLoss:0.0002 VLoss:0.1593 | TrAcc:1.0000 VAcc:0.9549 | Cv:1.5413
+  Epoch 3700/7000 | TrLoss:0.0002 VLoss:0.1154 | TrAcc:1.0000 VAcc:0.9649 | Cv:1.2997
+  Epoch 3800/7000 | TrLoss:0.0001 VLoss:0.0808 | TrAcc:1.0000 VAcc:0.9781 | Cv:1.1342
+  Epoch 3900/7000 | TrLoss:0.0001 VLoss:0.0536 | TrAcc:1.0000 VAcc:0.9862 | Cv:1.0118
+  Epoch 4000/7000 | TrLoss:0.0000 VLoss:0.0337 | TrAcc:1.0000 VAcc:0.9919 | Cv:0.9089
+  Epoch 4100/7000 | TrLoss:0.0000 VLoss:0.0202 | TrAcc:1.0000 VAcc:0.9957 | Cv:0.8277
+  Epoch 4200/7000 | TrLoss:0.0000 VLoss:0.0113 | TrAcc:1.0000 VAcc:0.9972 | Cv:0.7582
+  Epoch 4300/7000 | TrLoss:0.0018 VLoss:0.0102 | TrAcc:1.0000 VAcc:0.9994 | Cv:4.3521
+  Epoch 4400/7000 | TrLoss:0.0005 VLoss:0.0031 | TrAcc:1.0000 VAcc:0.9998 | Cv:2.9689
+  Epoch 4500/7000 | TrLoss:0.0003 VLoss:0.0016 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.1471
+  Epoch 4600/7000 | TrLoss:0.0002 VLoss:0.0009 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.5802
+  Epoch 4700/7000 | TrLoss:0.0001 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.1901
+  Epoch 4800/7000 | TrLoss:0.0001 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9261
+  Epoch 4900/7000 | TrLoss:0.0033 VLoss:0.0058 | TrAcc:1.0000 VAcc:0.9998 | Cv:7.1023
+  Epoch 5000/7000 | TrLoss:0.0006 VLoss:0.0010 | TrAcc:1.0000 VAcc:1.0000 | Cv:4.8885
+  Epoch 5100/7000 | TrLoss:0.0003 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.6422
+  Epoch 5200/7000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.7646
+  Epoch 5300/7000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.1323
+  Epoch 5400/7000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.6735
+  Epoch 5500/7000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3358
+  Epoch 5600/7000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0815
+  Epoch 5700/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8862
+  Epoch 5800/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7346
+  Epoch 5900/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6148
+  Epoch 6000/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5195
+  Epoch 6100/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4425
+  Epoch 6200/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3820
+  Epoch 6300/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3339
+  Epoch 6400/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2988
+  Epoch 6500/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2738
+  Epoch 6600/7000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2582
+  Epoch 6700/7000 | TrLoss:0.0013 VLoss:0.0019 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.9922
+  Epoch 6800/7000 | TrLoss:0.0004 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.9313
+  Epoch 6900/7000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.2167
+  Epoch 7000/7000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.6913
+
+============================================================
+PHASE 3 RESULTS (seed=9999)
+============================================================
+  Profiler triggered:          epoch 16
+  Z-Score (batch) triggered:   epoch 934
+  Kinematic triggered:         epoch 17
+  EMA Z-Score (continuous):    epoch 281
+  EMA Z-Score (gated/cold):    epoch 281
+  Natural grokking:            epoch 3381
+  LAG (kinematic -> grokking): 3364 epochs
+  LAG (ema_cont -> grokking):  3100 epochs
+  LAG (ema_gated -> grokking): 3100 epochs
+============================================================
+
+  Saved: data/phase3_seed9999_metrics.csv
+  Saved: data/phase3_seed9999_benchmark_results.json
+  Saved: figures/phase3_seed9999_triggers.png
+  Saved: figures/phase3_seed9999_kinematics.png
+
+============================================================
+ SEED 9999 — Phase 4B: CvAdamW (Cold-Start Gate)
+============================================================
+Phase 4B: Scale-Invariant CvAdamW (Z-Score Driven)
+  z_thresh=2.0, beta_z=0.9, base_wd=0.1
+  p=97, epochs=7000, seed=9999, device=cuda
+  Formula: lambda_t = base_wd + max(0, Z_t - z_thresh)
+
+  Epoch 100/7000 | Loss:0.0406 TrAcc:1.0000 VAcc:0.4893 | Cv:4.892213 v:-0.040302 mu:-0.008488 sigma:0.053185 Z:-0.598 WD:0.1000
+  Epoch 200/7000 | Loss:0.0085 TrAcc:1.0000 VAcc:0.4910 | Cv:4.319781 v:0.068874 mu:0.005008 sigma:0.042298 Z:1.510 WD:0.1000
+  Epoch 300/7000 | Loss:0.0038 TrAcc:1.0000 VAcc:0.4916 | Cv:3.913893 v:-0.006743 mu:-0.002218 sigma:0.034292 Z:-0.132 WD:0.1000
+  Epoch 400/7000 | Loss:0.0020 TrAcc:1.0000 VAcc:0.4925 | Cv:3.599577 v:0.064760 mu:0.004094 sigma:0.040777 Z:1.488 WD:0.1000
+  Epoch 500/7000 | Loss:0.0011 TrAcc:1.0000 VAcc:0.4922 | Cv:3.325527 v:-0.137450 mu:-0.011234 sigma:0.052375 Z:-2.410 WD:0.1000
+  Epoch 600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.4929 | Cv:3.122941 v:-0.012609 mu:0.001144 sigma:0.036869 Z:-0.373 WD:0.1000
+  Epoch 700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.4931 | Cv:2.920154 v:-0.024422 mu:-0.005682 sigma:0.039079 Z:-0.480 WD:0.1000
+  Epoch 800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.4933 | Cv:2.755128 v:0.039141 mu:-0.000165 sigma:0.026882 Z:1.462 WD:0.1000
+  Epoch 900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.4942 | Cv:2.603263 v:-0.002719 mu:-0.001772 sigma:0.023111 Z:-0.041 WD:0.1000
+  Epoch 1000/7000 | Loss:0.0028 TrAcc:1.0000 VAcc:0.4948 | Cv:6.641538 v:0.025166 mu:0.002958 sigma:0.044074 Z:0.504 WD:0.1000
+  Epoch 1100/7000 | Loss:0.0013 TrAcc:1.0000 VAcc:0.4954 | Cv:4.692897 v:0.023557 mu:0.003368 sigma:0.028381 Z:0.711 WD:0.1000
+  Epoch 1200/7000 | Loss:0.0009 TrAcc:1.0000 VAcc:0.4948 | Cv:3.634007 v:-0.017306 mu:-0.002261 sigma:0.027112 Z:-0.555 WD:0.1000
+  Epoch 1300/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.4967 | Cv:3.040948 v:-0.025838 mu:-0.002751 sigma:0.024676 Z:-0.936 WD:0.1000
+  Epoch 1400/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.4969 | Cv:2.685245 v:0.003427 mu:-0.000453 sigma:0.024477 Z:0.159 WD:0.1000
+  Epoch 1500/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.4978 | Cv:2.463789 v:0.001657 mu:-0.000021 sigma:0.011019 Z:0.152 WD:0.1000
+  Epoch 1600/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.4978 | Cv:2.299260 v:0.031953 mu:0.001236 sigma:0.030987 Z:0.991 WD:0.1000
+  Epoch 1700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.4982 | Cv:2.175483 v:0.052194 mu:0.006878 sigma:0.023555 Z:1.924 WD:0.1000
+  Epoch 1800/7000 | Loss:0.0135 TrAcc:1.0000 VAcc:0.5197 | Cv:8.579066 v:-0.047827 mu:-0.013385 sigma:0.065768 Z:-0.524 WD:0.1000
+  Epoch 1900/7000 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5228 | Cv:5.418387 v:-0.074792 mu:-0.010642 sigma:0.041649 Z:-1.540 WD:0.1000
+  Epoch 2000/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5271 | Cv:3.993259 v:0.041277 mu:0.002089 sigma:0.025815 Z:1.518 WD:0.1000
+  Epoch 2100/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5296 | Cv:3.129118 v:0.012764 mu:-0.001036 sigma:0.021972 Z:0.628 WD:0.1000
+  Epoch 2200/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5305 | Cv:2.591908 v:0.030549 mu:0.003036 sigma:0.016053 Z:1.714 WD:0.1000
+  Epoch 2300/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5311 | Cv:2.243482 v:0.000244 mu:-0.002074 sigma:0.015137 Z:0.153 WD:0.1000
+  Epoch 2400/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5339 | Cv:2.005905 v:-0.013383 mu:-0.000218 sigma:0.014591 Z:-0.902 WD:0.1000
+  Epoch 2500/7000 | Loss:0.0079 TrAcc:1.0000 VAcc:0.6115 | Cv:6.663629 v:-0.015574 mu:-0.009158 sigma:0.020094 Z:-0.319 WD:0.1000
+  Epoch 2600/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.6287 | Cv:4.415283 v:-0.074526 mu:-0.009092 sigma:0.031503 Z:-2.077 WD:0.1000
+  Epoch 2700/7000 | Loss:0.0008 TrAcc:1.0000 VAcc:0.6414 | Cv:3.256059 v:-0.023413 mu:-0.001593 sigma:0.020003 Z:-1.091 WD:0.1000
+  Epoch 2800/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.6506 | Cv:2.539460 v:-0.021347 mu:-0.001925 sigma:0.015795 Z:-1.230 WD:0.1000
+  Epoch 2900/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.6538 | Cv:2.086914 v:-0.000971 mu:-0.000138 sigma:0.009810 Z:-0.085 WD:0.1000
+  Epoch 3000/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.6629 | Cv:1.794073 v:-0.003679 mu:-0.000347 sigma:0.011023 Z:-0.302 WD:0.1000
+  Epoch 3100/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.6650 | Cv:1.592344 v:-0.007425 mu:-0.000933 sigma:0.008913 Z:-0.728 WD:0.1000
+  Epoch 3200/7000 | Loss:0.0293 TrAcc:1.0000 VAcc:0.8461 | Cv:7.028920 v:-0.047928 mu:-0.006730 sigma:0.030758 Z:-1.339 WD:0.1000
+  Epoch 3300/7000 | Loss:0.0016 TrAcc:1.0000 VAcc:0.8895 | Cv:4.193705 v:-0.018021 mu:-0.003949 sigma:0.012583 Z:-1.118 WD:0.1000
+  Epoch 3400/7000 | Loss:0.0008 TrAcc:1.0000 VAcc:0.9365 | Cv:2.865123 v:0.007990 mu:-0.000253 sigma:0.016755 Z:0.492 WD:0.1000
+  Epoch 3500/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.9617 | Cv:2.038338 v:-0.024330 mu:-0.002867 sigma:0.011122 Z:-1.930 WD:0.1000
+  Epoch 3600/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9766 | Cv:1.526949 v:-0.016367 mu:-0.000893 sigma:0.009935 Z:-1.557 WD:0.1000
+  Epoch 3700/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9826 | Cv:1.207288 v:-0.005957 mu:-0.001335 sigma:0.005015 Z:-0.921 WD:0.1000
+  Epoch 3800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9849 | Cv:1.006582 v:0.001510 mu:-0.000618 sigma:0.007677 Z:0.277 WD:0.1000
+  Epoch 3900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9902 | Cv:0.875772 v:0.003701 mu:0.000068 sigma:0.003750 Z:0.969 WD:0.1000
+  Epoch 4000/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9936 | Cv:0.784653 v:-0.004096 mu:-0.000666 sigma:0.004814 Z:-0.713 WD:0.1000
+  Epoch 4100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9960 | Cv:0.713620 v:-0.006670 mu:-0.001027 sigma:0.003571 Z:-1.580 WD:0.1000
+  Epoch 4200/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9981 | Cv:0.657328 v:0.005929 mu:0.000609 sigma:0.003559 Z:1.495 WD:0.1000
+  Epoch 4300/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9987 | Cv:0.608571 v:0.001822 mu:-0.000027 sigma:0.003317 Z:0.557 WD:0.1000
+  Epoch 4400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9991 | Cv:0.567302 v:-0.005287 mu:-0.000484 sigma:0.003171 Z:-1.515 WD:0.1000
+  Epoch 4500/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.536651 v:0.005452 mu:0.000559 sigma:0.003052 Z:1.603 WD:0.1000
+  Epoch 4600/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.511065 v:-0.000958 mu:-0.000078 sigma:0.003038 Z:-0.290 WD:0.1000
+  Epoch 4700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.489185 v:-0.002919 mu:-0.000316 sigma:0.002774 Z:-0.938 WD:0.1000
+  Epoch 4800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.474381 v:0.003500 mu:0.000219 sigma:0.002141 Z:1.533 WD:0.1000
+  Epoch 4900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.459536 v:-0.000081 mu:-0.000144 sigma:0.001578 Z:0.040 WD:0.1000
+  Epoch 5000/7000 | Loss:0.0935 TrAcc:1.0000 VAcc:0.9900 | Cv:4.555489 v:-0.021968 mu:-0.004992 sigma:0.016808 Z:-1.010 WD:0.1000
+  Epoch 5100/7000 | Loss:0.0012 TrAcc:1.0000 VAcc:1.0000 | Cv:2.599461 v:-0.014753 mu:-0.002518 sigma:0.008025 Z:-1.525 WD:0.1000
+  Epoch 5200/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 | Cv:1.951934 v:-0.002564 mu:-0.000958 sigma:0.008376 Z:-0.192 WD:0.1000
+  Epoch 5300/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 | Cv:1.507674 v:-0.012925 mu:-0.001821 sigma:0.005562 Z:-1.996 WD:0.1000
+  Epoch 5400/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.178835 v:0.006509 mu:0.000578 sigma:0.004256 Z:1.394 WD:0.1000
+  Epoch 5500/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.920167 v:0.003178 mu:-0.000148 sigma:0.004058 Z:0.820 WD:0.1000
+  Epoch 5600/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.724071 v:0.000858 mu:0.000009 sigma:0.002425 Z:0.350 WD:0.1000
+  Epoch 5700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.577091 v:-0.002617 mu:-0.000373 sigma:0.002499 Z:-0.898 WD:0.1000
+  Epoch 5800/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.465877 v:0.000915 mu:0.000091 sigma:0.001544 Z:0.534 WD:0.1000
+  Epoch 5900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.392101 v:0.000941 mu:0.000099 sigma:0.001277 Z:0.660 WD:0.1000
+  Epoch 6000/7000 | Loss:0.0022 TrAcc:1.0000 VAcc:1.0000 | Cv:4.250566 v:-0.003613 mu:-0.004337 sigma:0.030471 Z:0.024 WD:0.1000
+  Epoch 6100/7000 | Loss:0.0008 TrAcc:1.0000 VAcc:1.0000 | Cv:3.342990 v:-0.046261 mu:-0.006722 sigma:0.020220 Z:-1.955 WD:0.1000
+  Epoch 6200/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 | Cv:2.637232 v:0.021292 mu:0.001829 sigma:0.017006 Z:1.144 WD:0.1000
+  Epoch 6300/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:2.064547 v:0.010567 mu:0.000579 sigma:0.007802 Z:1.280 WD:0.1000
+  Epoch 6400/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.623227 v:0.005919 mu:0.000669 sigma:0.007630 Z:0.688 WD:0.1000
+  Epoch 6500/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.291857 v:0.000827 mu:-0.000777 sigma:0.005747 Z:0.279 WD:0.1000
+  Epoch 6600/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.036603 v:0.002893 mu:-0.000034 sigma:0.003665 Z:0.799 WD:0.1000
+  Epoch 6700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.843879 v:0.011470 mu:0.000856 sigma:0.004735 Z:2.242 WD:0.3416
+  Epoch 6800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.694342 v:0.002032 mu:0.000089 sigma:0.002218 Z:0.876 WD:0.1000
+  Epoch 6900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.583711 v:-0.003225 mu:-0.000299 sigma:0.002098 Z:-1.395 WD:0.1000
+  Epoch 7000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.504013 v:0.002600 mu:0.000226 sigma:0.001690 Z:1.405 WD:0.1000
+
+============================================================
+  PHASE 4B RESULTS (seed=9999)
+============================================================
+  Grokking epoch:  3314
+  Max Z-score:     2.7123
+  Max dynamic WD:  0.8123
+  z_thresh:        2.0
+  beta_z:          0.9
+============================================================
+  Saved: data/phase4b_seed9999_metrics.csv
+  Saved: data/phase4b_seed9999_results.json
+  Saved: figures/phase4b_seed9999_cv_adamw.png
+
+============================================================
+ SEED 9999 — Phase 4B: CvAdamW (Continuous Sensor / No Cold-Start)
+============================================================
+Phase 4B: Scale-Invariant CvAdamW (Z-Score Driven)
+  z_thresh=2.0, beta_z=0.9, base_wd=0.1
+  p=97, epochs=7000, seed=9999, device=cuda
+  Formula: lambda_t = base_wd + max(0, Z_t - z_thresh)
+
+  Epoch 100/7000 | Loss:0.0405 TrAcc:1.0000 VAcc:0.4893 | Cv:4.894273 v:-0.040351 mu:-0.008494 sigma:0.053211 Z:-0.599 WD:0.1000
+  Epoch 200/7000 | Loss:0.0085 TrAcc:1.0000 VAcc:0.4910 | Cv:4.321462 v:0.068924 mu:0.005009 sigma:0.042323 Z:1.510 WD:0.1000
+  Epoch 300/7000 | Loss:0.0038 TrAcc:1.0000 VAcc:0.4916 | Cv:3.915378 v:-0.006739 mu:-0.002219 sigma:0.034311 Z:-0.132 WD:0.1000
+  Epoch 400/7000 | Loss:0.0020 TrAcc:1.0000 VAcc:0.4925 | Cv:3.600927 v:0.064783 mu:0.004094 sigma:0.040795 Z:1.488 WD:0.1000
+  Epoch 500/7000 | Loss:0.0011 TrAcc:1.0000 VAcc:0.4922 | Cv:3.326752 v:-0.137526 mu:-0.011238 sigma:0.052401 Z:-2.410 WD:0.1000
+  Epoch 600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.4929 | Cv:3.124073 v:-0.012602 mu:0.001143 sigma:0.036885 Z:-0.373 WD:0.1000
+  Epoch 700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.4931 | Cv:2.921206 v:-0.024453 mu:-0.005684 sigma:0.039101 Z:-0.480 WD:0.1000
+  Epoch 800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.4933 | Cv:2.756105 v:0.039134 mu:-0.000166 sigma:0.026890 Z:1.462 WD:0.1000
+  Epoch 900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.4942 | Cv:2.604159 v:-0.002718 mu:-0.001771 sigma:0.023116 Z:-0.041 WD:0.1000
+  Epoch 1000/7000 | Loss:0.0028 TrAcc:1.0000 VAcc:0.4948 | Cv:6.639890 v:0.024972 mu:0.002950 sigma:0.044002 Z:0.500 WD:0.1000
+  Epoch 1100/7000 | Loss:0.0013 TrAcc:1.0000 VAcc:0.4952 | Cv:4.691674 v:0.023481 mu:0.003354 sigma:0.028333 Z:0.710 WD:0.1000
+  Epoch 1200/7000 | Loss:0.0009 TrAcc:1.0000 VAcc:0.4950 | Cv:3.632903 v:-0.017353 mu:-0.002264 sigma:0.027066 Z:-0.557 WD:0.1000
+  Epoch 1300/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.4965 | Cv:3.039700 v:-0.026033 mu:-0.002742 sigma:0.024716 Z:-0.942 WD:0.1000
+  Epoch 1400/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.4969 | Cv:2.683800 v:0.003493 mu:-0.000431 sigma:0.024454 Z:0.160 WD:0.1000
+  Epoch 1500/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.4980 | Cv:2.462404 v:0.001636 mu:-0.000035 sigma:0.011047 Z:0.151 WD:0.1000
+  Epoch 1600/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.4980 | Cv:2.298062 v:0.031808 mu:0.001236 sigma:0.030966 Z:0.987 WD:0.1000
+  Epoch 1700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.4982 | Cv:2.174296 v:0.052325 mu:0.006895 sigma:0.023504 Z:1.933 WD:0.1000
+  Epoch 1800/7000 | Loss:0.0092 TrAcc:1.0000 VAcc:0.5203 | Cv:8.257124 v:-0.075850 mu:-0.015310 sigma:0.048581 Z:-1.246 WD:0.1000
+  Epoch 1900/7000 | Loss:0.0018 TrAcc:1.0000 VAcc:0.5214 | Cv:5.519215 v:-0.067729 mu:-0.009204 sigma:0.037450 Z:-1.563 WD:0.1000
+  Epoch 2000/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5211 | Cv:4.161019 v:0.039158 mu:0.001705 sigma:0.023559 Z:1.590 WD:0.1000
+  Epoch 2100/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5220 | Cv:3.316265 v:0.015589 mu:-0.001638 sigma:0.024020 Z:0.717 WD:0.1000
+  Epoch 2200/7000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5226 | Cv:2.792524 v:0.026909 mu:0.003494 sigma:0.014660 Z:1.597 WD:0.1000
+  Epoch 2300/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5250 | Cv:2.451018 v:0.017801 mu:-0.000463 sigma:0.016620 Z:1.099 WD:0.1000
+  Epoch 2400/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5239 | Cv:2.210124 v:-0.013510 mu:-0.000837 sigma:0.016235 Z:-0.781 WD:0.1000
+  Epoch 2500/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5256 | Cv:2.026266 v:-0.000244 mu:-0.000335 sigma:0.010605 Z:0.009 WD:0.1000
+  Epoch 2600/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5284 | Cv:1.885555 v:-0.022156 mu:-0.001425 sigma:0.015388 Z:-1.347 WD:0.1000
+  Epoch 2700/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5296 | Cv:1.776991 v:-0.023319 mu:-0.001455 sigma:0.012659 Z:-1.727 WD:0.1000
+  Epoch 2800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5328 | Cv:1.680025 v:-0.004904 mu:0.000165 sigma:0.015923 Z:-0.318 WD:0.1000
+  Epoch 2900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5339 | Cv:1.596262 v:-0.004571 mu:0.000798 sigma:0.011765 Z:-0.456 WD:0.1000
+  Epoch 3000/7000 | Loss:0.0953 TrAcc:1.0000 VAcc:0.6861 | Cv:9.220850 v:-0.050677 mu:-0.006742 sigma:0.035483 Z:-1.238 WD:0.1000
+  Epoch 3100/7000 | Loss:0.0045 TrAcc:1.0000 VAcc:0.6744 | Cv:6.309178 v:0.043692 mu:0.000325 sigma:0.035241 Z:1.231 WD:0.1000
+  Epoch 3200/7000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.7073 | Cv:4.534499 v:-0.022821 mu:-0.001016 sigma:0.018903 Z:-1.154 WD:0.1000
+  Epoch 3300/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.7628 | Cv:3.299557 v:-0.015517 mu:-0.002184 sigma:0.009231 Z:-1.444 WD:0.1000
+  Epoch 3400/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.8185 | Cv:2.472587 v:-0.009068 mu:-0.001576 sigma:0.013196 Z:-0.568 WD:0.1000
+  Epoch 3500/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.8604 | Cv:1.919960 v:-0.024635 mu:-0.002859 sigma:0.012604 Z:-1.728 WD:0.1000
+  Epoch 3600/7000 | Loss:0.0047 TrAcc:1.0000 VAcc:0.9660 | Cv:7.191710 v:-0.117280 mu:-0.013923 sigma:0.047836 Z:-2.161 WD:0.1000
+  Epoch 3700/7000 | Loss:0.0010 TrAcc:1.0000 VAcc:0.9828 | Cv:4.865811 v:-0.029596 mu:-0.005014 sigma:0.023460 Z:-1.048 WD:0.1000
+  Epoch 3800/7000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.9928 | Cv:3.542504 v:0.008337 mu:-0.001555 sigma:0.011292 Z:0.876 WD:0.1000
+  Epoch 3900/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9968 | Cv:2.640870 v:-0.015388 mu:-0.002411 sigma:0.008791 Z:-1.476 WD:0.1000
+  Epoch 4000/7000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9989 | Cv:2.006736 v:-0.016318 mu:-0.002197 sigma:0.010438 Z:-1.353 WD:0.1000
+  Epoch 4100/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9994 | Cv:1.569918 v:-0.006001 mu:-0.001688 sigma:0.005247 Z:-0.822 WD:0.1000
+  Epoch 4200/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.263515 v:-0.006617 mu:-0.000251 sigma:0.004674 Z:-1.362 WD:0.1000
+  Epoch 4300/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:1.048822 v:0.002138 mu:-0.000341 sigma:0.004443 Z:0.558 WD:0.1000
+  Epoch 4400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.890613 v:0.000686 mu:-0.000063 sigma:0.004400 Z:0.170 WD:0.1000
+  Epoch 4500/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.772424 v:0.005582 mu:0.000622 sigma:0.002835 Z:1.749 WD:0.1000
+  Epoch 4600/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.677713 v:-0.004348 mu:-0.000481 sigma:0.003210 Z:-1.205 WD:0.1000
+  Epoch 4700/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.600992 v:0.001464 mu:-0.000077 sigma:0.002703 Z:0.570 WD:0.1000
+  Epoch 4800/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.536279 v:0.003078 mu:0.000109 sigma:0.002150 Z:1.381 WD:0.1000
+  Epoch 4900/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.481351 v:0.001855 mu:0.000083 sigma:0.001457 Z:1.216 WD:0.1000
+  Epoch 5000/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.436780 v:-0.001481 mu:-0.000180 sigma:0.001613 Z:-0.807 WD:0.1000
+  Epoch 5100/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.400362 v:-0.002543 mu:-0.000392 sigma:0.001831 Z:-1.175 WD:0.1000
+  Epoch 5200/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.371717 v:-0.002069 mu:-0.000229 sigma:0.001819 Z:-1.012 WD:0.1000
+  Epoch 5300/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.349740 v:-0.001988 mu:-0.000168 sigma:0.001572 Z:-1.158 WD:0.1000
+  Epoch 5400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.335069 v:0.000284 mu:0.000136 sigma:0.001342 Z:0.110 WD:0.1000
+  Epoch 5500/7000 | Loss:0.0051 TrAcc:1.0000 VAcc:1.0000 | Cv:3.530565 v:0.010009 mu:-0.001902 sigma:0.017965 Z:0.663 WD:0.1000
+  Epoch 5600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 | Cv:2.268732 v:-0.006262 mu:-0.001348 sigma:0.009056 Z:-0.543 WD:0.1000
+  Epoch 5700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 | Cv:1.667961 v:0.000826 mu:-0.000362 sigma:0.006263 Z:0.190 WD:0.1000
+  Epoch 5800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.242489 v:-0.001298 mu:-0.000199 sigma:0.004144 Z:-0.265 WD:0.1000
+  Epoch 5900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.925065 v:-0.000469 mu:-0.000307 sigma:0.002530 Z:-0.064 WD:0.1000
+  Epoch 6000/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.699770 v:0.005267 mu:0.000291 sigma:0.002964 Z:1.679 WD:0.1000
+  Epoch 6100/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.542937 v:-0.002535 mu:-0.000447 sigma:0.001638 Z:-1.274 WD:0.1000
+  Epoch 6200/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.434649 v:0.002309 mu:0.000274 sigma:0.001740 Z:1.170 WD:0.1000
+  Epoch 6300/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.360549 v:-0.004432 mu:-0.000545 sigma:0.001509 Z:-2.575 WD:0.1000
+  Epoch 6400/7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 | Cv:0.318891 v:0.000483 mu:0.000052 sigma:0.000836 Z:0.516 WD:0.1000
+  Epoch 6500/7000 | Loss:0.0018 TrAcc:1.0000 VAcc:1.0000 | Cv:3.028853 v:-0.013460 mu:-0.002728 sigma:0.010072 Z:-1.066 WD:0.1000
+  Epoch 6600/7000 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 | Cv:2.173876 v:0.021132 mu:0.000971 sigma:0.009893 Z:2.038 WD:0.1379
+  Epoch 6700/7000 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 | Cv:1.606576 v:0.013502 mu:0.001139 sigma:0.006693 Z:1.847 WD:0.1000
+  Epoch 6800/7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 | Cv:1.200568 v:-0.001064 mu:-0.000323 sigma:0.003513 Z:-0.211 WD:0.1000
+  Epoch 6900/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.912655 v:-0.007546 mu:-0.000874 sigma:0.003106 Z:-2.148 WD:0.1000
+  Epoch 7000/7000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 | Cv:0.710525 v:0.003520 mu:0.000304 sigma:0.002911 Z:1.105 WD:0.1000
+
+============================================================
+  PHASE 4B RESULTS (seed=9999)
+============================================================
+  Grokking epoch:  3550
+  Max Z-score:     2.7326
+  Max dynamic WD:  0.8326
+  z_thresh:        2.0
+  beta_z:          0.9
+============================================================
+  Saved: data/phase4b_wocs_seed9999_metrics.csv
+  Saved: data/phase4b_wocs_seed9999_results.json
+  Saved: figures/phase4b_wocs_seed9999_cv_adamw.png
+
+  ✅ Seed 9999 complete (all 3 runs).
+
+
+============================================================
+ ALL 10 SEEDS COMPLETE
+============================================================
+ Results in: data/
+   phase3_seed*           — baseline triggers
+   phase4b_seed*          — cold-start gate variant
+   phase4b_wocs_seed*     — continuous sensor variant
+ Figures in: figures/
+============================================================

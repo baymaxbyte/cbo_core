@@ -1,0 +1,1840 @@
+nohup: ignoring input
+============================================
+CBO Experiment 3: EMA Shock Absorber
+  Seeds: 42 1042 2042 3042 4042
+  Epochs: 10000
+============================================
+
+############################################
+# SEED: 42
+############################################
+
+>>> Phase 3 (Baseline + Ghost Triggers) | seed=42
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=10000, seed=42
+  Profiler tau=0.015, Z-score threshold=3.0
+  Device: cuda
+
+  Epoch 100/10000 | TrLoss:0.0389 VLoss:3.4945 | TrAcc:1.0000 VAcc:0.5003 | Cv:5.3198
+  Epoch 200/10000 | TrLoss:0.0083 VLoss:3.6500 | TrAcc:1.0000 VAcc:0.5018 | Cv:4.7167
+  Epoch 300/10000 | TrLoss:0.0037 VLoss:3.7302 | TrAcc:1.0000 VAcc:0.5018 | Cv:4.2919
+  Epoch 400/10000 | TrLoss:0.0020 VLoss:3.7921 | TrAcc:1.0000 VAcc:0.5022 | Cv:3.9732
+  Epoch 500/10000 | TrLoss:0.0011 VLoss:3.8502 | TrAcc:1.0000 VAcc:0.5027 | Cv:3.7038
+  Epoch 600/10000 | TrLoss:0.0006 VLoss:3.9040 | TrAcc:1.0000 VAcc:0.5031 | Cv:3.4896
+  Epoch 700/10000 | TrLoss:0.0004 VLoss:3.9624 | TrAcc:1.0000 VAcc:0.5029 | Cv:3.2823
+  Epoch 800/10000 | TrLoss:0.0002 VLoss:4.0265 | TrAcc:1.0000 VAcc:0.5031 | Cv:3.0996
+  Epoch 900/10000 | TrLoss:0.0001 VLoss:4.0824 | TrAcc:1.0000 VAcc:0.5037 | Cv:2.9490
+  Epoch 1000/10000 | TrLoss:0.0001 VLoss:4.1475 | TrAcc:1.0000 VAcc:0.5033 | Cv:2.8084
+    [PROFILER] Triggered at epoch 1066 (velocity=0.128136 > tau=0.015)
+    [Z-SCORE] Triggered at epoch 1066 (z=3.24 > 3.0)
+    [KINEMATIC] Triggered at epoch 1077 (v=0.065012>0, a=-0.105063<0)
+  Epoch 1100/10000 | TrLoss:0.0054 VLoss:4.0910 | TrAcc:1.0000 VAcc:0.5031 | Cv:10.2603
+  Epoch 1200/10000 | TrLoss:0.0014 VLoss:4.0401 | TrAcc:1.0000 VAcc:0.5050 | Cv:6.8553
+  Epoch 1300/10000 | TrLoss:0.0009 VLoss:3.9606 | TrAcc:1.0000 VAcc:0.5046 | Cv:5.0655
+  Epoch 1400/10000 | TrLoss:0.0006 VLoss:3.9062 | TrAcc:1.0000 VAcc:0.5044 | Cv:3.9986
+  Epoch 1500/10000 | TrLoss:0.0004 VLoss:3.8812 | TrAcc:1.0000 VAcc:0.5039 | Cv:3.3744
+  Epoch 1600/10000 | TrLoss:0.0055 VLoss:3.8198 | TrAcc:1.0000 VAcc:0.5024 | Cv:10.7311
+  Epoch 1700/10000 | TrLoss:0.0011 VLoss:3.8265 | TrAcc:1.0000 VAcc:0.5041 | Cv:7.3557
+  Epoch 1800/10000 | TrLoss:0.0007 VLoss:3.7824 | TrAcc:1.0000 VAcc:0.5052 | Cv:5.5070
+  Epoch 1900/10000 | TrLoss:0.0005 VLoss:3.7602 | TrAcc:1.0000 VAcc:0.5050 | Cv:4.3457
+  Epoch 2000/10000 | TrLoss:0.0004 VLoss:3.7674 | TrAcc:1.0000 VAcc:0.5054 | Cv:3.6323
+  Epoch 2100/10000 | TrLoss:0.0002 VLoss:3.8037 | TrAcc:1.0000 VAcc:0.5052 | Cv:3.1731
+  Epoch 2200/10000 | TrLoss:0.0002 VLoss:3.8599 | TrAcc:1.0000 VAcc:0.5052 | Cv:2.8567
+  Epoch 2300/10000 | TrLoss:0.0001 VLoss:3.9257 | TrAcc:1.0000 VAcc:0.5061 | Cv:2.6291
+  Epoch 2400/10000 | TrLoss:0.0001 VLoss:4.0020 | TrAcc:1.0000 VAcc:0.5050 | Cv:2.4427
+  Epoch 2500/10000 | TrLoss:0.0000 VLoss:4.0828 | TrAcc:1.0000 VAcc:0.5058 | Cv:2.2891
+  Epoch 2600/10000 | TrLoss:0.0105 VLoss:3.6718 | TrAcc:1.0000 VAcc:0.5069 | Cv:9.9453
+  Epoch 2700/10000 | TrLoss:0.0013 VLoss:3.6737 | TrAcc:1.0000 VAcc:0.5092 | Cv:6.2525
+  Epoch 2800/10000 | TrLoss:0.0007 VLoss:3.5935 | TrAcc:1.0000 VAcc:0.5084 | Cv:4.5373
+  Epoch 2900/10000 | TrLoss:0.0005 VLoss:3.5210 | TrAcc:1.0000 VAcc:0.5086 | Cv:3.4860
+  Epoch 3000/10000 | TrLoss:0.0004 VLoss:3.4748 | TrAcc:1.0000 VAcc:0.5095 | Cv:2.8510
+  Epoch 3100/10000 | TrLoss:3.1116 VLoss:4.6499 | TrAcc:0.1216 VAcc:0.0406 | Cv:3.6940
+  Epoch 3200/10000 | TrLoss:0.0019 VLoss:3.0310 | TrAcc:1.0000 VAcc:0.5177 | Cv:6.5301
+  Epoch 3300/10000 | TrLoss:0.0009 VLoss:2.9437 | TrAcc:1.0000 VAcc:0.5194 | Cv:4.8257
+  Epoch 3400/10000 | TrLoss:0.0006 VLoss:2.8821 | TrAcc:1.0000 VAcc:0.5211 | Cv:3.7748
+  Epoch 3500/10000 | TrLoss:0.0004 VLoss:2.8439 | TrAcc:1.0000 VAcc:0.5226 | Cv:3.0838
+  Epoch 3600/10000 | TrLoss:0.0003 VLoss:2.8236 | TrAcc:1.0000 VAcc:0.5260 | Cv:2.6382
+  Epoch 3700/10000 | TrLoss:0.0002 VLoss:2.8204 | TrAcc:1.0000 VAcc:0.5262 | Cv:2.3410
+  Epoch 3800/10000 | TrLoss:0.0001 VLoss:2.8226 | TrAcc:1.0000 VAcc:0.5292 | Cv:2.1379
+  Epoch 3900/10000 | TrLoss:0.2812 VLoss:1.5977 | TrAcc:0.9930 VAcc:0.5800 | Cv:12.4393
+  Epoch 4000/10000 | TrLoss:0.0019 VLoss:1.0900 | TrAcc:1.0000 VAcc:0.6980 | Cv:5.3943
+  Epoch 4100/10000 | TrLoss:0.0008 VLoss:0.8665 | TrAcc:1.0000 VAcc:0.7509 | Cv:3.8165
+  Epoch 4200/10000 | TrLoss:0.0005 VLoss:0.7113 | TrAcc:1.0000 VAcc:0.7855 | Cv:2.8544
+  Epoch 4300/10000 | TrLoss:0.0004 VLoss:0.5953 | TrAcc:1.0000 VAcc:0.8213 | Cv:2.2150
+  Epoch 4400/10000 | TrLoss:0.0003 VLoss:0.4912 | TrAcc:1.0000 VAcc:0.8548 | Cv:1.7838
+  Epoch 4500/10000 | TrLoss:0.0002 VLoss:0.3876 | TrAcc:1.0000 VAcc:0.8880 | Cv:1.4923
+  Epoch 4600/10000 | TrLoss:0.0001 VLoss:0.2835 | TrAcc:1.0000 VAcc:0.9245 | Cv:1.2854
+  Epoch 4700/10000 | TrLoss:0.0001 VLoss:0.1960 | TrAcc:1.0000 VAcc:0.9501 | Cv:1.1269
+  Epoch 4800/10000 | TrLoss:0.0001 VLoss:0.1249 | TrAcc:1.0000 VAcc:0.9664 | Cv:0.9983
+  Epoch 4900/10000 | TrLoss:0.0000 VLoss:0.0731 | TrAcc:1.0000 VAcc:0.9813 | Cv:0.8923
+  Epoch 5000/10000 | TrLoss:0.0000 VLoss:0.0400 | TrAcc:1.0000 VAcc:0.9902 | Cv:0.8004
+  Epoch 5100/10000 | TrLoss:0.0000 VLoss:0.0207 | TrAcc:1.0000 VAcc:0.9957 | Cv:0.7210
+  Epoch 5200/10000 | TrLoss:0.0000 VLoss:0.0109 | TrAcc:1.0000 VAcc:0.9981 | Cv:0.6529
+  Epoch 5300/10000 | TrLoss:0.0000 VLoss:0.0061 | TrAcc:1.0000 VAcc:0.9989 | Cv:0.5971
+  Epoch 5400/10000 | TrLoss:0.0000 VLoss:0.0034 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.5502
+  Epoch 5500/10000 | TrLoss:0.0000 VLoss:0.0021 | TrAcc:1.0000 VAcc:0.9994 | Cv:0.5128
+  Epoch 5600/10000 | TrLoss:0.0000 VLoss:0.0015 | TrAcc:1.0000 VAcc:0.9996 | Cv:0.4814
+  Epoch 5700/10000 | TrLoss:0.0000 VLoss:0.0007 | TrAcc:1.0000 VAcc:0.9998 | Cv:0.4574
+  Epoch 5800/10000 | TrLoss:0.0000 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4363
+  Epoch 5900/10000 | TrLoss:0.0000 VLoss:0.0004 | TrAcc:1.0000 VAcc:0.9996 | Cv:0.4199
+  Epoch 6000/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4062
+  Epoch 6100/10000 | TrLoss:0.0027 VLoss:0.0093 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.8879
+  Epoch 6200/10000 | TrLoss:0.0006 VLoss:0.0026 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.1119
+  Epoch 6300/10000 | TrLoss:0.0003 VLoss:0.0013 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.6077
+  Epoch 6400/10000 | TrLoss:0.0002 VLoss:0.0008 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2505
+  Epoch 6500/10000 | TrLoss:0.0001 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9737
+  Epoch 6600/10000 | TrLoss:0.0001 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7526
+  Epoch 6700/10000 | TrLoss:0.0013 VLoss:0.0019 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.8143
+  Epoch 6800/10000 | TrLoss:0.0003 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.7318
+  Epoch 6900/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.0987
+  Epoch 7000/10000 | TrLoss:0.0002 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.6405
+  Epoch 7100/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2894
+  Epoch 7200/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0040
+  Epoch 7300/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7762
+  Epoch 7400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6044
+  Epoch 7500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4846
+  Epoch 7600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4027
+  Epoch 7700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3502
+  Epoch 7800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3188
+  Epoch 7900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3027
+  Epoch 8000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2955
+  Epoch 8100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2932
+  Epoch 8200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2934
+  Epoch 8300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2931
+  Epoch 8400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2915
+  Epoch 8500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2891
+  Epoch 8600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2854
+  Epoch 8700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2797
+  Epoch 8800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2783
+  Epoch 8900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2831
+  Epoch 9000/10000 | TrLoss:0.0009 VLoss:0.0015 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.5515
+  Epoch 9100/10000 | TrLoss:0.0004 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.9888
+  Epoch 9200/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.5666
+  Epoch 9300/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2382
+  Epoch 9400/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9838
+  Epoch 9500/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7816
+  Epoch 9600/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6242
+  Epoch 9700/10000 | TrLoss:0.0008 VLoss:0.0010 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.2860
+  Epoch 9800/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.6142
+  Epoch 9900/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.1075
+  Epoch 10000/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7060
+
+==================================================
+PHASE 3 RESULTS (seed=42)
+==================================================
+  Profiler triggered:  epoch 1066
+  Z-Score triggered:   epoch 1066
+  Kinematic triggered: epoch 1077
+  Natural grokking:    epoch 4525
+  LAG (kinematic -> grokking): 3448 epochs
+==================================================
+
+  Saved: data/phase3_exp3_metrics_seed42.csv
+  Saved: data/phase3_exp3_benchmark_results_seed42.json
+  Saved: figures/phase3_exp3_triggers_seed42.png
+  Saved: figures/phase3_exp3_kinematics_seed42.png
+
+>>> Phase 4A (Step-Function Heat Spike) | seed=42
+Phase 4A: Active Thermodynamic Optimization (Training Loop)
+  base_wd=0.1, spike_wd=1.0, cooldown=50
+  p=97, epochs=10000, seed=42, device=cuda
+
+  Epoch 100 | Loss:0.0389 TrAcc:1.0000 VAcc:0.5003 Cv:5.3198 WD:0.1
+  Epoch 200 | Loss:0.0083 TrAcc:1.0000 VAcc:0.5018 Cv:4.7167 WD:0.1
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5018 Cv:4.2919 WD:0.1
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5022 Cv:3.9732 WD:0.1
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5027 Cv:3.7038 WD:0.1
+  Epoch 600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5031 Cv:3.4896 WD:0.1
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5029 Cv:3.2823 WD:0.1
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5031 Cv:3.0996 WD:0.1
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5037 Cv:2.9490 WD:0.1
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5033 Cv:2.8084 WD:0.1
+  🔥 KINEMATIC TRIGGER at epoch 1077! Injecting heat (wd=1.0)
+  Epoch 1100 | Loss:0.0100 TrAcc:1.0000 VAcc:0.5039 Cv:6.5373 WD:1.0
+  ❄️ Cooldown at epoch 1127. Returning to wd=0.1
+  Epoch 1200 | Loss:0.0028 TrAcc:1.0000 VAcc:0.5052 Cv:3.0366 WD:0.1
+  Epoch 1300 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5041 Cv:2.6728 WD:0.1
+  Epoch 1400 | Loss:1.4591 TrAcc:0.8025 VAcc:0.3056 Cv:13.4112 WD:0.1
+  Epoch 1500 | Loss:0.0018 TrAcc:1.0000 VAcc:0.5052 Cv:5.9128 WD:0.1
+  Epoch 1600 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5065 Cv:4.4316 WD:0.1
+  Epoch 1700 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5063 Cv:3.6125 WD:0.1
+  Epoch 1800 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5058 Cv:3.1167 WD:0.1
+  Epoch 1900 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5058 Cv:2.7903 WD:0.1
+  Epoch 2000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5052 Cv:2.5638 WD:0.1
+  Epoch 2100 | Loss:0.0130 TrAcc:1.0000 VAcc:0.5063 Cv:9.5302 WD:0.1
+  Epoch 2200 | Loss:0.0013 TrAcc:1.0000 VAcc:0.5084 Cv:6.1120 WD:0.1
+  Epoch 2300 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5112 Cv:4.5879 WD:0.1
+  Epoch 2400 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5116 Cv:3.6472 WD:0.1
+  Epoch 2500 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5109 Cv:3.0715 WD:0.1
+  Epoch 2600 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5116 Cv:2.7191 WD:0.1
+  Epoch 2700 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5129 Cv:2.4928 WD:0.1
+  Epoch 2800 | Loss:0.0018 TrAcc:1.0000 VAcc:0.5214 Cv:6.8518 WD:0.1
+  Epoch 2900 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5245 Cv:5.0340 WD:0.1
+  Epoch 3000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5258 Cv:3.9247 WD:0.1
+  Epoch 3100 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5254 Cv:3.2347 WD:0.1
+  Epoch 3200 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5269 Cv:2.7910 WD:0.1
+  Epoch 3300 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5290 Cv:2.4969 WD:0.1
+  Epoch 3400 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5282 Cv:2.2917 WD:0.1
+  Epoch 3500 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5299 Cv:2.1358 WD:0.1
+  Epoch 3600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5290 Cv:2.0174 WD:0.1
+  Epoch 3700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5290 Cv:1.9194 WD:0.1
+  Epoch 3800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5318 Cv:1.8411 WD:0.1
+  Epoch 3900 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5313 Cv:1.7772 WD:0.1
+  Epoch 4000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5328 Cv:1.7241 WD:0.1
+  Epoch 4100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5333 Cv:1.6823 WD:0.1
+  Epoch 4200 | Loss:0.1731 TrAcc:0.9981 VAcc:0.5741 Cv:10.6927 WD:0.1
+  Epoch 4300 | Loss:0.0015 TrAcc:1.0000 VAcc:0.7092 Cv:4.8381 WD:0.1
+  Epoch 4400 | Loss:0.0007 TrAcc:1.0000 VAcc:0.7569 Cv:3.4535 WD:0.1
+  Epoch 4500 | Loss:0.0005 TrAcc:1.0000 VAcc:0.8009 Cv:2.5915 WD:0.1
+  Epoch 4600 | Loss:0.0003 TrAcc:1.0000 VAcc:0.8264 Cv:2.0129 WD:0.1
+  Epoch 4700 | Loss:0.0034 TrAcc:1.0000 VAcc:0.9851 Cv:7.8913 WD:0.1
+  Epoch 4800 | Loss:0.0010 TrAcc:1.0000 VAcc:0.9943 Cv:5.5812 WD:0.1
+  Epoch 4900 | Loss:0.0006 TrAcc:1.0000 VAcc:0.9981 Cv:4.2258 WD:0.1
+  Epoch 5000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9987 Cv:3.2715 WD:0.1
+  Epoch 5100 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9991 Cv:2.5675 WD:0.1
+  Epoch 5200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9991 Cv:2.0242 WD:0.1
+  Epoch 5300 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9994 Cv:1.6105 WD:0.1
+  Epoch 5400 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9996 Cv:1.3037 WD:0.1
+  Epoch 5500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:1.0777 WD:0.1
+  Epoch 5600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9094 WD:0.1
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7812 WD:0.1
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6817 WD:0.1
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6037 WD:0.1
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5418 WD:0.1
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4928 WD:0.1
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4551 WD:0.1
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4253 WD:0.1
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4024 WD:0.1
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3861 WD:0.1
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3735 WD:0.1
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3635 WD:0.1
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3590 WD:0.1
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3622 WD:0.1
+  Epoch 7000 | Loss:0.0030 TrAcc:1.0000 VAcc:1.0000 Cv:3.1521 WD:0.1
+  Epoch 7100 | Loss:0.0006 TrAcc:1.0000 VAcc:1.0000 Cv:2.2742 WD:0.1
+  Epoch 7200 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.7078 WD:0.1
+  Epoch 7300 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.3270 WD:0.1
+  Epoch 7400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0634 WD:0.1
+  Epoch 7500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8648 WD:0.1
+  Epoch 7600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7006 WD:0.1
+  Epoch 7700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.5714 WD:0.1
+  Epoch 7800 | Loss:0.0013 TrAcc:1.0000 VAcc:1.0000 Cv:3.0960 WD:0.1
+  Epoch 7900 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.2466 WD:0.1
+  Epoch 8000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.7441 WD:0.1
+  Epoch 8100 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.3881 WD:0.1
+  Epoch 8200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1070 WD:0.1
+  Epoch 8300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8692 WD:0.1
+  Epoch 8400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.6956 WD:0.1
+  Epoch 8500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5793 WD:0.1
+  Epoch 8600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5028 WD:0.1
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4593 WD:0.1
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4383 WD:0.1
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4306 WD:0.1
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4309 WD:0.1
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4364 WD:0.1
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4435 WD:0.1
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4502 WD:0.1
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4556 WD:0.1
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4554 WD:0.1
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4548 WD:0.1
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4505 WD:0.1
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4479 WD:0.1
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4395 WD:0.1
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4374 WD:0.1
+
+==================================================
+  Seed: 42
+  Trigger: epoch 1077
+  Grokking: epoch 4653
+  Lag: 3576 epochs
+==================================================
+  Saved: figures/phase4a_exp3_intervention_seed42.png
+
+>>> Phase 4B (CvAdamW) | seed=42
+Phase 4B: CvAdamW — Thermodynamically-Aware Optimizer
+  kappa=5.0, tau=0.02, alpha=0.9, base_wd=0.1
+  p=97, epochs=10000, seed=42, device=cuda
+
+  Epoch 100 | Loss:0.0389 TrAcc:1.0000 VAcc:0.5003 Cv:5.3197 WD:0.1000 μ:-0.004124
+  Epoch 200 | Loss:0.0083 TrAcc:1.0000 VAcc:0.5018 Cv:4.7166 WD:0.1000 μ:0.003736
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5018 Cv:4.2919 WD:0.1000 μ:-0.005746
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5022 Cv:3.9731 WD:0.1000 μ:0.003624
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5027 Cv:3.7038 WD:0.1000 μ:-0.005597
+  Epoch 600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5031 Cv:3.4896 WD:0.1000 μ:0.007997
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5029 Cv:3.2822 WD:0.1000 μ:-0.004747
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5031 Cv:3.0996 WD:0.1000 μ:-0.004940
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5037 Cv:2.9490 WD:0.1000 μ:-0.002615
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5033 Cv:2.8084 WD:0.1000 μ:-0.001548
+  Epoch 1100 | Loss:0.0069 TrAcc:1.0000 VAcc:0.5037 Cv:7.1299 WD:0.1000 μ:-0.008263
+  Epoch 1200 | Loss:0.0019 TrAcc:1.0000 VAcc:0.5052 Cv:4.8354 WD:0.1000 μ:0.008342
+  Epoch 1300 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5050 Cv:3.7926 WD:0.1000 μ:0.000047
+  Epoch 1400 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5041 Cv:3.2197 WD:0.1000 μ:-0.002574
+  Epoch 1500 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5039 Cv:2.8774 WD:0.1000 μ:0.000241
+  Epoch 1600 | Loss:0.0085 TrAcc:1.0000 VAcc:0.5037 Cv:8.2369 WD:0.1000 μ:-0.024328
+  Epoch 1700 | Loss:0.0014 TrAcc:1.0000 VAcc:0.5050 Cv:5.5014 WD:0.1000 μ:-0.000017
+  Epoch 1800 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5054 Cv:4.2230 WD:0.1000 μ:0.002627
+  Epoch 1900 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5056 Cv:3.4728 WD:0.1000 μ:-0.000125
+  Epoch 2000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5067 Cv:3.0193 WD:0.1000 μ:0.003332
+  Epoch 2100 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5065 Cv:2.7225 WD:0.1000 μ:-0.003292
+  Epoch 2200 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5069 Cv:2.5109 WD:0.1000 μ:-0.000192
+  Epoch 2300 | Loss:0.0035 TrAcc:1.0000 VAcc:0.5124 Cv:5.6660 WD:0.1000 μ:-0.004102
+  Epoch 2400 | Loss:0.0013 TrAcc:1.0000 VAcc:0.5120 Cv:4.0971 WD:0.1000 μ:-0.001886
+  Epoch 2500 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5126 Cv:3.2724 WD:0.1000 μ:-0.002860
+  Epoch 2600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5116 Cv:2.7888 WD:0.1000 μ:0.001244
+  Epoch 2700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5099 Cv:2.4987 WD:0.1000 μ:0.002734
+  Epoch 2800 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5099 Cv:2.2950 WD:0.1000 μ:-0.000334
+  Epoch 2900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5112 Cv:2.1519 WD:0.1000 μ:-0.000866
+  Epoch 3000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5112 Cv:2.0409 WD:0.1000 μ:-0.001286
+  Epoch 3100 | Loss:0.5312 TrAcc:0.9594 VAcc:0.4638 Cv:10.2530 WD:1.1455 μ:0.229101
+  Epoch 3200 | Loss:0.0016 TrAcc:1.0000 VAcc:0.5528 Cv:4.0793 WD:0.1000 μ:0.000187
+  Epoch 3300 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5532 Cv:3.0735 WD:0.1000 μ:-0.003061
+  Epoch 3400 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5549 Cv:2.4852 WD:0.1000 μ:0.000784
+  Epoch 3500 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5532 Cv:2.1236 WD:0.1000 μ:-0.001867
+  Epoch 3600 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5543 Cv:1.9014 WD:0.1000 μ:0.001900
+  Epoch 3700 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5520 Cv:1.7702 WD:0.1000 μ:0.000403
+  Epoch 3800 | Loss:0.0022 TrAcc:1.0000 VAcc:0.8085 Cv:5.0040 WD:0.1000 μ:-0.006619
+  Epoch 3900 | Loss:0.0009 TrAcc:1.0000 VAcc:0.8584 Cv:3.5102 WD:0.1000 μ:-0.005543
+  Epoch 4000 | Loss:0.0005 TrAcc:1.0000 VAcc:0.8878 Cv:2.6346 WD:0.1000 μ:-0.003768
+  Epoch 4100 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9010 Cv:2.0767 WD:0.1000 μ:-0.002706
+  Epoch 4200 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9050 Cv:1.7183 WD:0.1000 μ:-0.000365
+  Epoch 4300 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9148 Cv:1.4757 WD:0.1000 μ:0.000227
+  Epoch 4400 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9286 Cv:1.3016 WD:0.1000 μ:-0.000840
+  Epoch 4500 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9452 Cv:1.1706 WD:0.1000 μ:0.000828
+  Epoch 4600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9581 Cv:1.0601 WD:0.1000 μ:-0.000036
+  Epoch 4700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9707 Cv:0.9670 WD:0.1000 μ:0.000204
+  Epoch 4800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9832 Cv:0.8841 WD:0.1000 μ:-0.001483
+  Epoch 4900 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9902 Cv:0.8151 WD:0.1000 μ:-0.000318
+  Epoch 5000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9945 Cv:0.7537 WD:0.1000 μ:0.000393
+  Epoch 5100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9970 Cv:0.6993 WD:0.1000 μ:0.000673
+  Epoch 5200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9987 Cv:0.6518 WD:0.1000 μ:-0.000221
+  Epoch 5300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9991 Cv:0.6109 WD:0.1000 μ:-0.000110
+  Epoch 5400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 Cv:0.5756 WD:0.1000 μ:0.000670
+  Epoch 5500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.5428 WD:0.1000 μ:-0.000714
+  Epoch 5600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.5151 WD:0.1000 μ:-0.000155
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.4898 WD:0.1000 μ:0.000079
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4675 WD:0.1000 μ:0.000147
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4525 WD:0.1000 μ:0.000155
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4471 WD:0.1000 μ:-0.000092
+  Epoch 6100 | Loss:0.0055 TrAcc:1.0000 VAcc:0.9998 Cv:5.4641 WD:0.1000 μ:-0.006355
+  Epoch 6200 | Loss:0.0012 TrAcc:1.0000 VAcc:1.0000 Cv:3.5031 WD:0.1000 μ:0.002116
+  Epoch 6300 | Loss:0.0006 TrAcc:1.0000 VAcc:1.0000 Cv:2.4757 WD:0.1000 μ:-0.001334
+  Epoch 6400 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.7712 WD:0.1000 μ:-0.001405
+  Epoch 6500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1590 WD:0.1000 μ:-0.001238
+  Epoch 6600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7700 WD:0.1000 μ:-0.000645
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5564 WD:0.1000 μ:-0.000027
+  Epoch 6800 | Loss:0.0092 TrAcc:1.0000 VAcc:1.0000 Cv:4.4238 WD:0.1000 μ:-0.003804
+  Epoch 6900 | Loss:0.0013 TrAcc:1.0000 VAcc:1.0000 Cv:2.9912 WD:0.1000 μ:0.000295
+  Epoch 7000 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:2.2112 WD:0.1000 μ:-0.002132
+  Epoch 7100 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.6619 WD:0.1000 μ:0.001285
+  Epoch 7200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2688 WD:0.1000 μ:0.000006
+  Epoch 7300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9865 WD:0.1000 μ:-0.000644
+  Epoch 7400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7671 WD:0.1000 μ:-0.000342
+  Epoch 7500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6006 WD:0.1000 μ:0.000339
+  Epoch 7600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4831 WD:0.1000 μ:-0.000258
+  Epoch 7700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4017 WD:0.1000 μ:-0.000299
+  Epoch 7800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3475 WD:0.1000 μ:-0.000288
+  Epoch 7900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3124 WD:0.1000 μ:-0.000052
+  Epoch 8000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2899 WD:0.1000 μ:-0.000030
+  Epoch 8100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2765 WD:0.1000 μ:0.000010
+  Epoch 8200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2692 WD:0.1000 μ:-0.000011
+  Epoch 8300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2658 WD:0.1000 μ:0.000091
+  Epoch 8400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2645 WD:0.1000 μ:-0.000007
+  Epoch 8500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2632 WD:0.1000 μ:0.000007
+  Epoch 8600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2620 WD:0.1000 μ:0.000185
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2597 WD:0.1000 μ:-0.000067
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2569 WD:0.1000 μ:0.000148
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2524 WD:0.1000 μ:0.000123
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2495 WD:0.1000 μ:0.000038
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2518 WD:0.1000 μ:0.000149
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2610 WD:0.1000 μ:0.000047
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2789 WD:0.1000 μ:-0.000147
+  Epoch 9400 | Loss:0.0009 TrAcc:1.0000 VAcc:1.0000 Cv:2.7427 WD:0.1000 μ:0.001429
+  Epoch 9500 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.0834 WD:0.1000 μ:0.002200
+  Epoch 9600 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.6446 WD:0.1000 μ:-0.000218
+  Epoch 9700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.3269 WD:0.1000 μ:-0.001523
+  Epoch 9800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0875 WD:0.1000 μ:-0.000655
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.8996 WD:0.1000 μ:-0.000069
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7458 WD:0.1000 μ:0.000025
+
+==================================================
+  Seed: 42
+  Grokking: epoch 4080
+  Max dynamic WD: 1.8354
+==================================================
+  Saved: figures/phase4b_exp3_cv_adamw_seed42.png
+
+>>> Plotting WD comparison (4A vs 4B) | seed=42
+Loading Phase 4A: data/phase4a_exp3_metrics_seed42.csv
+Loading Phase 4B: data/phase4b_exp3_metrics_seed42.csv
+
+Saved: figures/wd_comparison_4a_vs_4b_seed42.png
+
+--- Seed 42 complete ---
+
+############################################
+# SEED: 1042
+############################################
+
+>>> Phase 3 (Baseline + Ghost Triggers) | seed=1042
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=10000, seed=1042
+  Profiler tau=0.015, Z-score threshold=3.0
+  Device: cuda
+
+  Epoch 100/10000 | TrLoss:0.0394 VLoss:3.4153 | TrAcc:1.0000 VAcc:0.5007 | Cv:5.1075
+  Epoch 200/10000 | TrLoss:0.0084 VLoss:3.5508 | TrAcc:1.0000 VAcc:0.5014 | Cv:4.4500
+  Epoch 300/10000 | TrLoss:0.0037 VLoss:3.6263 | TrAcc:1.0000 VAcc:0.5012 | Cv:4.0357
+  Epoch 400/10000 | TrLoss:0.0020 VLoss:3.6768 | TrAcc:1.0000 VAcc:0.5007 | Cv:3.7114
+    [PROFILER] Triggered at epoch 409 (velocity=0.425756 > tau=0.015)
+    [Z-SCORE] Triggered at epoch 409 (z=5.94 > 3.0)
+    [KINEMATIC] Triggered at epoch 409 (v=0.425756>0, a=-0.011516<0)
+  Epoch 500/10000 | TrLoss:0.0015 VLoss:3.8279 | TrAcc:1.0000 VAcc:0.5003 | Cv:6.2659
+  Epoch 600/10000 | TrLoss:0.0010 VLoss:3.8320 | TrAcc:1.0000 VAcc:0.5005 | Cv:4.9352
+  Epoch 700/10000 | TrLoss:0.0007 VLoss:3.8624 | TrAcc:1.0000 VAcc:0.5010 | Cv:4.1842
+  Epoch 800/10000 | TrLoss:0.0004 VLoss:3.9179 | TrAcc:1.0000 VAcc:0.5016 | Cv:3.7041
+  Epoch 900/10000 | TrLoss:0.0003 VLoss:3.9874 | TrAcc:1.0000 VAcc:0.5016 | Cv:3.3726
+  Epoch 1000/10000 | TrLoss:0.0002 VLoss:4.0649 | TrAcc:1.0000 VAcc:0.5016 | Cv:3.1163
+  Epoch 1100/10000 | TrLoss:0.0001 VLoss:4.1423 | TrAcc:1.0000 VAcc:0.5022 | Cv:2.9002
+  Epoch 1200/10000 | TrLoss:0.0001 VLoss:4.2191 | TrAcc:1.0000 VAcc:0.5022 | Cv:2.7097
+  Epoch 1300/10000 | TrLoss:0.0000 VLoss:4.2948 | TrAcc:1.0000 VAcc:0.5024 | Cv:2.5482
+  Epoch 1400/10000 | TrLoss:0.0000 VLoss:4.3643 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.4063
+  Epoch 1500/10000 | TrLoss:0.0000 VLoss:4.4298 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.2677
+  Epoch 1600/10000 | TrLoss:0.0000 VLoss:4.4995 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.1460
+  Epoch 1700/10000 | TrLoss:0.0000 VLoss:4.5584 | TrAcc:1.0000 VAcc:0.5033 | Cv:2.0350
+  Epoch 1800/10000 | TrLoss:0.0030 VLoss:4.0660 | TrAcc:1.0000 VAcc:0.5031 | Cv:7.9714
+  Epoch 1900/10000 | TrLoss:0.0011 VLoss:3.9430 | TrAcc:1.0000 VAcc:0.5039 | Cv:5.5270
+  Epoch 2000/10000 | TrLoss:0.0007 VLoss:3.8128 | TrAcc:1.0000 VAcc:0.5029 | Cv:4.1216
+  Epoch 2100/10000 | TrLoss:0.0005 VLoss:3.7018 | TrAcc:1.0000 VAcc:0.5035 | Cv:3.2492
+  Epoch 2200/10000 | TrLoss:0.0004 VLoss:3.6155 | TrAcc:1.0000 VAcc:0.5041 | Cv:2.7250
+  Epoch 2300/10000 | TrLoss:0.0003 VLoss:3.5600 | TrAcc:1.0000 VAcc:0.5044 | Cv:2.4040
+  Epoch 2400/10000 | TrLoss:0.0002 VLoss:3.5253 | TrAcc:1.0000 VAcc:0.5041 | Cv:2.2012
+  Epoch 2500/10000 | TrLoss:0.0001 VLoss:3.5236 | TrAcc:1.0000 VAcc:0.5054 | Cv:2.0676
+  Epoch 2600/10000 | TrLoss:0.0071 VLoss:2.8834 | TrAcc:1.0000 VAcc:0.5163 | Cv:8.5009
+  Epoch 2700/10000 | TrLoss:0.0016 VLoss:2.7013 | TrAcc:1.0000 VAcc:0.5214 | Cv:5.5658
+  Epoch 2800/10000 | TrLoss:0.0009 VLoss:2.5785 | TrAcc:1.0000 VAcc:0.5286 | Cv:4.0976
+  Epoch 2900/10000 | TrLoss:0.0006 VLoss:2.4812 | TrAcc:1.0000 VAcc:0.5326 | Cv:3.1621
+  Epoch 3000/10000 | TrLoss:0.0004 VLoss:2.4156 | TrAcc:1.0000 VAcc:0.5377 | Cv:2.5657
+  Epoch 3100/10000 | TrLoss:0.0003 VLoss:2.3399 | TrAcc:1.0000 VAcc:0.5413 | Cv:2.1757
+  Epoch 3200/10000 | TrLoss:0.0002 VLoss:2.2793 | TrAcc:1.0000 VAcc:0.5450 | Cv:1.9185
+  Epoch 3300/10000 | TrLoss:0.0001 VLoss:2.2298 | TrAcc:1.0000 VAcc:0.5473 | Cv:1.7343
+  Epoch 3400/10000 | TrLoss:0.0001 VLoss:2.1711 | TrAcc:1.0000 VAcc:0.5541 | Cv:1.5962
+  Epoch 3500/10000 | TrLoss:0.0000 VLoss:2.1076 | TrAcc:1.0000 VAcc:0.5586 | Cv:1.4876
+  Epoch 3600/10000 | TrLoss:0.0017 VLoss:0.9132 | TrAcc:1.0000 VAcc:0.7243 | Cv:2.9134
+  Epoch 3700/10000 | TrLoss:0.0007 VLoss:0.7169 | TrAcc:1.0000 VAcc:0.7832 | Cv:1.8558
+  Epoch 3800/10000 | TrLoss:0.0005 VLoss:0.6151 | TrAcc:1.0000 VAcc:0.8196 | Cv:1.3548
+  Epoch 3900/10000 | TrLoss:0.0004 VLoss:0.5537 | TrAcc:1.0000 VAcc:0.8429 | Cv:1.0922
+  Epoch 4000/10000 | TrLoss:0.0003 VLoss:0.5048 | TrAcc:1.0000 VAcc:0.8536 | Cv:0.9478
+  Epoch 4100/10000 | TrLoss:0.0016 VLoss:0.1455 | TrAcc:1.0000 VAcc:0.9583 | Cv:3.8295
+  Epoch 4200/10000 | TrLoss:0.0006 VLoss:0.0606 | TrAcc:1.0000 VAcc:0.9896 | Cv:2.5002
+  Epoch 4300/10000 | TrLoss:0.0004 VLoss:0.0305 | TrAcc:1.0000 VAcc:0.9951 | Cv:1.7452
+  Epoch 4400/10000 | TrLoss:0.0003 VLoss:0.0170 | TrAcc:1.0000 VAcc:0.9983 | Cv:1.2586
+  Epoch 4500/10000 | TrLoss:0.0002 VLoss:0.0102 | TrAcc:1.0000 VAcc:0.9987 | Cv:0.9427
+  Epoch 4600/10000 | TrLoss:0.0001 VLoss:0.0067 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.7485
+  Epoch 4700/10000 | TrLoss:0.0001 VLoss:0.0043 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.6265
+  Epoch 4800/10000 | TrLoss:0.0023 VLoss:0.0145 | TrAcc:1.0000 VAcc:1.0000 | Cv:4.7061
+  Epoch 4900/10000 | TrLoss:0.0006 VLoss:0.0036 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.2011
+  Epoch 5000/10000 | TrLoss:0.0004 VLoss:0.0017 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.3198
+  Epoch 5100/10000 | TrLoss:0.0002 VLoss:0.0010 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7101
+  Epoch 5200/10000 | TrLoss:0.0002 VLoss:0.0007 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2872
+  Epoch 5300/10000 | TrLoss:0.0001 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9820
+  Epoch 5400/10000 | TrLoss:0.0001 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7671
+  Epoch 5500/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6199
+  Epoch 5600/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5181
+  Epoch 5700/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4446
+  Epoch 5800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3899
+  Epoch 5900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3472
+  Epoch 6000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3141
+  Epoch 6100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2882
+  Epoch 6200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2679
+  Epoch 6300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2531
+  Epoch 6400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2418
+  Epoch 6500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2329
+  Epoch 6600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2269
+  Epoch 6700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2229
+  Epoch 6800/10000 | TrLoss:0.0014 VLoss:0.0032 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.2849
+  Epoch 6900/10000 | TrLoss:0.0004 VLoss:0.0010 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.4107
+  Epoch 7000/10000 | TrLoss:0.0003 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.8477
+  Epoch 7100/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.4097
+  Epoch 7200/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0567
+  Epoch 7300/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8031
+  Epoch 7400/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6234
+  Epoch 7500/10000 | TrLoss:0.0009 VLoss:0.0013 | TrAcc:1.0000 VAcc:1.0000 | Cv:4.1175
+  Epoch 7600/10000 | TrLoss:0.0003 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.0464
+  Epoch 7700/10000 | TrLoss:0.0002 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.3077
+  Epoch 7800/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7777
+  Epoch 7900/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3975
+  Epoch 8000/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.1004
+  Epoch 8100/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8893
+  Epoch 8200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7352
+  Epoch 8300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6191
+  Epoch 8400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5339
+  Epoch 8500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4712
+  Epoch 8600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4268
+  Epoch 8700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3959
+  Epoch 8800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3762
+  Epoch 8900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3636
+  Epoch 9000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3560
+  Epoch 9100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3502
+  Epoch 9200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3429
+  Epoch 9300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3356
+  Epoch 9400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3333
+  Epoch 9500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3290
+  Epoch 9600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3246
+  Epoch 9700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3281
+  Epoch 9800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3412
+  Epoch 9900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3599
+  Epoch 10000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3822
+
+==================================================
+PHASE 3 RESULTS (seed=1042)
+==================================================
+  Profiler triggered:  epoch 409
+  Z-Score triggered:   epoch 409
+  Kinematic triggered: epoch 409
+  Natural grokking:    epoch 4045
+  LAG (kinematic -> grokking): 3636 epochs
+==================================================
+
+  Saved: data/phase3_exp3_metrics_seed1042.csv
+  Saved: data/phase3_exp3_benchmark_results_seed1042.json
+  Saved: figures/phase3_exp3_triggers_seed1042.png
+  Saved: figures/phase3_exp3_kinematics_seed1042.png
+
+>>> Phase 4A (Step-Function Heat Spike) | seed=1042
+Phase 4A: Active Thermodynamic Optimization (Training Loop)
+  base_wd=0.1, spike_wd=1.0, cooldown=50
+  p=97, epochs=10000, seed=1042, device=cuda
+
+  Epoch 100 | Loss:0.0394 TrAcc:1.0000 VAcc:0.5007 Cv:5.1075 WD:0.1
+  Epoch 200 | Loss:0.0084 TrAcc:1.0000 VAcc:0.5014 Cv:4.4500 WD:0.1
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5012 Cv:4.0357 WD:0.1
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5007 Cv:3.7114 WD:0.1
+  🔥 KINEMATIC TRIGGER at epoch 409! Injecting heat (wd=1.0)
+  ❄️ Cooldown at epoch 459. Returning to wd=0.1
+  Epoch 500 | Loss:0.0038 TrAcc:1.0000 VAcc:0.5012 Cv:3.3136 WD:0.1
+  Epoch 600 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5014 Cv:3.0607 WD:0.1
+  Epoch 700 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5018 Cv:2.8219 WD:0.1
+  Epoch 800 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5020 Cv:2.6149 WD:0.1
+  Epoch 900 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5020 Cv:2.4436 WD:0.1
+  Epoch 1000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5024 Cv:2.2933 WD:0.1
+  Epoch 1100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5029 Cv:2.1573 WD:0.1
+  Epoch 1200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5033 Cv:2.0315 WD:0.1
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5029 Cv:1.9244 WD:0.1
+  Epoch 1400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5033 Cv:1.8231 WD:0.1
+  Epoch 1500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5037 Cv:1.7282 WD:0.1
+  Epoch 1600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5044 Cv:1.6510 WD:0.1
+  Epoch 1700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5044 Cv:1.5797 WD:0.1
+  Epoch 1800 | Loss:0.0241 TrAcc:1.0000 VAcc:0.5035 Cv:19.1894 WD:0.1
+  Epoch 1900 | Loss:0.0033 TrAcc:1.0000 VAcc:0.5124 Cv:12.8356 WD:0.1
+  Epoch 2000 | Loss:0.0016 TrAcc:1.0000 VAcc:0.5148 Cv:9.4374 WD:0.1
+  Epoch 2100 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5175 Cv:7.0844 WD:0.1
+  Epoch 2200 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5207 Cv:5.4104 WD:0.1
+  Epoch 2300 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5248 Cv:4.2662 WD:0.1
+  Epoch 2400 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5286 Cv:3.4836 WD:0.1
+  Epoch 2500 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5307 Cv:2.9635 WD:0.1
+  Epoch 2600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5330 Cv:2.6017 WD:0.1
+  Epoch 2700 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5373 Cv:2.3504 WD:0.1
+  Epoch 2800 | Loss:1.4092 TrAcc:0.6915 VAcc:0.3139 Cv:18.1035 WD:0.1
+  Epoch 2900 | Loss:0.0020 TrAcc:1.0000 VAcc:0.7528 Cv:6.5746 WD:0.1
+  Epoch 3000 | Loss:0.0008 TrAcc:1.0000 VAcc:0.8096 Cv:4.5970 WD:0.1
+  Epoch 3100 | Loss:0.0005 TrAcc:1.0000 VAcc:0.8493 Cv:3.3297 WD:0.1
+  Epoch 3200 | Loss:0.0003 TrAcc:1.0000 VAcc:0.8899 Cv:2.4810 WD:0.1
+  Epoch 3300 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9152 Cv:1.9087 WD:0.1
+  Epoch 3400 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9441 Cv:1.5207 WD:0.1
+  Epoch 3500 | Loss:0.0057 TrAcc:1.0000 VAcc:0.9964 Cv:6.8452 WD:0.1
+  Epoch 3600 | Loss:0.0013 TrAcc:1.0000 VAcc:0.9953 Cv:4.6142 WD:0.1
+  Epoch 3700 | Loss:0.0005 TrAcc:1.0000 VAcc:0.9972 Cv:3.1623 WD:0.1
+  Epoch 3800 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9985 Cv:2.2081 WD:0.1
+  Epoch 3900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9994 Cv:1.5974 WD:0.1
+  Epoch 4000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.2061 WD:0.1
+  Epoch 4100 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9549 WD:0.1
+  Epoch 4200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7940 WD:0.1
+  Epoch 4300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6846 WD:0.1
+  Epoch 4400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5961 WD:0.1
+  Epoch 4500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5289 WD:0.1
+  Epoch 4600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4705 WD:0.1
+  Epoch 4700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4243 WD:0.1
+  Epoch 4800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3846 WD:0.1
+  Epoch 4900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3530 WD:0.1
+  Epoch 5000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3253 WD:0.1
+  Epoch 5100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3030 WD:0.1
+  Epoch 5200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2852 WD:0.1
+  Epoch 5300 | Loss:0.0020 TrAcc:1.0000 VAcc:1.0000 Cv:4.2790 WD:0.1
+  Epoch 5400 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:2.9169 WD:0.1
+  Epoch 5500 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.1471 WD:0.1
+  Epoch 5600 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.6303 WD:0.1
+  Epoch 5700 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.2713 WD:0.1
+  Epoch 5800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9982 WD:0.1
+  Epoch 5900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7717 WD:0.1
+  Epoch 6000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.5326 WD:0.1
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3470 WD:0.1
+  Epoch 6200 | Loss:0.0034 TrAcc:1.0000 VAcc:1.0000 Cv:3.8666 WD:0.1
+  Epoch 6300 | Loss:0.0008 TrAcc:1.0000 VAcc:1.0000 Cv:2.8225 WD:0.1
+  Epoch 6400 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:2.1769 WD:0.1
+  Epoch 6500 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.7218 WD:0.1
+  Epoch 6600 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.3875 WD:0.1
+  Epoch 6700 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.1207 WD:0.1
+  Epoch 6800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9029 WD:0.1
+  Epoch 6900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7240 WD:0.1
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5741 WD:0.1
+  Epoch 7100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4509 WD:0.1
+  Epoch 7200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3677 WD:0.1
+  Epoch 7300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3190 WD:0.1
+  Epoch 7400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2907 WD:0.1
+  Epoch 7500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2743 WD:0.1
+  Epoch 7600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2653 WD:0.1
+  Epoch 7700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2605 WD:0.1
+  Epoch 7800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2584 WD:0.1
+  Epoch 7900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2563 WD:0.1
+  Epoch 8000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2530 WD:0.1
+  Epoch 8100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2495 WD:0.1
+  Epoch 8200 | Loss:0.0006 TrAcc:1.0000 VAcc:1.0000 Cv:3.2300 WD:0.1
+  Epoch 8300 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:2.4112 WD:0.1
+  Epoch 8400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.8471 WD:0.1
+  Epoch 8500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.4353 WD:0.1
+  Epoch 8600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1305 WD:0.1
+  Epoch 8700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8982 WD:0.1
+  Epoch 8800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7144 WD:0.1
+  Epoch 8900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.5797 WD:0.1
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4917 WD:0.1
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4449 WD:0.1
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4334 WD:0.1
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4347 WD:0.1
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4402 WD:0.1
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4449 WD:0.1
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4482 WD:0.1
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4479 WD:0.1
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4456 WD:0.1
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4380 WD:0.1
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4269 WD:0.1
+
+==================================================
+  Seed: 1042
+  Trigger: epoch 409
+  Grokking: epoch 3232
+  Lag: 2823 epochs
+==================================================
+  Saved: figures/phase4a_exp3_intervention_seed1042.png
+
+>>> Phase 4B (CvAdamW) | seed=1042
+Phase 4B: CvAdamW — Thermodynamically-Aware Optimizer
+  kappa=5.0, tau=0.02, alpha=0.9, base_wd=0.1
+  p=97, epochs=10000, seed=1042, device=cuda
+
+  Epoch 100 | Loss:0.0394 TrAcc:1.0000 VAcc:0.5007 Cv:5.1075 WD:0.1000 μ:-0.004106
+  Epoch 200 | Loss:0.0084 TrAcc:1.0000 VAcc:0.5014 Cv:4.4500 WD:0.1000 μ:0.000048
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5012 Cv:4.0357 WD:0.1000 μ:0.010645
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5007 Cv:3.7114 WD:0.1000 μ:-0.003746
+  Epoch 500 | Loss:0.0014 TrAcc:1.0000 VAcc:0.5003 Cv:6.0558 WD:0.1000 μ:-0.020881
+  Epoch 600 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5005 Cv:4.8137 WD:0.1000 μ:-0.008623
+  Epoch 700 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5007 Cv:4.1041 WD:0.1000 μ:0.001499
+  Epoch 800 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5010 Cv:3.6434 WD:0.1000 μ:-0.000739
+  Epoch 900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5014 Cv:3.3235 WD:0.1000 μ:-0.001227
+  Epoch 1000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5014 Cv:3.0733 WD:0.1000 μ:0.000308
+  Epoch 1100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5020 Cv:2.8627 WD:0.1000 μ:0.002781
+  Epoch 1200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5022 Cv:2.6756 WD:0.1000 μ:-0.003714
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5024 Cv:2.5164 WD:0.1000 μ:0.000105
+  Epoch 1400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5027 Cv:2.3771 WD:0.1000 μ:0.001175
+  Epoch 1500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5027 Cv:2.2405 WD:0.1000 μ:-0.005025
+  Epoch 1600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.1211 WD:0.1000 μ:-0.002074
+  Epoch 1700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.0136 WD:0.1000 μ:-0.000432
+  Epoch 1800 | Loss:0.0025 TrAcc:1.0000 VAcc:0.5014 Cv:7.9931 WD:0.1000 μ:-0.001982
+  Epoch 1900 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5031 Cv:5.4402 WD:0.1000 μ:0.002567
+  Epoch 2000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5037 Cv:4.0021 WD:0.1000 μ:0.003025
+  Epoch 2100 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5037 Cv:3.1201 WD:0.1000 μ:-0.001036
+  Epoch 2200 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5052 Cv:2.5990 WD:0.1000 μ:0.000364
+  Epoch 2300 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5044 Cv:2.2863 WD:0.1000 μ:0.001471
+  Epoch 2400 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5046 Cv:2.0912 WD:0.1000 μ:-0.000431
+  Epoch 2500 | Loss:3.4586 TrAcc:0.2691 VAcc:0.0410 Cv:24.4018 WD:0.3947 μ:0.078950
+  Epoch 2600 | Loss:0.0026 TrAcc:1.0000 VAcc:0.5184 Cv:6.1489 WD:0.1000 μ:0.001212
+  Epoch 2700 | Loss:0.0013 TrAcc:1.0000 VAcc:0.5194 Cv:4.3755 WD:0.1000 μ:-0.005043
+  Epoch 2800 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5214 Cv:3.3504 WD:0.1000 μ:0.003825
+  Epoch 2900 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5237 Cv:2.7088 WD:0.1000 μ:-0.003793
+  Epoch 3000 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5260 Cv:2.3087 WD:0.1000 μ:0.001396
+  Epoch 3100 | Loss:0.0038 TrAcc:1.0000 VAcc:0.6011 Cv:5.4709 WD:0.1000 μ:-0.011363
+  Epoch 3200 | Loss:0.0012 TrAcc:1.0000 VAcc:0.6223 Cv:3.7628 WD:0.1000 μ:-0.000338
+  Epoch 3300 | Loss:0.0008 TrAcc:1.0000 VAcc:0.6319 Cv:2.8828 WD:0.1000 μ:-0.003820
+  Epoch 3400 | Loss:0.0006 TrAcc:1.0000 VAcc:0.6361 Cv:2.3431 WD:0.1000 μ:-0.000152
+  Epoch 3500 | Loss:0.0076 TrAcc:1.0000 VAcc:0.8119 Cv:5.7850 WD:0.1000 μ:-0.007421
+  Epoch 3600 | Loss:0.0014 TrAcc:1.0000 VAcc:0.9001 Cv:3.5227 WD:0.1000 μ:-0.000177
+  Epoch 3700 | Loss:0.0008 TrAcc:1.0000 VAcc:0.9292 Cv:2.5445 WD:0.1000 μ:-0.000524
+  Epoch 3800 | Loss:0.0005 TrAcc:1.0000 VAcc:0.9382 Cv:1.9765 WD:0.1000 μ:-0.002561
+  Epoch 3900 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9490 Cv:1.6201 WD:0.1000 μ:0.001072
+  Epoch 4000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9573 Cv:1.3743 WD:0.1000 μ:-0.000931
+  Epoch 4100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9671 Cv:1.1897 WD:0.1000 μ:-0.000236
+  Epoch 4200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9770 Cv:1.0440 WD:0.1000 μ:0.000492
+  Epoch 4300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9832 Cv:0.9228 WD:0.1000 μ:0.000317
+  Epoch 4400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9894 Cv:0.8222 WD:0.1000 μ:-0.000198
+  Epoch 4500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9923 Cv:0.7351 WD:0.1000 μ:0.000409
+  Epoch 4600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9945 Cv:0.6622 WD:0.1000 μ:0.000636
+  Epoch 4700 | Loss:0.0064 TrAcc:1.0000 VAcc:0.9921 Cv:3.6830 WD:0.1000 μ:-0.002472
+  Epoch 4800 | Loss:0.0007 TrAcc:1.0000 VAcc:0.9996 Cv:1.9377 WD:0.1000 μ:-0.000208
+  Epoch 4900 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9996 Cv:1.3070 WD:0.1000 μ:-0.000343
+  Epoch 5000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9998 Cv:0.9179 WD:0.1000 μ:-0.000838
+  Epoch 5100 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9998 Cv:0.6583 WD:0.1000 μ:-0.000388
+  Epoch 5200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9998 Cv:0.4936 WD:0.1000 μ:-0.000191
+  Epoch 5300 | Loss:0.0014 TrAcc:1.0000 VAcc:1.0000 Cv:2.8485 WD:0.1000 μ:-0.003621
+  Epoch 5400 | Loss:0.0006 TrAcc:1.0000 VAcc:1.0000 Cv:2.0986 WD:0.1000 μ:-0.000200
+  Epoch 5500 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.6133 WD:0.1000 μ:-0.001185
+  Epoch 5600 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.2681 WD:0.1000 μ:-0.000549
+  Epoch 5700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0116 WD:0.1000 μ:0.000520
+  Epoch 5800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8134 WD:0.1000 μ:-0.000092
+  Epoch 5900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.6630 WD:0.1000 μ:-0.000301
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5514 WD:0.1000 μ:0.000119
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4644 WD:0.1000 μ:-0.000141
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3958 WD:0.1000 μ:-0.000276
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3417 WD:0.1000 μ:0.000009
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2977 WD:0.1000 μ:0.000097
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2621 WD:0.1000 μ:-0.000179
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2343 WD:0.1000 μ:-0.000042
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2126 WD:0.1000 μ:0.000009
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1961 WD:0.1000 μ:-0.000032
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1835 WD:0.1000 μ:-0.000078
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1739 WD:0.1000 μ:-0.000081
+  Epoch 7100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1669 WD:0.1000 μ:-0.000017
+  Epoch 7200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1615 WD:0.1000 μ:0.000114
+  Epoch 7300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1566 WD:0.1000 μ:0.000010
+  Epoch 7400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.1547 WD:0.1000 μ:-0.000064
+  Epoch 7500 | Loss:0.0016 TrAcc:1.0000 VAcc:1.0000 Cv:3.4939 WD:0.1000 μ:-0.002342
+  Epoch 7600 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.6589 WD:0.1000 μ:-0.001026
+  Epoch 7700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:2.0444 WD:0.1000 μ:-0.000092
+  Epoch 7800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.5684 WD:0.1000 μ:-0.001640
+  Epoch 7900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2025 WD:0.1000 μ:-0.000215
+  Epoch 8000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9193 WD:0.1000 μ:0.000366
+  Epoch 8100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7144 WD:0.1000 μ:-0.000417
+  Epoch 8200 | Loss:0.0011 TrAcc:1.0000 VAcc:1.0000 Cv:3.2676 WD:0.1000 μ:-0.002172
+  Epoch 8300 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.4023 WD:0.1000 μ:-0.001602
+  Epoch 8400 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.8397 WD:0.1000 μ:-0.000745
+  Epoch 8500 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.4255 WD:0.1000 μ:-0.001917
+  Epoch 8600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1241 WD:0.1000 μ:-0.000445
+  Epoch 8700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9050 WD:0.1000 μ:0.000159
+  Epoch 8800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7400 WD:0.1000 μ:-0.000153
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6167 WD:0.1000 μ:0.000002
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5266 WD:0.1000 μ:-0.000285
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4607 WD:0.1000 μ:0.000257
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4117 WD:0.1000 μ:-0.000012
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3764 WD:0.1000 μ:0.000077
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3514 WD:0.1000 μ:-0.000241
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3349 WD:0.1000 μ:-0.000111
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3241 WD:0.1000 μ:-0.000229
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3175 WD:0.1000 μ:0.000003
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3124 WD:0.1000 μ:-0.000070
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3077 WD:0.1000 μ:-0.000109
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3028 WD:0.1000 μ:0.000104
+
+==================================================
+  Seed: 1042
+  Grokking: epoch 3598
+  Max dynamic WD: 1.9646
+==================================================
+  Saved: figures/phase4b_exp3_cv_adamw_seed1042.png
+
+>>> Plotting WD comparison (4A vs 4B) | seed=1042
+Loading Phase 4A: data/phase4a_exp3_metrics_seed1042.csv
+Loading Phase 4B: data/phase4b_exp3_metrics_seed1042.csv
+
+Saved: figures/wd_comparison_4a_vs_4b_seed1042.png
+
+--- Seed 1042 complete ---
+
+############################################
+# SEED: 2042
+############################################
+
+>>> Phase 3 (Baseline + Ghost Triggers) | seed=2042
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=10000, seed=2042
+  Profiler tau=0.015, Z-score threshold=3.0
+  Device: cuda
+
+  Epoch 100/10000 | TrLoss:0.0405 VLoss:3.4963 | TrAcc:1.0000 VAcc:0.5005 | Cv:4.6558
+  Epoch 200/10000 | TrLoss:0.0085 VLoss:3.6511 | TrAcc:1.0000 VAcc:0.5010 | Cv:4.0838
+  Epoch 300/10000 | TrLoss:0.0038 VLoss:3.7319 | TrAcc:1.0000 VAcc:0.5016 | Cv:3.7083
+  Epoch 400/10000 | TrLoss:0.0020 VLoss:3.7938 | TrAcc:1.0000 VAcc:0.5016 | Cv:3.4066
+  Epoch 500/10000 | TrLoss:0.0011 VLoss:3.8549 | TrAcc:1.0000 VAcc:0.5020 | Cv:3.1715
+  Epoch 600/10000 | TrLoss:0.0007 VLoss:3.9064 | TrAcc:1.0000 VAcc:0.5018 | Cv:2.9416
+  Epoch 700/10000 | TrLoss:0.0004 VLoss:3.9614 | TrAcc:1.0000 VAcc:0.5020 | Cv:2.7733
+  Epoch 800/10000 | TrLoss:0.0002 VLoss:4.0280 | TrAcc:1.0000 VAcc:0.5022 | Cv:2.6087
+  Epoch 900/10000 | TrLoss:0.0001 VLoss:4.0944 | TrAcc:1.0000 VAcc:0.5024 | Cv:2.4829
+  Epoch 1000/10000 | TrLoss:0.0001 VLoss:4.1609 | TrAcc:1.0000 VAcc:0.5024 | Cv:2.3508
+  Epoch 1100/10000 | TrLoss:0.0000 VLoss:4.2396 | TrAcc:1.0000 VAcc:0.5022 | Cv:2.2401
+  Epoch 1200/10000 | TrLoss:0.0000 VLoss:4.3173 | TrAcc:1.0000 VAcc:0.5020 | Cv:2.1492
+  Epoch 1300/10000 | TrLoss:0.0000 VLoss:4.3883 | TrAcc:1.0000 VAcc:0.5020 | Cv:2.0612
+  Epoch 1400/10000 | TrLoss:0.0000 VLoss:4.4674 | TrAcc:1.0000 VAcc:0.5020 | Cv:1.9935
+  Epoch 1500/10000 | TrLoss:0.0000 VLoss:4.5439 | TrAcc:1.0000 VAcc:0.5022 | Cv:1.9328
+    [KINEMATIC] Triggered at epoch 1549 (v=0.000114>0, a=-0.000171<0)
+    [PROFILER] Triggered at epoch 1598 (velocity=0.064010 > tau=0.015)
+  Epoch 1600/10000 | TrLoss:4.9083 VLoss:4.8490 | TrAcc:0.0476 VAcc:0.0125 | Cv:7.6285
+  Epoch 1700/10000 | TrLoss:0.0020 VLoss:4.5292 | TrAcc:1.0000 VAcc:0.5018 | Cv:7.8234
+  Epoch 1800/10000 | TrLoss:0.0010 VLoss:4.3776 | TrAcc:1.0000 VAcc:0.5018 | Cv:5.5956
+  Epoch 1900/10000 | TrLoss:0.0006 VLoss:4.2355 | TrAcc:1.0000 VAcc:0.5024 | Cv:4.1980
+  Epoch 2000/10000 | TrLoss:0.0004 VLoss:4.1197 | TrAcc:1.0000 VAcc:0.5029 | Cv:3.3012
+  Epoch 2100/10000 | TrLoss:0.0003 VLoss:4.0358 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.7465
+  Epoch 2200/10000 | TrLoss:0.0002 VLoss:3.9965 | TrAcc:1.0000 VAcc:0.5024 | Cv:2.3904
+  Epoch 2300/10000 | TrLoss:0.0002 VLoss:3.9816 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.1661
+  Epoch 2400/10000 | TrLoss:0.0243 VLoss:4.2251 | TrAcc:1.0000 VAcc:0.5016 | Cv:11.5632
+  Epoch 2500/10000 | TrLoss:0.0019 VLoss:4.0604 | TrAcc:1.0000 VAcc:0.5027 | Cv:7.1881
+  Epoch 2600/10000 | TrLoss:0.0010 VLoss:3.9316 | TrAcc:1.0000 VAcc:0.5029 | Cv:5.3075
+  Epoch 2700/10000 | TrLoss:0.0007 VLoss:3.8259 | TrAcc:1.0000 VAcc:0.5039 | Cv:4.1036
+  Epoch 2800/10000 | TrLoss:0.0005 VLoss:3.7583 | TrAcc:1.0000 VAcc:0.5044 | Cv:3.3310
+  Epoch 2900/10000 | TrLoss:0.0003 VLoss:3.7251 | TrAcc:1.0000 VAcc:0.5041 | Cv:2.8283
+  Epoch 3000/10000 | TrLoss:0.0002 VLoss:3.7218 | TrAcc:1.0000 VAcc:0.5050 | Cv:2.4983
+  Epoch 3100/10000 | TrLoss:0.0029 VLoss:3.6546 | TrAcc:1.0000 VAcc:0.5054 | Cv:9.6509
+  Epoch 3200/10000 | TrLoss:0.0012 VLoss:3.5505 | TrAcc:1.0000 VAcc:0.5061 | Cv:6.9401
+  Epoch 3300/10000 | TrLoss:0.0008 VLoss:3.4633 | TrAcc:1.0000 VAcc:0.5075 | Cv:5.2454
+  Epoch 3400/10000 | TrLoss:0.0006 VLoss:3.4050 | TrAcc:1.0000 VAcc:0.5090 | Cv:4.1185
+  Epoch 3500/10000 | TrLoss:0.0004 VLoss:3.3737 | TrAcc:1.0000 VAcc:0.5095 | Cv:3.3882
+  Epoch 3600/10000 | TrLoss:0.0003 VLoss:3.3526 | TrAcc:1.0000 VAcc:0.5082 | Cv:2.9113
+  Epoch 3700/10000 | TrLoss:0.0002 VLoss:3.3586 | TrAcc:1.0000 VAcc:0.5090 | Cv:2.5911
+  Epoch 3800/10000 | TrLoss:0.0001 VLoss:3.3930 | TrAcc:1.0000 VAcc:0.5092 | Cv:2.3684
+  Epoch 3900/10000 | TrLoss:0.0001 VLoss:3.4209 | TrAcc:1.0000 VAcc:0.5097 | Cv:2.2084
+  Epoch 4000/10000 | TrLoss:0.0000 VLoss:3.4638 | TrAcc:1.0000 VAcc:0.5105 | Cv:2.0773
+  Epoch 4100/10000 | TrLoss:0.0000 VLoss:3.5124 | TrAcc:1.0000 VAcc:0.5109 | Cv:1.9758
+  Epoch 4200/10000 | TrLoss:0.0048 VLoss:2.9529 | TrAcc:1.0000 VAcc:0.5184 | Cv:9.3422
+  Epoch 4300/10000 | TrLoss:0.0011 VLoss:2.8090 | TrAcc:1.0000 VAcc:0.5224 | Cv:6.3275
+  Epoch 4400/10000 | TrLoss:0.0006 VLoss:2.7352 | TrAcc:1.0000 VAcc:0.5254 | Cv:4.6781
+  Epoch 4500/10000 | TrLoss:0.0004 VLoss:2.6721 | TrAcc:1.0000 VAcc:0.5269 | Cv:3.6010
+  Epoch 4600/10000 | TrLoss:0.0004 VLoss:2.6244 | TrAcc:1.0000 VAcc:0.5260 | Cv:2.9001
+    [Z-SCORE] Triggered at epoch 4659 (z=3.48 > 3.0)
+  Epoch 4700/10000 | TrLoss:0.0066 VLoss:1.7534 | TrAcc:1.0000 VAcc:0.5872 | Cv:7.9649
+  Epoch 4800/10000 | TrLoss:0.0015 VLoss:1.5559 | TrAcc:1.0000 VAcc:0.6189 | Cv:5.4225
+  Epoch 4900/10000 | TrLoss:0.0008 VLoss:1.4807 | TrAcc:1.0000 VAcc:0.6332 | Cv:4.0951
+  Epoch 5000/10000 | TrLoss:0.0005 VLoss:1.4619 | TrAcc:1.0000 VAcc:0.6293 | Cv:3.2579
+  Epoch 5100/10000 | TrLoss:0.0003 VLoss:1.4540 | TrAcc:1.0000 VAcc:0.6361 | Cv:2.7134
+  Epoch 5200/10000 | TrLoss:0.0214 VLoss:0.6133 | TrAcc:1.0000 VAcc:0.8062 | Cv:9.7948
+  Epoch 5300/10000 | TrLoss:0.0030 VLoss:0.3295 | TrAcc:1.0000 VAcc:0.9024 | Cv:5.8953
+  Epoch 5400/10000 | TrLoss:0.0013 VLoss:0.2203 | TrAcc:1.0000 VAcc:0.9382 | Cv:4.1224
+  Epoch 5500/10000 | TrLoss:0.0007 VLoss:0.1455 | TrAcc:1.0000 VAcc:0.9628 | Cv:3.0286
+  Epoch 5600/10000 | TrLoss:0.0004 VLoss:0.0923 | TrAcc:1.0000 VAcc:0.9781 | Cv:2.3054
+  Epoch 5700/10000 | TrLoss:0.0002 VLoss:0.0551 | TrAcc:1.0000 VAcc:0.9883 | Cv:1.8040
+  Epoch 5800/10000 | TrLoss:0.0002 VLoss:0.0319 | TrAcc:1.0000 VAcc:0.9957 | Cv:1.4607
+  Epoch 5900/10000 | TrLoss:0.0001 VLoss:0.0189 | TrAcc:1.0000 VAcc:0.9966 | Cv:1.2274
+  Epoch 6000/10000 | TrLoss:0.0001 VLoss:0.0113 | TrAcc:1.0000 VAcc:0.9981 | Cv:1.0686
+  Epoch 6100/10000 | TrLoss:0.0000 VLoss:0.0068 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.9531
+  Epoch 6200/10000 | TrLoss:0.0000 VLoss:0.0041 | TrAcc:1.0000 VAcc:0.9994 | Cv:0.8684
+  Epoch 6300/10000 | TrLoss:0.0000 VLoss:0.0022 | TrAcc:1.0000 VAcc:0.9998 | Cv:0.8030
+  Epoch 6400/10000 | TrLoss:0.0000 VLoss:0.0011 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7490
+  Epoch 6500/10000 | TrLoss:0.0000 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7061
+  Epoch 6600/10000 | TrLoss:0.0000 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6700
+  Epoch 6700/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6405
+  Epoch 6800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6164
+  Epoch 6900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5954
+  Epoch 7000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5773
+  Epoch 7100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5625
+  Epoch 7200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5509
+  Epoch 7300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5460
+  Epoch 7400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5518
+  Epoch 7500/10000 | TrLoss:0.0038 VLoss:0.0114 | TrAcc:1.0000 VAcc:0.9994 | Cv:3.4459
+  Epoch 7600/10000 | TrLoss:0.0011 VLoss:0.0028 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.5239
+  Epoch 7700/10000 | TrLoss:0.0006 VLoss:0.0014 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.9447
+  Epoch 7800/10000 | TrLoss:0.0004 VLoss:0.0008 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.5336
+  Epoch 7900/10000 | TrLoss:0.0003 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2128
+  Epoch 8000/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9400
+  Epoch 8100/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7454
+  Epoch 8200/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6171
+  Epoch 8300/10000 | TrLoss:0.2651 VLoss:0.1375 | TrAcc:0.9970 VAcc:0.9877 | Cv:3.3977
+  Epoch 8400/10000 | TrLoss:0.0010 VLoss:0.0015 | TrAcc:1.0000 VAcc:1.0000 | Cv:4.0695
+  Epoch 8500/10000 | TrLoss:0.0005 VLoss:0.0007 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.0160
+  Epoch 8600/10000 | TrLoss:0.0003 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.2720
+  Epoch 8700/10000 | TrLoss:0.0002 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7282
+  Epoch 8800/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3637
+  Epoch 8900/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.1045
+  Epoch 9000/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9175
+  Epoch 9100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7812
+  Epoch 9200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6771
+  Epoch 9300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5998
+  Epoch 9400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5470
+  Epoch 9500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5160
+  Epoch 9600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5012
+  Epoch 9700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4951
+  Epoch 9800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4927
+  Epoch 9900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4911
+  Epoch 10000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4875
+
+==================================================
+PHASE 3 RESULTS (seed=2042)
+==================================================
+  Profiler triggered:  epoch 1598
+  Z-Score triggered:   epoch 4659
+  Kinematic triggered: epoch 1549
+  Natural grokking:    epoch 5298
+  LAG (kinematic -> grokking): 3749 epochs
+==================================================
+
+  Saved: data/phase3_exp3_metrics_seed2042.csv
+  Saved: data/phase3_exp3_benchmark_results_seed2042.json
+  Saved: figures/phase3_exp3_triggers_seed2042.png
+  Saved: figures/phase3_exp3_kinematics_seed2042.png
+
+>>> Phase 4A (Step-Function Heat Spike) | seed=2042
+Phase 4A: Active Thermodynamic Optimization (Training Loop)
+  base_wd=0.1, spike_wd=1.0, cooldown=50
+  p=97, epochs=10000, seed=2042, device=cuda
+
+  Epoch 100 | Loss:0.0405 TrAcc:1.0000 VAcc:0.5005 Cv:4.6558 WD:0.1
+  Epoch 200 | Loss:0.0085 TrAcc:1.0000 VAcc:0.5010 Cv:4.0838 WD:0.1
+  Epoch 300 | Loss:0.0038 TrAcc:1.0000 VAcc:0.5016 Cv:3.7083 WD:0.1
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5016 Cv:3.4066 WD:0.1
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5020 Cv:3.1715 WD:0.1
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5018 Cv:2.9416 WD:0.1
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5020 Cv:2.7733 WD:0.1
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5022 Cv:2.6087 WD:0.1
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5024 Cv:2.4829 WD:0.1
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5024 Cv:2.3508 WD:0.1
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5022 Cv:2.2401 WD:0.1
+  Epoch 1200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:2.1492 WD:0.1
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:2.0612 WD:0.1
+  Epoch 1400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:1.9935 WD:0.1
+  Epoch 1500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5022 Cv:1.9328 WD:0.1
+  🔥 KINEMATIC TRIGGER at epoch 1549! Injecting heat (wd=1.0)
+  ❄️ Cooldown at epoch 1599. Returning to wd=0.1
+  Epoch 1600 | Loss:0.0121 TrAcc:1.0000 VAcc:0.5018 Cv:4.1918 WD:0.1
+  Epoch 1700 | Loss:0.0021 TrAcc:1.0000 VAcc:0.5027 Cv:3.0473 WD:0.1
+  Epoch 1800 | Loss:0.0012 TrAcc:1.0000 VAcc:0.5027 Cv:2.5614 WD:0.1
+  Epoch 1900 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5018 Cv:2.2681 WD:0.1
+  Epoch 2000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5022 Cv:2.0706 WD:0.1
+  Epoch 2100 | Loss:0.0039 TrAcc:1.0000 VAcc:0.5031 Cv:7.0622 WD:0.1
+  Epoch 2200 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5033 Cv:4.9115 WD:0.1
+  Epoch 2300 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5035 Cv:3.7764 WD:0.1
+  Epoch 2400 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5039 Cv:3.1196 WD:0.1
+  Epoch 2500 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5044 Cv:2.7205 WD:0.1
+  Epoch 2600 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5048 Cv:2.4499 WD:0.1
+  Epoch 2700 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5054 Cv:2.2602 WD:0.1
+  Epoch 2800 | Loss:1.8602 TrAcc:0.6112 VAcc:0.1524 Cv:25.4427 WD:0.1
+  Epoch 2900 | Loss:0.0070 TrAcc:1.0000 VAcc:0.5054 Cv:12.7171 WD:0.1
+  Epoch 3000 | Loss:0.0022 TrAcc:1.0000 VAcc:0.5088 Cv:9.2347 WD:0.1
+  Epoch 3100 | Loss:0.0012 TrAcc:1.0000 VAcc:0.5105 Cv:7.0455 WD:0.1
+  Epoch 3200 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5124 Cv:5.5367 WD:0.1
+  Epoch 3300 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5146 Cv:4.4494 WD:0.1
+  Epoch 3400 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5163 Cv:3.6870 WD:0.1
+  Epoch 3500 | Loss:0.0169 TrAcc:1.0000 VAcc:0.5418 Cv:12.5618 WD:0.1
+  Epoch 3600 | Loss:0.0022 TrAcc:1.0000 VAcc:0.5552 Cv:7.9516 WD:0.1
+  Epoch 3700 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5688 Cv:5.9636 WD:0.1
+  Epoch 3800 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5821 Cv:4.7362 WD:0.1
+  Epoch 3900 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5909 Cv:3.9127 WD:0.1
+  Epoch 4000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5987 Cv:3.3394 WD:0.1
+  Epoch 4100 | Loss:0.0002 TrAcc:1.0000 VAcc:0.6083 Cv:2.9249 WD:0.1
+  Epoch 4200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.6213 Cv:2.6194 WD:0.1
+  Epoch 4300 | Loss:0.0001 TrAcc:1.0000 VAcc:0.6376 Cv:2.3786 WD:0.1
+  Epoch 4400 | Loss:0.0114 TrAcc:1.0000 VAcc:0.7853 Cv:7.1146 WD:0.1
+  Epoch 4500 | Loss:0.0014 TrAcc:1.0000 VAcc:0.8882 Cv:4.0090 WD:0.1
+  Epoch 4600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.9292 Cv:2.8389 WD:0.1
+  Epoch 4700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9486 Cv:2.1514 WD:0.1
+  Epoch 4800 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9603 Cv:1.7285 WD:0.1
+  Epoch 4900 | Loss:0.0166 TrAcc:1.0000 VAcc:0.9768 Cv:8.3941 WD:0.1
+  Epoch 5000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.9987 Cv:4.5283 WD:0.1
+  Epoch 5100 | Loss:0.0008 TrAcc:1.0000 VAcc:0.9994 Cv:3.2525 WD:0.1
+  Epoch 5200 | Loss:0.0005 TrAcc:1.0000 VAcc:0.9994 Cv:2.4587 WD:0.1
+  Epoch 5300 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9994 Cv:1.9041 WD:0.1
+  Epoch 5400 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9994 Cv:1.5185 WD:0.1
+  Epoch 5500 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9996 Cv:1.2445 WD:0.1
+  Epoch 5600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9998 Cv:1.0508 WD:0.1
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9085 WD:0.1
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7987 WD:0.1
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7140 WD:0.1
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6500 WD:0.1
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5964 WD:0.1
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5564 WD:0.1
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5258 WD:0.1
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5020 WD:0.1
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4860 WD:0.1
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4739 WD:0.1
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4659 WD:0.1
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4610 WD:0.1
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4582 WD:0.1
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4627 WD:0.1
+  Epoch 7100 | Loss:0.0042 TrAcc:1.0000 VAcc:0.9985 Cv:5.5500 WD:0.1
+  Epoch 7200 | Loss:0.0008 TrAcc:1.0000 VAcc:0.9996 Cv:3.9903 WD:0.1
+  Epoch 7300 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:3.0275 WD:0.1
+  Epoch 7400 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.3220 WD:0.1
+  Epoch 7500 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.7766 WD:0.1
+  Epoch 7600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.3419 WD:0.1
+  Epoch 7700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9995 WD:0.1
+  Epoch 7800 | Loss:0.0074 TrAcc:1.0000 VAcc:0.9996 Cv:7.2297 WD:0.1
+  Epoch 7900 | Loss:0.0013 TrAcc:1.0000 VAcc:1.0000 Cv:4.9658 WD:0.1
+  Epoch 8000 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 Cv:3.7378 WD:0.1
+  Epoch 8100 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:2.8933 WD:0.1
+  Epoch 8200 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:2.2580 WD:0.1
+  Epoch 8300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.7606 WD:0.1
+  Epoch 8400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.3836 WD:0.1
+  Epoch 8500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1305 WD:0.1
+  Epoch 8600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9422 WD:0.1
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.8016 WD:0.1
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7032 WD:0.1
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6348 WD:0.1
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5937 WD:0.1
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5725 WD:0.1
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5646 WD:0.1
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5629 WD:0.1
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5644 WD:0.1
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5637 WD:0.1
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5626 WD:0.1
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5609 WD:0.1
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5545 WD:0.1
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5492 WD:0.1
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5519 WD:0.1
+
+==================================================
+  Seed: 2042
+  Trigger: epoch 1549
+  Grokking: epoch 4519
+  Lag: 2970 epochs
+==================================================
+  Saved: figures/phase4a_exp3_intervention_seed2042.png
+
+>>> Phase 4B (CvAdamW) | seed=2042
+Phase 4B: CvAdamW — Thermodynamically-Aware Optimizer
+  kappa=5.0, tau=0.02, alpha=0.9, base_wd=0.1
+  p=97, epochs=10000, seed=2042, device=cuda
+
+  Epoch 100 | Loss:0.0405 TrAcc:1.0000 VAcc:0.5005 Cv:4.6552 WD:0.1000 μ:-0.016819
+  Epoch 200 | Loss:0.0085 TrAcc:1.0000 VAcc:0.5010 Cv:4.0829 WD:0.1000 μ:0.004861
+  Epoch 300 | Loss:0.0038 TrAcc:1.0000 VAcc:0.5016 Cv:3.7076 WD:0.1000 μ:0.002546
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5016 Cv:3.4061 WD:0.1000 μ:-0.005006
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5020 Cv:3.1710 WD:0.1000 μ:0.010634
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5018 Cv:2.9412 WD:0.1000 μ:-0.014474
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5020 Cv:2.7729 WD:0.1000 μ:-0.003008
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5022 Cv:2.6083 WD:0.1000 μ:-0.003137
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5024 Cv:2.4826 WD:0.1000 μ:0.004800
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5024 Cv:2.3504 WD:0.1000 μ:-0.003585
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5022 Cv:2.2398 WD:0.1000 μ:-0.003923
+  Epoch 1200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:2.1490 WD:0.1000 μ:0.000006
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:2.0609 WD:0.1000 μ:-0.004409
+  Epoch 1400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5020 Cv:1.9932 WD:0.1000 μ:0.001002
+  Epoch 1500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5022 Cv:1.9326 WD:0.1000 μ:-0.000495
+  Epoch 1600 | Loss:4.9032 TrAcc:0.0538 VAcc:0.0138 Cv:7.4355 WD:1.1394 μ:0.227877
+  Epoch 1700 | Loss:0.0025 TrAcc:1.0000 VAcc:0.5024 Cv:5.4399 WD:0.1000 μ:-0.006959
+  Epoch 1800 | Loss:0.0012 TrAcc:1.0000 VAcc:0.5031 Cv:3.9522 WD:0.1000 μ:-0.001793
+  Epoch 1900 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5027 Cv:3.1129 WD:0.1000 μ:0.001564
+  Epoch 2000 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5033 Cv:2.6069 WD:0.1000 μ:-0.001459
+  Epoch 2100 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5035 Cv:2.2950 WD:0.1000 μ:0.000693
+  Epoch 2200 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5027 Cv:2.0879 WD:0.1000 μ:0.000241
+  Epoch 2300 | Loss:0.0017 TrAcc:1.0000 VAcc:0.5033 Cv:7.7937 WD:0.1000 μ:-0.014375
+  Epoch 2400 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5044 Cv:5.6076 WD:0.1000 μ:0.003518
+  Epoch 2500 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5037 Cv:4.2510 WD:0.1000 μ:0.000060
+  Epoch 2600 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5037 Cv:3.4077 WD:0.1000 μ:-0.000406
+  Epoch 2700 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5037 Cv:2.8703 WD:0.1000 μ:-0.005183
+  Epoch 2800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5027 Cv:2.5331 WD:0.1000 μ:0.001953
+  Epoch 2900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5029 Cv:2.2899 WD:0.1000 μ:0.002471
+  Epoch 3000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5031 Cv:2.1126 WD:0.1000 μ:-0.001187
+  Epoch 3100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5029 Cv:1.9757 WD:0.1000 μ:0.000329
+  Epoch 3200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5037 Cv:1.8759 WD:0.1000 μ:0.003971
+  Epoch 3300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5048 Cv:1.7970 WD:0.1000 μ:-0.001609
+  Epoch 3400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5054 Cv:1.7329 WD:0.1000 μ:-0.000381
+  Epoch 3500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5058 Cv:1.6851 WD:0.1000 μ:0.001353
+  Epoch 3600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5056 Cv:1.6469 WD:0.1000 μ:0.000883
+  Epoch 3700 | Loss:4.4771 TrAcc:0.0808 VAcc:0.0183 Cv:6.8054 WD:0.4002 μ:0.080044
+  Epoch 3800 | Loss:0.0028 TrAcc:1.0000 VAcc:0.5105 Cv:8.0962 WD:0.1000 μ:0.000125
+  Epoch 3900 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5097 Cv:5.7145 WD:0.1000 μ:0.000656
+  Epoch 4000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5107 Cv:4.2271 WD:0.1000 μ:-0.000961
+  Epoch 4100 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5131 Cv:3.2568 WD:0.1000 μ:-0.002609
+  Epoch 4200 | Loss:0.0070 TrAcc:1.0000 VAcc:0.5554 Cv:5.5355 WD:0.1000 μ:0.001390
+  Epoch 4300 | Loss:0.0017 TrAcc:1.0000 VAcc:0.5717 Cv:3.8972 WD:0.1000 μ:0.001385
+  Epoch 4400 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5775 Cv:3.0771 WD:0.1000 μ:-0.000352
+  Epoch 4500 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5817 Cv:2.5525 WD:0.1000 μ:0.000562
+  Epoch 4600 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5843 Cv:2.1977 WD:0.1000 μ:0.001577
+  Epoch 4700 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5923 Cv:1.9536 WD:0.1000 μ:0.003241
+  Epoch 4800 | Loss:0.0135 TrAcc:1.0000 VAcc:0.8174 Cv:7.1686 WD:0.1000 μ:-0.001904
+  Epoch 4900 | Loss:0.0029 TrAcc:1.0000 VAcc:0.9007 Cv:4.4047 WD:0.1000 μ:-0.003235
+  Epoch 5000 | Loss:0.0014 TrAcc:1.0000 VAcc:0.9428 Cv:3.1344 WD:0.1000 μ:-0.003131
+  Epoch 5100 | Loss:0.0007 TrAcc:1.0000 VAcc:0.9637 Cv:2.3503 WD:0.1000 μ:-0.002792
+  Epoch 5200 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9804 Cv:1.8111 WD:0.1000 μ:-0.000312
+  Epoch 5300 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9894 Cv:1.4557 WD:0.1000 μ:-0.001173
+  Epoch 5400 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9968 Cv:1.2271 WD:0.1000 μ:-0.000016
+  Epoch 5500 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9981 Cv:1.0805 WD:0.1000 μ:-0.000779
+  Epoch 5600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9991 Cv:0.9841 WD:0.1000 μ:0.000420
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 Cv:0.9157 WD:0.1000 μ:0.000798
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.8610 WD:0.1000 μ:-0.000990
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.8159 WD:0.1000 μ:-0.000904
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7773 WD:0.1000 μ:0.000259
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7434 WD:0.1000 μ:-0.000081
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7144 WD:0.1000 μ:-0.000695
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6934 WD:0.1000 μ:0.000289
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6746 WD:0.1000 μ:0.000080
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6594 WD:0.1000 μ:0.000215
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6457 WD:0.1000 μ:0.000084
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6320 WD:0.1000 μ:-0.000130
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6200 WD:0.1000 μ:0.000700
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6091 WD:0.1000 μ:0.000243
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6073 WD:0.1000 μ:-0.000327
+  Epoch 7100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6161 WD:0.1000 μ:0.000047
+  Epoch 7200 | Loss:0.0032 TrAcc:1.0000 VAcc:0.9996 Cv:3.4509 WD:0.1000 μ:0.001940
+  Epoch 7300 | Loss:0.0010 TrAcc:1.0000 VAcc:1.0000 Cv:2.5411 WD:0.1000 μ:0.001450
+  Epoch 7400 | Loss:0.0006 TrAcc:1.0000 VAcc:1.0000 Cv:1.9413 WD:0.1000 μ:-0.001114
+  Epoch 7500 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:1.5050 WD:0.1000 μ:-0.000179
+  Epoch 7600 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.1747 WD:0.1000 μ:0.000852
+  Epoch 7700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9157 WD:0.1000 μ:-0.000100
+  Epoch 7800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7379 WD:0.1000 μ:-0.000132
+  Epoch 7900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.6216 WD:0.1000 μ:-0.000082
+  Epoch 8000 | Loss:0.0032 TrAcc:1.0000 VAcc:0.9998 Cv:4.6205 WD:0.1000 μ:-0.000599
+  Epoch 8100 | Loss:0.0009 TrAcc:1.0000 VAcc:1.0000 Cv:3.0329 WD:0.1000 μ:-0.003662
+  Epoch 8200 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:2.2227 WD:0.1000 μ:-0.000446
+  Epoch 8300 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.6842 WD:0.1000 μ:0.000059
+  Epoch 8400 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.2958 WD:0.1000 μ:0.000105
+  Epoch 8500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9812 WD:0.1000 μ:0.000096
+  Epoch 8600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7506 WD:0.1000 μ:-0.000002
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6203 WD:0.1000 μ:-0.000683
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5444 WD:0.1000 μ:0.000176
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5005 WD:0.1000 μ:0.000392
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4780 WD:0.1000 μ:0.000128
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4714 WD:0.1000 μ:-0.000066
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4752 WD:0.1000 μ:0.000104
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4842 WD:0.1000 μ:0.000313
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4954 WD:0.1000 μ:0.000244
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5063 WD:0.1000 μ:-0.000047
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5159 WD:0.1000 μ:0.000121
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5204 WD:0.1000 μ:-0.000042
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5245 WD:0.1000 μ:-0.000171
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5247 WD:0.1000 μ:-0.000211
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5236 WD:0.1000 μ:0.000123
+
+==================================================
+  Seed: 2042
+  Grokking: epoch 4897
+  Max dynamic WD: 2.6046
+==================================================
+  Saved: figures/phase4b_exp3_cv_adamw_seed2042.png
+
+>>> Plotting WD comparison (4A vs 4B) | seed=2042
+Loading Phase 4A: data/phase4a_exp3_metrics_seed2042.csv
+Loading Phase 4B: data/phase4b_exp3_metrics_seed2042.csv
+
+Saved: figures/wd_comparison_4a_vs_4b_seed2042.png
+
+--- Seed 2042 complete ---
+
+############################################
+# SEED: 3042
+############################################
+
+>>> Phase 3 (Baseline + Ghost Triggers) | seed=3042
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=10000, seed=3042
+  Profiler tau=0.015, Z-score threshold=3.0
+  Device: cuda
+
+  Epoch 100/10000 | TrLoss:0.0385 VLoss:3.4011 | TrAcc:1.0000 VAcc:0.5022 | Cv:3.4730
+  Epoch 200/10000 | TrLoss:0.0083 VLoss:3.5353 | TrAcc:1.0000 VAcc:0.5035 | Cv:3.1083
+  Epoch 300/10000 | TrLoss:0.0037 VLoss:3.6077 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.8463
+  Epoch 400/10000 | TrLoss:0.0020 VLoss:3.6563 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.6273
+  Epoch 500/10000 | TrLoss:0.0011 VLoss:3.7053 | TrAcc:1.0000 VAcc:0.5035 | Cv:2.4644
+  Epoch 600/10000 | TrLoss:0.0007 VLoss:3.7510 | TrAcc:1.0000 VAcc:0.5037 | Cv:2.3073
+  Epoch 700/10000 | TrLoss:0.0004 VLoss:3.8040 | TrAcc:1.0000 VAcc:0.5041 | Cv:2.1821
+  Epoch 800/10000 | TrLoss:0.0002 VLoss:3.8501 | TrAcc:1.0000 VAcc:0.5039 | Cv:2.0562
+  Epoch 900/10000 | TrLoss:0.0001 VLoss:3.9090 | TrAcc:1.0000 VAcc:0.5044 | Cv:1.9589
+  Epoch 1000/10000 | TrLoss:0.0001 VLoss:3.9593 | TrAcc:1.0000 VAcc:0.5046 | Cv:1.8667
+  Epoch 1100/10000 | TrLoss:0.0000 VLoss:4.0237 | TrAcc:1.0000 VAcc:0.5050 | Cv:1.7891
+    [PROFILER] Triggered at epoch 1160 (velocity=0.239272 > tau=0.015)
+    [Z-SCORE] Triggered at epoch 1160 (z=9.06 > 3.0)
+    [KINEMATIC] Triggered at epoch 1171 (v=0.104273>0, a=-0.082033<0)
+  Epoch 1200/10000 | TrLoss:0.0044 VLoss:3.8240 | TrAcc:1.0000 VAcc:0.5039 | Cv:7.4615
+  Epoch 1300/10000 | TrLoss:0.0013 VLoss:3.7606 | TrAcc:1.0000 VAcc:0.5046 | Cv:4.8483
+  Epoch 1400/10000 | TrLoss:0.0008 VLoss:3.6809 | TrAcc:1.0000 VAcc:0.5056 | Cv:3.5385
+  Epoch 1500/10000 | TrLoss:0.0006 VLoss:3.6262 | TrAcc:1.0000 VAcc:0.5063 | Cv:2.7883
+  Epoch 1600/10000 | TrLoss:0.0004 VLoss:3.6020 | TrAcc:1.0000 VAcc:0.5069 | Cv:2.3515
+  Epoch 1700/10000 | TrLoss:0.0003 VLoss:3.6022 | TrAcc:1.0000 VAcc:0.5073 | Cv:2.0739
+  Epoch 1800/10000 | TrLoss:0.0002 VLoss:3.6369 | TrAcc:1.0000 VAcc:0.5065 | Cv:1.8803
+  Epoch 1900/10000 | TrLoss:0.0001 VLoss:3.6862 | TrAcc:1.0000 VAcc:0.5061 | Cv:1.7301
+  Epoch 2000/10000 | TrLoss:0.0001 VLoss:3.7489 | TrAcc:1.0000 VAcc:0.5069 | Cv:1.6209
+  Epoch 2100/10000 | TrLoss:0.0034 VLoss:3.2654 | TrAcc:1.0000 VAcc:0.5099 | Cv:7.7451
+  Epoch 2200/10000 | TrLoss:0.0013 VLoss:3.2295 | TrAcc:1.0000 VAcc:0.5099 | Cv:4.8912
+  Epoch 2300/10000 | TrLoss:0.0008 VLoss:3.1801 | TrAcc:1.0000 VAcc:0.5092 | Cv:3.4411
+  Epoch 2400/10000 | TrLoss:0.0006 VLoss:3.1509 | TrAcc:1.0000 VAcc:0.5101 | Cv:2.6571
+  Epoch 2500/10000 | TrLoss:0.0004 VLoss:3.1383 | TrAcc:1.0000 VAcc:0.5097 | Cv:2.2196
+  Epoch 2600/10000 | TrLoss:0.0003 VLoss:3.1482 | TrAcc:1.0000 VAcc:0.5090 | Cv:1.9596
+  Epoch 2700/10000 | TrLoss:0.0002 VLoss:3.1738 | TrAcc:1.0000 VAcc:0.5103 | Cv:1.7825
+  Epoch 2800/10000 | TrLoss:2.0282 VLoss:4.1522 | TrAcc:0.5614 VAcc:0.1671 | Cv:15.9796
+  Epoch 2900/10000 | TrLoss:0.0032 VLoss:2.2997 | TrAcc:1.0000 VAcc:0.5365 | Cv:6.1021
+  Epoch 3000/10000 | TrLoss:0.0012 VLoss:2.2744 | TrAcc:1.0000 VAcc:0.5420 | Cv:4.2711
+  Epoch 3100/10000 | TrLoss:0.0007 VLoss:2.2292 | TrAcc:1.0000 VAcc:0.5447 | Cv:3.2165
+  Epoch 3200/10000 | TrLoss:0.0005 VLoss:2.1985 | TrAcc:1.0000 VAcc:0.5471 | Cv:2.5671
+  Epoch 3300/10000 | TrLoss:0.0131 VLoss:1.0413 | TrAcc:1.0000 VAcc:0.6640 | Cv:8.5767
+  Epoch 3400/10000 | TrLoss:0.0018 VLoss:1.2033 | TrAcc:1.0000 VAcc:0.6508 | Cv:5.1908
+  Epoch 3500/10000 | TrLoss:0.0008 VLoss:1.1547 | TrAcc:1.0000 VAcc:0.6659 | Cv:3.6460
+  Epoch 3600/10000 | TrLoss:0.0005 VLoss:1.0667 | TrAcc:1.0000 VAcc:0.6867 | Cv:2.7474
+  Epoch 3700/10000 | TrLoss:0.0004 VLoss:0.9809 | TrAcc:1.0000 VAcc:0.7122 | Cv:2.2007
+  Epoch 3800/10000 | TrLoss:0.0003 VLoss:0.8901 | TrAcc:1.0000 VAcc:0.7348 | Cv:1.8410
+  Epoch 3900/10000 | TrLoss:0.0002 VLoss:0.8026 | TrAcc:1.0000 VAcc:0.7583 | Cv:1.5884
+  Epoch 4000/10000 | TrLoss:0.0001 VLoss:0.7043 | TrAcc:1.0000 VAcc:0.7834 | Cv:1.3883
+  Epoch 4100/10000 | TrLoss:0.0030 VLoss:0.2777 | TrAcc:1.0000 VAcc:0.9120 | Cv:5.2051
+  Epoch 4200/10000 | TrLoss:0.0007 VLoss:0.2085 | TrAcc:1.0000 VAcc:0.9367 | Cv:3.3489
+  Epoch 4300/10000 | TrLoss:0.0004 VLoss:0.1424 | TrAcc:1.0000 VAcc:0.9583 | Cv:2.3468
+  Epoch 4400/10000 | TrLoss:0.0003 VLoss:0.0977 | TrAcc:1.0000 VAcc:0.9734 | Cv:1.7042
+  Epoch 4500/10000 | TrLoss:0.0002 VLoss:0.0701 | TrAcc:1.0000 VAcc:0.9860 | Cv:1.2924
+  Epoch 4600/10000 | TrLoss:0.0002 VLoss:0.0512 | TrAcc:1.0000 VAcc:0.9896 | Cv:1.0285
+  Epoch 4700/10000 | TrLoss:0.0001 VLoss:0.0356 | TrAcc:1.0000 VAcc:0.9932 | Cv:0.8548
+  Epoch 4800/10000 | TrLoss:0.0001 VLoss:0.0235 | TrAcc:1.0000 VAcc:0.9957 | Cv:0.7348
+  Epoch 4900/10000 | TrLoss:0.0000 VLoss:0.0144 | TrAcc:1.0000 VAcc:0.9974 | Cv:0.6456
+  Epoch 5000/10000 | TrLoss:0.0000 VLoss:0.0088 | TrAcc:1.0000 VAcc:0.9979 | Cv:0.5761
+  Epoch 5100/10000 | TrLoss:0.0000 VLoss:0.0051 | TrAcc:1.0000 VAcc:0.9987 | Cv:0.5205
+  Epoch 5200/10000 | TrLoss:0.0000 VLoss:0.0025 | TrAcc:1.0000 VAcc:0.9996 | Cv:0.4750
+  Epoch 5300/10000 | TrLoss:0.0000 VLoss:0.0011 | TrAcc:1.0000 VAcc:0.9998 | Cv:0.4382
+  Epoch 5400/10000 | TrLoss:0.0000 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4084
+  Epoch 5500/10000 | TrLoss:0.0000 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3840
+  Epoch 5600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3659
+  Epoch 5700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3478
+  Epoch 5800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3338
+  Epoch 5900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3227
+  Epoch 6000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3130
+  Epoch 6100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3049
+  Epoch 6200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3039
+  Epoch 6300/10000 | TrLoss:0.0038 VLoss:0.0154 | TrAcc:1.0000 VAcc:0.9981 | Cv:3.8523
+  Epoch 6400/10000 | TrLoss:0.0011 VLoss:0.0046 | TrAcc:1.0000 VAcc:0.9998 | Cv:2.7999
+  Epoch 6500/10000 | TrLoss:0.0006 VLoss:0.0023 | TrAcc:1.0000 VAcc:0.9998 | Cv:2.1458
+  Epoch 6600/10000 | TrLoss:0.0003 VLoss:0.0011 | TrAcc:1.0000 VAcc:0.9998 | Cv:1.6573
+  Epoch 6700/10000 | TrLoss:0.0001 VLoss:0.0005 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2697
+  Epoch 6800/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.9666
+  Epoch 6900/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7505
+  Epoch 7000/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5967
+  Epoch 7100/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4956
+  Epoch 7200/10000 | TrLoss:0.0014 VLoss:0.0021 | TrAcc:1.0000 VAcc:1.0000 | Cv:4.2140
+  Epoch 7300/10000 | TrLoss:0.0005 VLoss:0.0008 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.0918
+  Epoch 7400/10000 | TrLoss:0.0003 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.3338
+  Epoch 7500/10000 | TrLoss:0.0002 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7799
+  Epoch 7600/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3606
+  Epoch 7700/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0578
+  Epoch 7800/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8448
+  Epoch 7900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6890
+  Epoch 8000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5869
+  Epoch 8100/10000 | TrLoss:0.0008 VLoss:0.0010 | TrAcc:1.0000 VAcc:1.0000 | Cv:3.4181
+  Epoch 8200/10000 | TrLoss:0.0003 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.6275
+  Epoch 8300/10000 | TrLoss:0.0002 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.0347
+  Epoch 8400/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.5795
+  Epoch 8500/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.2486
+  Epoch 8600/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0027
+  Epoch 8700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8102
+  Epoch 8800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6627
+  Epoch 8900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5562
+  Epoch 9000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4795
+  Epoch 9100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4258
+  Epoch 9200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3918
+  Epoch 9300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3714
+  Epoch 9400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3599
+  Epoch 9500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3532
+  Epoch 9600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3483
+  Epoch 9700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3450
+  Epoch 9800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3397
+  Epoch 9900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3359
+  Epoch 10000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3310
+
+==================================================
+PHASE 3 RESULTS (seed=3042)
+==================================================
+  Profiler triggered:  epoch 1160
+  Z-Score triggered:   epoch 1160
+  Kinematic triggered: epoch 1171
+  Natural grokking:    epoch 4051
+  LAG (kinematic -> grokking): 2880 epochs
+==================================================
+
+  Saved: data/phase3_exp3_metrics_seed3042.csv
+  Saved: data/phase3_exp3_benchmark_results_seed3042.json
+  Saved: figures/phase3_exp3_triggers_seed3042.png
+  Saved: figures/phase3_exp3_kinematics_seed3042.png
+
+>>> Phase 4A (Step-Function Heat Spike) | seed=3042
+Phase 4A: Active Thermodynamic Optimization (Training Loop)
+  base_wd=0.1, spike_wd=1.0, cooldown=50
+  p=97, epochs=10000, seed=3042, device=cuda
+
+  Epoch 100 | Loss:0.0385 TrAcc:1.0000 VAcc:0.5022 Cv:3.4730 WD:0.1
+  Epoch 200 | Loss:0.0083 TrAcc:1.0000 VAcc:0.5035 Cv:3.1083 WD:0.1
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5029 Cv:2.8463 WD:0.1
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5029 Cv:2.6273 WD:0.1
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5035 Cv:2.4644 WD:0.1
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5037 Cv:2.3073 WD:0.1
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5041 Cv:2.1821 WD:0.1
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5039 Cv:2.0562 WD:0.1
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5044 Cv:1.9589 WD:0.1
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5046 Cv:1.8667 WD:0.1
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5050 Cv:1.7891 WD:0.1
+  🔥 KINEMATIC TRIGGER at epoch 1171! Injecting heat (wd=1.0)
+  Epoch 1200 | Loss:0.0098 TrAcc:1.0000 VAcc:0.5037 Cv:4.2055 WD:1.0
+  ❄️ Cooldown at epoch 1221. Returning to wd=0.1
+  Epoch 1300 | Loss:0.0026 TrAcc:1.0000 VAcc:0.5063 Cv:2.1477 WD:0.1
+  Epoch 1400 | Loss:0.0014 TrAcc:1.0000 VAcc:0.5071 Cv:1.8588 WD:0.1
+  Epoch 1500 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5061 Cv:1.6803 WD:0.1
+  Epoch 1600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5063 Cv:1.5540 WD:0.1
+  Epoch 1700 | Loss:0.0043 TrAcc:1.0000 VAcc:0.5099 Cv:6.3826 WD:0.1
+  Epoch 1800 | Loss:0.0015 TrAcc:1.0000 VAcc:0.5095 Cv:4.2595 WD:0.1
+  Epoch 1900 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5088 Cv:3.1891 WD:0.1
+  Epoch 2000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5092 Cv:2.5866 WD:0.1
+  Epoch 2100 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5103 Cv:2.2209 WD:0.1
+  Epoch 2200 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5101 Cv:1.9739 WD:0.1
+  Epoch 2300 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5112 Cv:1.7994 WD:0.1
+  Epoch 2400 | Loss:3.9189 TrAcc:0.2175 VAcc:0.0417 Cv:12.6155 WD:0.1
+  Epoch 2500 | Loss:0.0022 TrAcc:1.0000 VAcc:0.5494 Cv:4.6572 WD:0.1
+  Epoch 2600 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5524 Cv:3.2860 WD:0.1
+  Epoch 2700 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5490 Cv:2.5481 WD:0.1
+  Epoch 2800 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5494 Cv:2.1173 WD:0.1
+  Epoch 2900 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5522 Cv:1.8435 WD:0.1
+  Epoch 3000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5530 Cv:1.6551 WD:0.1
+  Epoch 3100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5528 Cv:1.5162 WD:0.1
+  Epoch 3200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5571 Cv:1.4095 WD:0.1
+  Epoch 3300 | Loss:2.1229 TrAcc:0.5359 VAcc:0.1991 Cv:15.6849 WD:0.1
+  Epoch 3400 | Loss:0.0039 TrAcc:1.0000 VAcc:0.7792 Cv:3.6231 WD:0.1
+  Epoch 3500 | Loss:0.0012 TrAcc:1.0000 VAcc:0.8183 Cv:2.3314 WD:0.1
+  Epoch 3600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.8531 Cv:1.6146 WD:0.1
+  Epoch 3700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9003 Cv:1.1762 WD:0.1
+  Epoch 3800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9313 Cv:0.9055 WD:0.1
+  Epoch 3900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9562 Cv:0.7356 WD:0.1
+  Epoch 4000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9728 Cv:0.6262 WD:0.1
+  Epoch 4100 | Loss:0.0047 TrAcc:1.0000 VAcc:0.9968 Cv:4.4272 WD:0.1
+  Epoch 4200 | Loss:0.0009 TrAcc:1.0000 VAcc:0.9968 Cv:2.9191 WD:0.1
+  Epoch 4300 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9989 Cv:2.0751 WD:0.1
+  Epoch 4400 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9991 Cv:1.5025 WD:0.1
+  Epoch 4500 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9998 Cv:1.1224 WD:0.1
+  Epoch 4600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9998 Cv:0.8676 WD:0.1
+  Epoch 4700 | Loss:0.0012 TrAcc:1.0000 VAcc:1.0000 Cv:5.1562 WD:0.1
+  Epoch 4800 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:3.8084 WD:0.1
+  Epoch 4900 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.8395 WD:0.1
+  Epoch 5000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:2.1230 WD:0.1
+  Epoch 5100 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.6003 WD:0.1
+  Epoch 5200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2297 WD:0.1
+  Epoch 5300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9747 WD:0.1
+  Epoch 5400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7975 WD:0.1
+  Epoch 5500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6703 WD:0.1
+  Epoch 5600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5762 WD:0.1
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5036 WD:0.1
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4468 WD:0.1
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4011 WD:0.1
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3653 WD:0.1
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3378 WD:0.1
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3178 WD:0.1
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3031 WD:0.1
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2947 WD:0.1
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2904 WD:0.1
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2870 WD:0.1
+  Epoch 6700 | Loss:0.0079 TrAcc:1.0000 VAcc:0.9989 Cv:3.0716 WD:0.1
+  Epoch 6800 | Loss:0.0008 TrAcc:1.0000 VAcc:1.0000 Cv:2.3039 WD:0.1
+  Epoch 6900 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:1.8010 WD:0.1
+  Epoch 7000 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.4146 WD:0.1
+  Epoch 7100 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1109 WD:0.1
+  Epoch 7200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8668 WD:0.1
+  Epoch 7300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.6777 WD:0.1
+  Epoch 7400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.5333 WD:0.1
+  Epoch 7500 | Loss:0.0043 TrAcc:1.0000 VAcc:1.0000 Cv:3.5406 WD:0.1
+  Epoch 7600 | Loss:0.0011 TrAcc:1.0000 VAcc:1.0000 Cv:2.7173 WD:0.1
+  Epoch 7700 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:2.1778 WD:0.1
+  Epoch 7800 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.7560 WD:0.1
+  Epoch 7900 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.4125 WD:0.1
+  Epoch 8000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1341 WD:0.1
+  Epoch 8100 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9148 WD:0.1
+  Epoch 8200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7441 WD:0.1
+  Epoch 8300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6123 WD:0.1
+  Epoch 8400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5121 WD:0.1
+  Epoch 8500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4370 WD:0.1
+  Epoch 8600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3833 WD:0.1
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3483 WD:0.1
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3275 WD:0.1
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3158 WD:0.1
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3098 WD:0.1
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3062 WD:0.1
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3024 WD:0.1
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2995 WD:0.1
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2958 WD:0.1
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2911 WD:0.1
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.2881 WD:0.1
+  Epoch 9700 | Loss:0.0130 TrAcc:1.0000 VAcc:1.0000 Cv:1.6765 WD:0.1
+  Epoch 9800 | Loss:0.0016 TrAcc:1.0000 VAcc:1.0000 Cv:1.3334 WD:0.1
+  Epoch 9900 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 Cv:1.1003 WD:0.1
+  Epoch 10000 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:0.9185 WD:0.1
+
+==================================================
+  Seed: 3042
+  Trigger: epoch 1171
+  Grokking: epoch 3700
+  Lag: 2529 epochs
+==================================================
+  Saved: figures/phase4a_exp3_intervention_seed3042.png
+
+>>> Phase 4B (CvAdamW) | seed=3042
+Phase 4B: CvAdamW — Thermodynamically-Aware Optimizer
+  kappa=5.0, tau=0.02, alpha=0.9, base_wd=0.1
+  p=97, epochs=10000, seed=3042, device=cuda
+
+  Epoch 100 | Loss:0.0385 TrAcc:1.0000 VAcc:0.5022 Cv:3.4730 WD:0.1000 μ:-0.015973
+  Epoch 200 | Loss:0.0083 TrAcc:1.0000 VAcc:0.5035 Cv:3.1083 WD:0.1000 μ:0.007615
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5029 Cv:2.8463 WD:0.1000 μ:0.003238
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5029 Cv:2.6273 WD:0.1000 μ:-0.004753
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5035 Cv:2.4644 WD:0.1000 μ:0.004313
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5037 Cv:2.3073 WD:0.1000 μ:-0.006006
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5041 Cv:2.1821 WD:0.1000 μ:0.001886
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5039 Cv:2.0562 WD:0.1000 μ:-0.005999
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5044 Cv:1.9589 WD:0.1000 μ:-0.000500
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5046 Cv:1.8667 WD:0.1000 μ:-0.003037
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5050 Cv:1.7891 WD:0.1000 μ:0.004003
+  Epoch 1200 | Loss:0.0056 TrAcc:1.0000 VAcc:0.5041 Cv:5.5694 WD:0.1000 μ:-0.002200
+  Epoch 1300 | Loss:0.0016 TrAcc:1.0000 VAcc:0.5050 Cv:3.6581 WD:0.1000 μ:0.009863
+  Epoch 1400 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5061 Cv:2.8022 WD:0.1000 μ:0.001017
+  Epoch 1500 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5067 Cv:2.3346 WD:0.1000 μ:-0.000402
+  Epoch 1600 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5067 Cv:2.0499 WD:0.1000 μ:0.002259
+  Epoch 1700 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5065 Cv:1.8520 WD:0.1000 μ:0.000394
+  Epoch 1800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5063 Cv:1.7102 WD:0.1000 μ:0.004199
+  Epoch 1900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5063 Cv:1.5952 WD:0.1000 μ:-0.001502
+  Epoch 2000 | Loss:0.0062 TrAcc:1.0000 VAcc:0.5107 Cv:7.2118 WD:0.1000 μ:-0.010374
+  Epoch 2100 | Loss:0.0018 TrAcc:1.0000 VAcc:0.5109 Cv:4.5316 WD:0.1000 μ:0.002652
+  Epoch 2200 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5120 Cv:3.2884 WD:0.1000 μ:-0.001143
+  Epoch 2300 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5129 Cv:2.5948 WD:0.1000 μ:-0.002325
+  Epoch 2400 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5112 Cv:2.1870 WD:0.1000 μ:0.001500
+  Epoch 2500 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5120 Cv:1.9224 WD:0.1000 μ:-0.003345
+  Epoch 2600 | Loss:1.7649 TrAcc:0.6677 VAcc:0.2323 Cv:17.5994 WD:1.1013 μ:0.220268
+  Epoch 2700 | Loss:0.0027 TrAcc:1.0000 VAcc:0.5492 Cv:3.7262 WD:0.1000 μ:-0.003778
+  Epoch 2800 | Loss:0.0014 TrAcc:1.0000 VAcc:0.5532 Cv:2.6698 WD:0.1000 μ:-0.001282
+  Epoch 2900 | Loss:0.0009 TrAcc:1.0000 VAcc:0.5562 Cv:2.1487 WD:0.1000 μ:0.000547
+  Epoch 3000 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5541 Cv:1.8569 WD:0.1000 μ:-0.000820
+  Epoch 3100 | Loss:0.0178 TrAcc:1.0000 VAcc:0.7039 Cv:6.7971 WD:0.1000 μ:-0.012490
+  Epoch 3200 | Loss:0.0013 TrAcc:1.0000 VAcc:0.6995 Cv:3.5025 WD:0.1000 μ:0.002397
+  Epoch 3300 | Loss:0.0007 TrAcc:1.0000 VAcc:0.7133 Cv:2.4599 WD:0.1000 μ:-0.003422
+  Epoch 3400 | Loss:0.0005 TrAcc:1.0000 VAcc:0.7294 Cv:1.8975 WD:0.1000 μ:-0.001144
+  Epoch 3500 | Loss:0.0003 TrAcc:1.0000 VAcc:0.7515 Cv:1.5578 WD:0.1000 μ:0.001713
+  Epoch 3600 | Loss:0.0002 TrAcc:1.0000 VAcc:0.7773 Cv:1.3293 WD:0.1000 μ:-0.001328
+  Epoch 3700 | Loss:0.0001 TrAcc:1.0000 VAcc:0.8015 Cv:1.1655 WD:0.1000 μ:0.001064
+  Epoch 3800 | Loss:0.0001 TrAcc:1.0000 VAcc:0.8283 Cv:1.0389 WD:0.1000 μ:0.000426
+  Epoch 3900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.8540 Cv:0.9359 WD:0.1000 μ:0.000417
+  Epoch 4000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.8774 Cv:0.8500 WD:0.1000 μ:-0.000417
+  Epoch 4100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9003 Cv:0.7810 WD:0.1000 μ:0.000506
+  Epoch 4200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9222 Cv:0.7220 WD:0.1000 μ:-0.000273
+  Epoch 4300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9430 Cv:0.6728 WD:0.1000 μ:-0.000315
+  Epoch 4400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9579 Cv:0.6333 WD:0.1000 μ:0.000424
+  Epoch 4500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9664 Cv:0.5996 WD:0.1000 μ:0.000036
+  Epoch 4600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9758 Cv:0.5724 WD:0.1000 μ:0.000325
+  Epoch 4700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9824 Cv:0.5500 WD:0.1000 μ:-0.000078
+  Epoch 4800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9862 Cv:0.5321 WD:0.1000 μ:-0.000512
+  Epoch 4900 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9892 Cv:0.5170 WD:0.1000 μ:-0.000342
+  Epoch 5000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9911 Cv:0.5047 WD:0.1000 μ:0.000023
+  Epoch 5100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9945 Cv:0.4956 WD:0.1000 μ:-0.000105
+  Epoch 5200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9960 Cv:0.4942 WD:0.1000 μ:-0.000587
+  Epoch 5300 | Loss:0.0067 TrAcc:1.0000 VAcc:0.9832 Cv:5.0925 WD:0.1000 μ:-0.003023
+  Epoch 5400 | Loss:0.0008 TrAcc:1.0000 VAcc:0.9921 Cv:3.1340 WD:0.1000 μ:-0.003412
+  Epoch 5500 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9962 Cv:2.1673 WD:0.1000 μ:-0.002897
+  Epoch 5600 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9996 Cv:1.5125 WD:0.1000 μ:-0.000219
+  Epoch 5700 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0594 WD:0.1000 μ:0.000220
+  Epoch 5800 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.7684 WD:0.1000 μ:-0.000238
+  Epoch 5900 | Loss:0.0011 TrAcc:1.0000 VAcc:0.9996 Cv:5.0948 WD:0.1000 μ:-0.001815
+  Epoch 6000 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:3.6528 WD:0.1000 μ:-0.002590
+  Epoch 6100 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.6962 WD:0.1000 μ:-0.000988
+  Epoch 6200 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.9942 WD:0.1000 μ:0.000084
+  Epoch 6300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.4797 WD:0.1000 μ:0.000058
+  Epoch 6400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1362 WD:0.1000 μ:-0.000594
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9035 WD:0.1000 μ:0.000087
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7331 WD:0.1000 μ:-0.000084
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6076 WD:0.1000 μ:0.000293
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5168 WD:0.1000 μ:-0.000048
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4536 WD:0.1000 μ:-0.000320
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4123 WD:0.1000 μ:0.000124
+  Epoch 7100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3864 WD:0.1000 μ:0.000067
+  Epoch 7200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3720 WD:0.1000 μ:0.000109
+  Epoch 7300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3648 WD:0.1000 μ:0.000394
+  Epoch 7400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3612 WD:0.1000 μ:0.000001
+  Epoch 7500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3581 WD:0.1000 μ:0.000034
+  Epoch 7600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3560 WD:0.1000 μ:0.000163
+  Epoch 7700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3544 WD:0.1000 μ:-0.000193
+  Epoch 7800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3505 WD:0.1000 μ:-0.000185
+  Epoch 7900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3495 WD:0.1000 μ:0.000332
+  Epoch 8000 | Loss:0.0049 TrAcc:1.0000 VAcc:0.9998 Cv:5.0147 WD:0.1000 μ:-0.006763
+  Epoch 8100 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 Cv:3.5906 WD:0.1000 μ:-0.002509
+  Epoch 8200 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.7677 WD:0.1000 μ:-0.001341
+  Epoch 8300 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:2.1420 WD:0.1000 μ:-0.001481
+  Epoch 8400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.6432 WD:0.1000 μ:0.000106
+  Epoch 8500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2407 WD:0.1000 μ:0.000015
+  Epoch 8600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9190 WD:0.1000 μ:-0.000097
+  Epoch 8700 | Loss:0.0025 TrAcc:1.0000 VAcc:1.0000 Cv:4.1488 WD:0.1000 μ:0.003811
+  Epoch 8800 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:3.1575 WD:0.1000 μ:0.000132
+  Epoch 8900 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:2.4929 WD:0.1000 μ:-0.002787
+  Epoch 9000 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.9835 WD:0.1000 μ:-0.000503
+  Epoch 9100 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.5753 WD:0.1000 μ:-0.001756
+  Epoch 9200 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2486 WD:0.1000 μ:0.001525
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.9846 WD:0.1000 μ:0.000329
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7997 WD:0.1000 μ:-0.000027
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6675 WD:0.1000 μ:-0.000726
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5735 WD:0.1000 μ:-0.000076
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5136 WD:0.1000 μ:0.000380
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4792 WD:0.1000 μ:-0.000309
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4633 WD:0.1000 μ:0.000187
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4574 WD:0.1000 μ:-0.000098
+
+==================================================
+  Seed: 3042
+  Grokking: epoch 4076
+  Max dynamic WD: 1.4945
+==================================================
+  Saved: figures/phase4b_exp3_cv_adamw_seed3042.png
+
+>>> Plotting WD comparison (4A vs 4B) | seed=3042
+Loading Phase 4A: data/phase4a_exp3_metrics_seed3042.csv
+Loading Phase 4B: data/phase4b_exp3_metrics_seed3042.csv
+
+Saved: figures/wd_comparison_4a_vs_4b_seed3042.png
+
+--- Seed 3042 complete ---
+
+############################################
+# SEED: 4042
+############################################
+
+>>> Phase 3 (Baseline + Ghost Triggers) | seed=4042
+Phase 3: Multi-Method Trigger Benchmarking
+  p=97, epochs=10000, seed=4042
+  Profiler tau=0.015, Z-score threshold=3.0
+  Device: cuda
+
+  Epoch 100/10000 | TrLoss:0.0394 VLoss:3.4123 | TrAcc:1.0000 VAcc:0.5010 | Cv:4.9072
+  Epoch 200/10000 | TrLoss:0.0084 VLoss:3.5573 | TrAcc:1.0000 VAcc:0.5018 | Cv:4.3798
+  Epoch 300/10000 | TrLoss:0.0037 VLoss:3.6309 | TrAcc:1.0000 VAcc:0.5022 | Cv:4.0005
+  Epoch 400/10000 | TrLoss:0.0020 VLoss:3.6973 | TrAcc:1.0000 VAcc:0.5020 | Cv:3.7108
+  Epoch 500/10000 | TrLoss:0.0011 VLoss:3.7529 | TrAcc:1.0000 VAcc:0.5020 | Cv:3.4586
+  Epoch 600/10000 | TrLoss:0.0007 VLoss:3.8149 | TrAcc:1.0000 VAcc:0.5020 | Cv:3.2562
+  Epoch 700/10000 | TrLoss:0.0004 VLoss:3.8725 | TrAcc:1.0000 VAcc:0.5022 | Cv:3.0815
+  Epoch 800/10000 | TrLoss:0.0002 VLoss:3.9398 | TrAcc:1.0000 VAcc:0.5027 | Cv:2.9245
+  Epoch 900/10000 | TrLoss:0.0001 VLoss:4.0023 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.7837
+  Epoch 1000/10000 | TrLoss:0.0001 VLoss:4.0655 | TrAcc:1.0000 VAcc:0.5035 | Cv:2.6605
+  Epoch 1100/10000 | TrLoss:0.0000 VLoss:4.1362 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.5491
+  Epoch 1200/10000 | TrLoss:0.0000 VLoss:4.2160 | TrAcc:1.0000 VAcc:0.5031 | Cv:2.4501
+  Epoch 1300/10000 | TrLoss:0.0000 VLoss:4.2714 | TrAcc:1.0000 VAcc:0.5029 | Cv:2.3573
+    [PROFILER] Triggered at epoch 1324 (velocity=0.032949 > tau=0.015)
+    [KINEMATIC] Triggered at epoch 1324 (v=0.032949>0, a=-0.045698<0)
+  Epoch 1400/10000 | TrLoss:0.0020 VLoss:3.9957 | TrAcc:1.0000 VAcc:0.5039 | Cv:8.2929
+  Epoch 1500/10000 | TrLoss:0.0010 VLoss:3.9125 | TrAcc:1.0000 VAcc:0.5035 | Cv:5.8816
+  Epoch 1600/10000 | TrLoss:0.0006 VLoss:3.8307 | TrAcc:1.0000 VAcc:0.5039 | Cv:4.4596
+  Epoch 1700/10000 | TrLoss:0.0005 VLoss:3.7756 | TrAcc:1.0000 VAcc:0.5046 | Cv:3.5927
+  Epoch 1800/10000 | TrLoss:0.0003 VLoss:3.7415 | TrAcc:1.0000 VAcc:0.5050 | Cv:3.0593
+  Epoch 1900/10000 | TrLoss:0.0002 VLoss:3.7447 | TrAcc:1.0000 VAcc:0.5048 | Cv:2.7201
+  Epoch 2000/10000 | TrLoss:0.0001 VLoss:3.7535 | TrAcc:1.0000 VAcc:0.5054 | Cv:2.4751
+  Epoch 2100/10000 | TrLoss:0.0001 VLoss:3.8039 | TrAcc:1.0000 VAcc:0.5054 | Cv:2.2998
+  Epoch 2200/10000 | TrLoss:0.0001 VLoss:3.8564 | TrAcc:1.0000 VAcc:0.5046 | Cv:2.1646
+  Epoch 2300/10000 | TrLoss:0.0027 VLoss:3.4890 | TrAcc:1.0000 VAcc:0.5061 | Cv:7.6059
+  Epoch 2400/10000 | TrLoss:0.0011 VLoss:3.4029 | TrAcc:1.0000 VAcc:0.5082 | Cv:5.3969
+  Epoch 2500/10000 | TrLoss:0.0007 VLoss:3.3353 | TrAcc:1.0000 VAcc:0.5092 | Cv:4.0881
+  Epoch 2600/10000 | TrLoss:0.0005 VLoss:3.2930 | TrAcc:1.0000 VAcc:0.5095 | Cv:3.2747
+  Epoch 2700/10000 | TrLoss:0.0003 VLoss:3.2788 | TrAcc:1.0000 VAcc:0.5109 | Cv:2.7831
+  Epoch 2800/10000 | TrLoss:0.0002 VLoss:3.2841 | TrAcc:1.0000 VAcc:0.5109 | Cv:2.4709
+  Epoch 2900/10000 | TrLoss:1.4881 VLoss:3.8100 | TrAcc:0.6920 VAcc:0.2187 | Cv:23.8771
+  Epoch 3000/10000 | TrLoss:0.0026 VLoss:2.3783 | TrAcc:1.0000 VAcc:0.5409 | Cv:7.1954
+  Epoch 3100/10000 | TrLoss:0.0012 VLoss:2.2815 | TrAcc:1.0000 VAcc:0.5475 | Cv:5.1088
+  Epoch 3200/10000 | TrLoss:0.0008 VLoss:2.2199 | TrAcc:1.0000 VAcc:0.5503 | Cv:3.8206
+  Epoch 3300/10000 | TrLoss:0.0005 VLoss:2.1769 | TrAcc:1.0000 VAcc:0.5539 | Cv:2.9997
+  Epoch 3400/10000 | TrLoss:0.0004 VLoss:2.1402 | TrAcc:1.0000 VAcc:0.5592 | Cv:2.4808
+  Epoch 3500/10000 | TrLoss:0.0002 VLoss:2.1509 | TrAcc:1.0000 VAcc:0.5581 | Cv:2.1413
+  Epoch 3600/10000 | TrLoss:0.0096 VLoss:1.3149 | TrAcc:1.0000 VAcc:0.6366 | Cv:7.2685
+  Epoch 3700/10000 | TrLoss:0.0013 VLoss:1.1328 | TrAcc:1.0000 VAcc:0.6797 | Cv:4.3296
+  Epoch 3800/10000 | TrLoss:0.0007 VLoss:1.0468 | TrAcc:1.0000 VAcc:0.7018 | Cv:3.1016
+  Epoch 3900/10000 | TrLoss:0.0005 VLoss:0.9919 | TrAcc:1.0000 VAcc:0.7216 | Cv:2.3673
+  Epoch 4000/10000 | TrLoss:0.0004 VLoss:0.9472 | TrAcc:1.0000 VAcc:0.7288 | Cv:1.9128
+  Epoch 4100/10000 | TrLoss:0.0003 VLoss:0.8944 | TrAcc:1.0000 VAcc:0.7437 | Cv:1.6289
+    [Z-SCORE] Triggered at epoch 4180 (z=4.71 > 3.0)
+  Epoch 4200/10000 | TrLoss:0.0081 VLoss:0.5032 | TrAcc:1.0000 VAcc:0.8387 | Cv:6.8829
+  Epoch 4300/10000 | TrLoss:0.0012 VLoss:0.2912 | TrAcc:1.0000 VAcc:0.9197 | Cv:4.4972
+  Epoch 4400/10000 | TrLoss:0.0006 VLoss:0.1988 | TrAcc:1.0000 VAcc:0.9507 | Cv:3.2244
+  Epoch 4500/10000 | TrLoss:0.0004 VLoss:0.1451 | TrAcc:1.0000 VAcc:0.9679 | Cv:2.3868
+  Epoch 4600/10000 | TrLoss:0.0003 VLoss:0.1105 | TrAcc:1.0000 VAcc:0.9790 | Cv:1.8109
+  Epoch 4700/10000 | TrLoss:0.0002 VLoss:0.0882 | TrAcc:1.0000 VAcc:0.9838 | Cv:1.4292
+  Epoch 4800/10000 | TrLoss:0.0001 VLoss:0.0713 | TrAcc:1.0000 VAcc:0.9885 | Cv:1.1750
+  Epoch 4900/10000 | TrLoss:0.0001 VLoss:0.0552 | TrAcc:1.0000 VAcc:0.9904 | Cv:0.9932
+  Epoch 5000/10000 | TrLoss:0.0000 VLoss:0.0402 | TrAcc:1.0000 VAcc:0.9923 | Cv:0.8563
+  Epoch 5100/10000 | TrLoss:0.0000 VLoss:0.0292 | TrAcc:1.0000 VAcc:0.9947 | Cv:0.7441
+  Epoch 5200/10000 | TrLoss:0.0000 VLoss:0.0209 | TrAcc:1.0000 VAcc:0.9964 | Cv:0.6518
+  Epoch 5300/10000 | TrLoss:0.0000 VLoss:0.0140 | TrAcc:1.0000 VAcc:0.9970 | Cv:0.5748
+  Epoch 5400/10000 | TrLoss:0.0000 VLoss:0.0095 | TrAcc:1.0000 VAcc:0.9981 | Cv:0.5085
+  Epoch 5500/10000 | TrLoss:0.0000 VLoss:0.0069 | TrAcc:1.0000 VAcc:0.9987 | Cv:0.4525
+  Epoch 5600/10000 | TrLoss:0.0000 VLoss:0.0046 | TrAcc:1.0000 VAcc:0.9991 | Cv:0.4051
+  Epoch 5700/10000 | TrLoss:0.0000 VLoss:0.0031 | TrAcc:1.0000 VAcc:0.9994 | Cv:0.3661
+  Epoch 5800/10000 | TrLoss:0.0000 VLoss:0.0022 | TrAcc:1.0000 VAcc:0.9994 | Cv:0.3339
+  Epoch 5900/10000 | TrLoss:0.0000 VLoss:0.0015 | TrAcc:1.0000 VAcc:0.9996 | Cv:0.3069
+  Epoch 6000/10000 | TrLoss:0.0000 VLoss:0.0009 | TrAcc:1.0000 VAcc:0.9996 | Cv:0.2833
+  Epoch 6100/10000 | TrLoss:0.0000 VLoss:0.0005 | TrAcc:1.0000 VAcc:0.9998 | Cv:0.2646
+  Epoch 6200/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2496
+  Epoch 6300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2366
+  Epoch 6400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2282
+  Epoch 6500/10000 | TrLoss:0.0095 VLoss:0.0261 | TrAcc:1.0000 VAcc:0.9994 | Cv:1.9986
+  Epoch 6600/10000 | TrLoss:0.0012 VLoss:0.0037 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.6188
+  Epoch 6700/10000 | TrLoss:0.0005 VLoss:0.0011 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0680
+  Epoch 6800/10000 | TrLoss:0.0004 VLoss:0.0008 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7881
+  Epoch 6900/10000 | TrLoss:0.0002 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5178
+  Epoch 7000/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3356
+  Epoch 7100/10000 | TrLoss:0.0011 VLoss:0.0019 | TrAcc:1.0000 VAcc:1.0000 | Cv:2.3749
+  Epoch 7200/10000 | TrLoss:0.0007 VLoss:0.0011 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.7598
+  Epoch 7300/10000 | TrLoss:0.0004 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.3352
+  Epoch 7400/10000 | TrLoss:0.0003 VLoss:0.0004 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.0176
+  Epoch 7500/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8044
+  Epoch 7600/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.6363
+  Epoch 7700/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4945
+  Epoch 7800/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4007
+  Epoch 7900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3267
+  Epoch 8000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2741
+  Epoch 8100/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2383
+  Epoch 8200/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2147
+  Epoch 8300/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2009
+  Epoch 8400/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1940
+  Epoch 8500/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1913
+  Epoch 8600/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1900
+  Epoch 8700/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1888
+  Epoch 8800/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1867
+  Epoch 8900/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1840
+  Epoch 9000/10000 | TrLoss:0.0000 VLoss:0.0000 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.1827
+  Epoch 9100/10000 | TrLoss:4.4525 VLoss:5.2009 | TrAcc:0.0157 VAcc:0.0174 | Cv:0.1404
+  Epoch 9200/10000 | TrLoss:0.0019 VLoss:0.0026 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.4609
+  Epoch 9300/10000 | TrLoss:0.0009 VLoss:0.0012 | TrAcc:1.0000 VAcc:1.0000 | Cv:1.1327
+  Epoch 9400/10000 | TrLoss:0.0004 VLoss:0.0006 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.8941
+  Epoch 9500/10000 | TrLoss:0.0002 VLoss:0.0003 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.7055
+  Epoch 9600/10000 | TrLoss:0.0001 VLoss:0.0002 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.5527
+  Epoch 9700/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.4320
+  Epoch 9800/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.3370
+  Epoch 9900/10000 | TrLoss:0.0001 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2736
+  Epoch 10000/10000 | TrLoss:0.0000 VLoss:0.0001 | TrAcc:1.0000 VAcc:1.0000 | Cv:0.2431
+
+==================================================
+PHASE 3 RESULTS (seed=4042)
+==================================================
+  Profiler triggered:  epoch 1324
+  Z-Score triggered:   epoch 4180
+  Kinematic triggered: epoch 1324
+  Natural grokking:    epoch 4260
+  LAG (kinematic -> grokking): 2936 epochs
+==================================================
+
+  Saved: data/phase3_exp3_metrics_seed4042.csv
+  Saved: data/phase3_exp3_benchmark_results_seed4042.json
+  Saved: figures/phase3_exp3_triggers_seed4042.png
+  Saved: figures/phase3_exp3_kinematics_seed4042.png
+
+>>> Phase 4A (Step-Function Heat Spike) | seed=4042
+Phase 4A: Active Thermodynamic Optimization (Training Loop)
+  base_wd=0.1, spike_wd=1.0, cooldown=50
+  p=97, epochs=10000, seed=4042, device=cuda
+
+  Epoch 100 | Loss:0.0394 TrAcc:1.0000 VAcc:0.5010 Cv:4.9072 WD:0.1
+  Epoch 200 | Loss:0.0084 TrAcc:1.0000 VAcc:0.5018 Cv:4.3798 WD:0.1
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5022 Cv:4.0005 WD:0.1
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5020 Cv:3.7108 WD:0.1
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5020 Cv:3.4586 WD:0.1
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5020 Cv:3.2562 WD:0.1
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5022 Cv:3.0815 WD:0.1
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5027 Cv:2.9245 WD:0.1
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5031 Cv:2.7837 WD:0.1
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5035 Cv:2.6605 WD:0.1
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.5491 WD:0.1
+  Epoch 1200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.4501 WD:0.1
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5029 Cv:2.3573 WD:0.1
+  🔥 KINEMATIC TRIGGER at epoch 1324! Injecting heat (wd=1.0)
+  ❄️ Cooldown at epoch 1374. Returning to wd=0.1
+  Epoch 1400 | Loss:0.0047 TrAcc:1.0000 VAcc:0.5027 Cv:3.2905 WD:0.1
+  Epoch 1500 | Loss:0.0017 TrAcc:1.0000 VAcc:0.5048 Cv:2.7609 WD:0.1
+  Epoch 1600 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5048 Cv:2.4423 WD:0.1
+  Epoch 1700 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5063 Cv:2.2254 WD:0.1
+  Epoch 1800 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5054 Cv:2.0697 WD:0.1
+  Epoch 1900 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5048 Cv:1.9563 WD:0.1
+  Epoch 2000 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5054 Cv:1.8647 WD:0.1
+  Epoch 2100 | Loss:0.6681 TrAcc:0.9175 VAcc:0.3834 Cv:16.9219 WD:0.1
+  Epoch 2200 | Loss:0.0042 TrAcc:1.0000 VAcc:0.5231 Cv:7.3452 WD:0.1
+  Epoch 2300 | Loss:0.0019 TrAcc:1.0000 VAcc:0.5303 Cv:5.4376 WD:0.1
+  Epoch 2400 | Loss:0.0012 TrAcc:1.0000 VAcc:0.5371 Cv:4.2099 WD:0.1
+  Epoch 2500 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5435 Cv:3.3862 WD:0.1
+  Epoch 2600 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5479 Cv:2.7929 WD:0.1
+  Epoch 2700 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5520 Cv:2.3675 WD:0.1
+  Epoch 2800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5560 Cv:2.0614 WD:0.1
+  Epoch 2900 | Loss:0.0088 TrAcc:1.0000 VAcc:0.6102 Cv:6.4177 WD:0.1
+  Epoch 3000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.6648 Cv:4.0121 WD:0.1
+  Epoch 3100 | Loss:0.0008 TrAcc:1.0000 VAcc:0.6888 Cv:2.8691 WD:0.1
+  Epoch 3200 | Loss:0.0006 TrAcc:1.0000 VAcc:0.7105 Cv:2.1735 WD:0.1
+  Epoch 3300 | Loss:0.0004 TrAcc:1.0000 VAcc:0.7226 Cv:1.7474 WD:0.1
+  Epoch 3400 | Loss:0.0028 TrAcc:1.0000 VAcc:0.8183 Cv:5.6060 WD:0.1
+  Epoch 3500 | Loss:0.0010 TrAcc:1.0000 VAcc:0.8820 Cv:3.6860 WD:0.1
+  Epoch 3600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.9148 Cv:2.5821 WD:0.1
+  Epoch 3700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.9462 Cv:1.8830 WD:0.1
+  Epoch 3800 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9594 Cv:1.4395 WD:0.1
+  Epoch 3900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9739 Cv:1.1529 WD:0.1
+  Epoch 4000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9804 Cv:0.9597 WD:0.1
+  Epoch 4100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9866 Cv:0.8217 WD:0.1
+  Epoch 4200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9898 Cv:0.7180 WD:0.1
+  Epoch 4300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9940 Cv:0.6371 WD:0.1
+  Epoch 4400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9964 Cv:0.5719 WD:0.1
+  Epoch 4500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9981 Cv:0.5185 WD:0.1
+  Epoch 4600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9985 Cv:0.4726 WD:0.1
+  Epoch 4700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9994 Cv:0.4342 WD:0.1
+  Epoch 4800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 Cv:0.4023 WD:0.1
+  Epoch 4900 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 Cv:0.3746 WD:0.1
+  Epoch 5000 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.3504 WD:0.1
+  Epoch 5100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.3310 WD:0.1
+  Epoch 5200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3147 WD:0.1
+  Epoch 5300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3031 WD:0.1
+  Epoch 5400 | Loss:0.0043 TrAcc:1.0000 VAcc:0.9945 Cv:4.6994 WD:0.1
+  Epoch 5500 | Loss:0.0007 TrAcc:1.0000 VAcc:0.9989 Cv:2.8442 WD:0.1
+  Epoch 5600 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9998 Cv:1.9977 WD:0.1
+  Epoch 5700 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9998 Cv:1.4665 WD:0.1
+  Epoch 5800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9998 Cv:1.0930 WD:0.1
+  Epoch 5900 | Loss:0.0015 TrAcc:1.0000 VAcc:1.0000 Cv:3.9666 WD:0.1
+  Epoch 6000 | Loss:0.0004 TrAcc:1.0000 VAcc:1.0000 Cv:2.8358 WD:0.1
+  Epoch 6100 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.1918 WD:0.1
+  Epoch 6200 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.7338 WD:0.1
+  Epoch 6300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.3899 WD:0.1
+  Epoch 6400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.1357 WD:0.1
+  Epoch 6500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9363 WD:0.1
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7780 WD:0.1
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6460 WD:0.1
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5365 WD:0.1
+  Epoch 6900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4546 WD:0.1
+  Epoch 7000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4029 WD:0.1
+  Epoch 7100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3735 WD:0.1
+  Epoch 7200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3581 WD:0.1
+  Epoch 7300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3508 WD:0.1
+  Epoch 7400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3475 WD:0.1
+  Epoch 7500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3455 WD:0.1
+  Epoch 7600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3441 WD:0.1
+  Epoch 7700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3425 WD:0.1
+  Epoch 7800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3425 WD:0.1
+  Epoch 7900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3414 WD:0.1
+  Epoch 8000 | Loss:0.0018 TrAcc:1.0000 VAcc:1.0000 Cv:3.9664 WD:0.1
+  Epoch 8100 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:3.0183 WD:0.1
+  Epoch 8200 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.3911 WD:0.1
+  Epoch 8300 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.9261 WD:0.1
+  Epoch 8400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.5632 WD:0.1
+  Epoch 8500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.2661 WD:0.1
+  Epoch 8600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0300 WD:0.1
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.8471 WD:0.1
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.7037 WD:0.1
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5924 WD:0.1
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5364 WD:0.1
+  Epoch 9100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5218 WD:0.1
+  Epoch 9200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5233 WD:0.1
+  Epoch 9300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5297 WD:0.1
+  Epoch 9400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5366 WD:0.1
+  Epoch 9500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5420 WD:0.1
+  Epoch 9600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5453 WD:0.1
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5455 WD:0.1
+  Epoch 9800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5425 WD:0.1
+  Epoch 9900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5364 WD:0.1
+  Epoch 10000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.5284 WD:0.1
+
+==================================================
+  Seed: 4042
+  Trigger: epoch 1324
+  Grokking: epoch 3543
+  Lag: 2219 epochs
+==================================================
+  Saved: figures/phase4a_exp3_intervention_seed4042.png
+
+>>> Phase 4B (CvAdamW) | seed=4042
+Phase 4B: CvAdamW — Thermodynamically-Aware Optimizer
+  kappa=5.0, tau=0.02, alpha=0.9, base_wd=0.1
+  p=97, epochs=10000, seed=4042, device=cuda
+
+  Epoch 100 | Loss:0.0394 TrAcc:1.0000 VAcc:0.5010 Cv:4.9072 WD:0.1000 μ:-0.006497
+  Epoch 200 | Loss:0.0084 TrAcc:1.0000 VAcc:0.5018 Cv:4.3798 WD:0.1000 μ:0.005183
+  Epoch 300 | Loss:0.0037 TrAcc:1.0000 VAcc:0.5022 Cv:4.0005 WD:0.1000 μ:-0.004858
+  Epoch 400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5020 Cv:3.7108 WD:0.1000 μ:0.013670
+  Epoch 500 | Loss:0.0011 TrAcc:1.0000 VAcc:0.5020 Cv:3.4585 WD:0.1000 μ:-0.001356
+  Epoch 600 | Loss:0.0007 TrAcc:1.0000 VAcc:0.5020 Cv:3.2562 WD:0.1000 μ:0.001907
+  Epoch 700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5022 Cv:3.0815 WD:0.1000 μ:0.002862
+  Epoch 800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5027 Cv:2.9245 WD:0.1000 μ:0.001265
+  Epoch 900 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5031 Cv:2.7837 WD:0.1000 μ:-0.000873
+  Epoch 1000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5035 Cv:2.6605 WD:0.1000 μ:-0.000743
+  Epoch 1100 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.5491 WD:0.1000 μ:0.000474
+  Epoch 1200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5031 Cv:2.4501 WD:0.1000 μ:0.002127
+  Epoch 1300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5029 Cv:2.3573 WD:0.1000 μ:0.003776
+  Epoch 1400 | Loss:0.0020 TrAcc:1.0000 VAcc:0.5041 Cv:8.2997 WD:0.1000 μ:-0.003373
+  Epoch 1500 | Loss:0.0010 TrAcc:1.0000 VAcc:0.5039 Cv:5.8901 WD:0.1000 μ:-0.006456
+  Epoch 1600 | Loss:0.0006 TrAcc:1.0000 VAcc:0.5039 Cv:4.4682 WD:0.1000 μ:-0.000657
+  Epoch 1700 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5046 Cv:3.6004 WD:0.1000 μ:0.001533
+  Epoch 1800 | Loss:0.0003 TrAcc:1.0000 VAcc:0.5052 Cv:3.0658 WD:0.1000 μ:-0.005478
+  Epoch 1900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5054 Cv:2.7255 WD:0.1000 μ:0.002234
+  Epoch 2000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5054 Cv:2.4796 WD:0.1000 μ:-0.006547
+  Epoch 2100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5056 Cv:2.3035 WD:0.1000 μ:-0.000780
+  Epoch 2200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5044 Cv:2.1681 WD:0.1000 μ:0.001684
+  Epoch 2300 | Loss:0.0028 TrAcc:1.0000 VAcc:0.5080 Cv:6.1181 WD:0.1000 μ:0.000659
+  Epoch 2400 | Loss:0.0012 TrAcc:1.0000 VAcc:0.5101 Cv:4.3454 WD:0.1000 μ:0.002696
+  Epoch 2500 | Loss:0.0008 TrAcc:1.0000 VAcc:0.5114 Cv:3.3812 WD:0.1000 μ:0.000236
+  Epoch 2600 | Loss:0.0005 TrAcc:1.0000 VAcc:0.5124 Cv:2.8098 WD:0.1000 μ:-0.004059
+  Epoch 2700 | Loss:0.0004 TrAcc:1.0000 VAcc:0.5135 Cv:2.4528 WD:0.1000 μ:0.001912
+  Epoch 2800 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5139 Cv:2.2084 WD:0.1000 μ:-0.000631
+  Epoch 2900 | Loss:0.0002 TrAcc:1.0000 VAcc:0.5124 Cv:2.0266 WD:0.1000 μ:-0.001393
+  Epoch 3000 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5131 Cv:1.8925 WD:0.1000 μ:0.000666
+  Epoch 3100 | Loss:0.0001 TrAcc:1.0000 VAcc:0.5137 Cv:1.7881 WD:0.1000 μ:-0.000845
+  Epoch 3200 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5141 Cv:1.7052 WD:0.1000 μ:0.001143
+  Epoch 3300 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5152 Cv:1.6329 WD:0.1000 μ:0.000289
+  Epoch 3400 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5173 Cv:1.5783 WD:0.1000 μ:0.000530
+  Epoch 3500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5158 Cv:1.5254 WD:0.1000 μ:-0.003695
+  Epoch 3600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5152 Cv:1.4945 WD:0.1000 μ:-0.000420
+  Epoch 3700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5177 Cv:1.4654 WD:0.1000 μ:0.000287
+  Epoch 3800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.5182 Cv:1.4424 WD:0.1000 μ:-0.000212
+  Epoch 3900 | Loss:0.0054 TrAcc:1.0000 VAcc:0.6140 Cv:6.3398 WD:0.1000 μ:0.001462
+  Epoch 4000 | Loss:0.0015 TrAcc:1.0000 VAcc:0.6463 Cv:4.2602 WD:0.1000 μ:-0.002323
+  Epoch 4100 | Loss:0.0008 TrAcc:1.0000 VAcc:0.6684 Cv:3.0599 WD:0.1000 μ:-0.000700
+  Epoch 4200 | Loss:0.0005 TrAcc:1.0000 VAcc:0.6980 Cv:2.2862 WD:0.1000 μ:0.000719
+  Epoch 4300 | Loss:0.0003 TrAcc:1.0000 VAcc:0.7220 Cv:1.7884 WD:0.1000 μ:0.004378
+  Epoch 4400 | Loss:0.0002 TrAcc:1.0000 VAcc:0.7394 Cv:1.4690 WD:0.1000 μ:0.000406
+  Epoch 4500 | Loss:0.0002 TrAcc:1.0000 VAcc:0.7607 Cv:1.2744 WD:0.1000 μ:0.001046
+  Epoch 4600 | Loss:0.0001 TrAcc:1.0000 VAcc:0.7841 Cv:1.1487 WD:0.1000 μ:0.000361
+  Epoch 4700 | Loss:0.0077 TrAcc:1.0000 VAcc:0.8961 Cv:5.2353 WD:0.1000 μ:-0.003653
+  Epoch 4800 | Loss:0.0014 TrAcc:1.0000 VAcc:0.9518 Cv:3.3028 WD:0.1000 μ:0.000677
+  Epoch 4900 | Loss:0.0006 TrAcc:1.0000 VAcc:0.9719 Cv:2.2169 WD:0.1000 μ:-0.000621
+  Epoch 5000 | Loss:0.0003 TrAcc:1.0000 VAcc:0.9879 Cv:1.5398 WD:0.1000 μ:0.000076
+  Epoch 5100 | Loss:0.0002 TrAcc:1.0000 VAcc:0.9940 Cv:1.0990 WD:0.1000 μ:-0.000188
+  Epoch 5200 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9968 Cv:0.8246 WD:0.1000 μ:-0.000968
+  Epoch 5300 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9974 Cv:0.6599 WD:0.1000 μ:-0.000675
+  Epoch 5400 | Loss:0.0001 TrAcc:1.0000 VAcc:0.9983 Cv:0.5595 WD:0.1000 μ:0.000016
+  Epoch 5500 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9987 Cv:0.4918 WD:0.1000 μ:-0.000020
+  Epoch 5600 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9991 Cv:0.4440 WD:0.1000 μ:-0.000700
+  Epoch 5700 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9996 Cv:0.4082 WD:0.1000 μ:-0.000318
+  Epoch 5800 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.3826 WD:0.1000 μ:0.000181
+  Epoch 5900 | Loss:0.0000 TrAcc:1.0000 VAcc:0.9998 Cv:0.3636 WD:0.1000 μ:-0.000204
+  Epoch 6000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3505 WD:0.1000 μ:-0.000140
+  Epoch 6100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3421 WD:0.1000 μ:0.000092
+  Epoch 6200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3363 WD:0.1000 μ:-0.000056
+  Epoch 6300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3322 WD:0.1000 μ:-0.000041
+  Epoch 6400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3281 WD:0.1000 μ:0.000090
+  Epoch 6500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3230 WD:0.1000 μ:0.000118
+  Epoch 6600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3178 WD:0.1000 μ:-0.000086
+  Epoch 6700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3119 WD:0.1000 μ:-0.000296
+  Epoch 6800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3065 WD:0.1000 μ:-0.000205
+  Epoch 6900 | Loss:0.0022 TrAcc:1.0000 VAcc:1.0000 Cv:3.6265 WD:0.1000 μ:0.001877
+  Epoch 7000 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 Cv:2.5372 WD:0.1000 μ:-0.002526
+  Epoch 7100 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.8560 WD:0.1000 μ:-0.001733
+  Epoch 7200 | Loss:0.0002 TrAcc:1.0000 VAcc:1.0000 Cv:1.3913 WD:0.1000 μ:-0.000078
+  Epoch 7300 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.0618 WD:0.1000 μ:-0.001275
+  Epoch 7400 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.8024 WD:0.1000 μ:0.000139
+  Epoch 7500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6076 WD:0.1000 μ:-0.000428
+  Epoch 7600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.4842 WD:0.1000 μ:0.000032
+  Epoch 7700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3998 WD:0.1000 μ:-0.000023
+  Epoch 7800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3511 WD:0.1000 μ:-0.000252
+  Epoch 7900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3327 WD:0.1000 μ:-0.000111
+  Epoch 8000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3319 WD:0.1000 μ:-0.000162
+  Epoch 8100 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3383 WD:0.1000 μ:-0.000209
+  Epoch 8200 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3471 WD:0.1000 μ:-0.000057
+  Epoch 8300 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3557 WD:0.1000 μ:0.000278
+  Epoch 8400 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3627 WD:0.1000 μ:0.000044
+  Epoch 8500 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3676 WD:0.1000 μ:-0.000187
+  Epoch 8600 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3699 WD:0.1000 μ:0.000139
+  Epoch 8700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3691 WD:0.1000 μ:0.000062
+  Epoch 8800 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3664 WD:0.1000 μ:0.000055
+  Epoch 8900 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3623 WD:0.1000 μ:-0.000013
+  Epoch 9000 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.3562 WD:0.1000 μ:-0.000066
+  Epoch 9100 | Loss:4.5133 TrAcc:0.0270 VAcc:0.0219 Cv:0.3439 WD:0.1000 μ:0.005506
+  Epoch 9200 | Loss:0.0011 TrAcc:1.0000 VAcc:1.0000 Cv:3.4105 WD:0.1000 μ:0.001220
+  Epoch 9300 | Loss:0.0005 TrAcc:1.0000 VAcc:1.0000 Cv:2.5119 WD:0.1000 μ:0.000379
+  Epoch 9400 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:1.8548 WD:0.1000 μ:-0.001041
+  Epoch 9500 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:1.3341 WD:0.1000 μ:-0.000913
+  Epoch 9600 | Loss:0.0001 TrAcc:1.0000 VAcc:1.0000 Cv:0.9260 WD:0.1000 μ:-0.001068
+  Epoch 9700 | Loss:0.0000 TrAcc:1.0000 VAcc:1.0000 Cv:0.6886 WD:0.1000 μ:0.000417
+  Epoch 9800 | Loss:0.0713 TrAcc:1.0000 VAcc:1.0000 Cv:3.6411 WD:0.3895 μ:0.077904
+  Epoch 9900 | Loss:0.0007 TrAcc:1.0000 VAcc:1.0000 Cv:3.0529 WD:0.1000 μ:-0.001962
+  Epoch 10000 | Loss:0.0003 TrAcc:1.0000 VAcc:1.0000 Cv:2.3418 WD:0.1000 μ:0.001090
+
+==================================================
+  Seed: 4042
+  Grokking: epoch 4705
+  Max dynamic WD: 1.8165
+==================================================
+  Saved: figures/phase4b_exp3_cv_adamw_seed4042.png
+
+>>> Plotting WD comparison (4A vs 4B) | seed=4042
+Loading Phase 4A: data/phase4a_exp3_metrics_seed4042.csv
+Loading Phase 4B: data/phase4b_exp3_metrics_seed4042.csv
+
+Saved: figures/wd_comparison_4a_vs_4b_seed4042.png
+
+--- Seed 4042 complete ---
+
+============================================
+EXPERIMENT 3 COMPLETE (all seeds)
+============================================

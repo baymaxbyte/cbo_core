@@ -1,0 +1,9 @@
+{
+  "grokking_epoch": 4197,
+  "z_thresh": 2.0,
+  "beta_z": 0.9,
+  "base_wd": 0.1,
+  "seed": 512,
+  "max_dynamic_wd": 1.069363975658443,
+  "max_z_score": 2.969363975658443
+}
