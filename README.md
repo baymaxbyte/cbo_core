@@ -67,9 +67,6 @@ experiment_core/
 |-- plot_wd_comparison.py             # WD overlay: 4A vs 4B
 |-- run_exp3.sh                       # Multi-seed runner (5 seeds, 10k epochs)
 |
-|-- JOURNEY.md                        # Full development documentation
-|-- SUBSTACK_ARTICLE.md               # Narrative article
-|
 |-- data/                             # Per-seed CSVs and JSONs
 |   |-- phase3_exp3_metrics_seed{N}.csv
 |   |-- phase3_exp3_benchmark_results_seed{N}.json
