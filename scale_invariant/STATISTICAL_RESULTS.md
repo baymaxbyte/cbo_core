@@ -85,18 +85,16 @@ Preferred for small samples (n=10) where normality is uncertain.
 
 The cold-start scale-invariant CvAdamW optimizer improved grokking latency in 8 out of 10 seeds, producing a mean reduction of 257 epochs (6.0%). Both the paired t-test (p = 0.030) and Wilcoxon signed-rank test (p = 0.024) reach significance at α = 0.05, and the effect size is medium (Cohen's d = 0.68).
 
-However, the 95% confidence interval for the mean improvement narrowly includes zero ([-13, 527]), and the sign test is borderline (p = 0.055). This is characteristic of paired experiments with n = 10: the effect is real and consistent in direction (8/10 wins), but sample size limits the precision of the estimate.
+However, the 95% confidence interval for the mean improvement narrowly includes zero ([-13, 527]) and the sign test is borderline (p = 0.055). This is characteristic of paired experiments with n = 10: the effect is real and consistent in direction (8/10 wins),but sample size limits the precision of the estimate.
 
 ### What this means practically
 
 1. **The method works more often than not** — it improved 80% of random seeds
-2. **When it works, the gains can be dramatic** — seeds 2048 and 3141 saw 20%+ reductions
+2. **When it works, the gains can be larger** — seeds 2048 and 3141 saw 20%+ reductions
 3. **It rarely hurts** — the two "losses" (seeds 123, 1024) are small (-140, -120 epochs) compared to the wins
 4. **The effect is asymmetric** — wins are larger than losses, suggesting the optimizer captures genuine phase transitions when they occur
 
-### Recommended paper language
-
-> "The cold-start z-score CvAdamW reduced mean grokking latency by 257 epochs (6.0%) across 10 paired seeds (Wilcoxon W = 47, p = 0.024; Cohen's d = 0.68). The method improved 8/10 seeds, with gains concentrated in seeds where the phase transition was most pronounced."
+The cold-start z-score CvAdamW reduced mean grokking latency by 257 epochs (6.0%) across 10 paired seeds (Wilcoxon W = 47, p = 0.024; Cohen's d = 0.68). The method improved 8/10 seeds with gains concentrated in seeds where the phase transition was most pronounced.
 
 ### Limitations
 
