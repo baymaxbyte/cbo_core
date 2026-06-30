@@ -91,7 +91,7 @@ However, the 95% confidence interval for the mean improvement narrowly includes 
 
 1. **The method works more often than not** — it improved 80% of random seeds
 2. **When it works, the gains can be larger** — seeds 2048 and 3141 saw 20%+ reductions
-3. **It rarely hurts** — the two "losses" (seeds 123, 1024) are small (-140, -120 epochs) compared to the wins
+3. **The inefficiency is less frequent** — the two "losses" (seeds 123, 1024) are small (-140, -120 epochs) compared to the wins
 4. **The effect is asymmetric** — wins are larger than losses, suggesting the optimizer captures genuine phase transitions when they occur
 
 The cold-start z-score CvAdamW reduced mean grokking latency by 257 epochs (6.0%) across 10 paired seeds (Wilcoxon W = 47, p = 0.024; Cohen's d = 0.68). The method improved 8/10 seeds with gains concentrated in seeds where the phase transition was most pronounced.
